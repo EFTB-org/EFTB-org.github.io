@@ -1,0 +1,17 @@
+// Put your custom SCSS code here
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #0133b0;
+  --bs-btn-border-color: #0133b0;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #2403b4;
+  --bs-btn-hover-border-color: #2403b4;
+  --bs-btn-focus-shadow-rgb: 117, 78, 152;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #2403b4;
+  --bs-btn-active-border-color: #2403b4;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #0133b0;
+  --bs-btn-disabled-border-color: #0133b0;
+}

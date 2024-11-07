@@ -1,0 +1,10 @@
+{{ $image := resources.Get (.src) }}
+{{ if $image }}
+  <img src="{{ $image.RelPermalink }}"
+       width="{{ .width }}"
+       height="{{ .height }}"
+       class="{{ .class }}"
+       alt="{{ .alt | default (path.Base .src) }}">
+{{ else }}
+  {{ warnf "Image not found: %s" .src }}
+{{ end }}
