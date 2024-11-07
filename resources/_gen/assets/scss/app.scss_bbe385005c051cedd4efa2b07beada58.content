@@ -14517,4 +14517,7 @@ body {
   --bs-btn-disabled-bg: #0133b0;
   --bs-btn-disabled-border-color: #0133b0; }
 
+table {
+  margin: 5px; }
+
 /*# sourceMappingURL=main.css.map */
