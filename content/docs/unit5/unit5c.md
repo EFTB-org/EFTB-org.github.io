@@ -50,6 +50,9 @@ seo:
 | Audio                                                                                                | Sentence                                       | Meaning                                                        |
 |:-----------------------------------------------------------------------------------------------------|:-----------------------------------------------|:---------------------------------------------------------------|
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 63edc8d (update padding sounds)
 | {{<audio-player src="audio/unit5c/sentences_padded/00_Is_there_a_beautiful_park_near_your_house.wav">}}     | Is there a beautiful park near your house?     | Có một công viên đẹp gần nhà bạn không?                        |
 | {{<audio-player src="audio/unit5c/sentences_padded/01_Are_there_any_quiet_libraries_in_this_city.wav">}}    | Are there any quiet libraries in this city?    | Có thư viện nào yên tĩnh ở thành phố này không?                |
 | {{<audio-player src="audio/unit5c/sentences_padded/02_Is_there_a_famous_museum_in_your_town.wav">}}         | Is there a famous museum in your town?         | Có một bảo tàng nổi tiếng ở thị trấn của bạn không?            |
@@ -65,6 +68,7 @@ seo:
 | {{<audio-player src="audio/unit5c/sentences_padded/12_Is_there_a_luxury_hotel_near_the_beach.wav">}}        | Is there a luxury hotel near the beach?        | Có một khách sạn sang trọng gần bãi biển không?                |
 | {{<audio-player src="audio/unit5c/sentences_padded/13_Are_there_any_popular_zoos_in_the_country.wav">}}     | Are there any popular zoos in the country?     | Có sở thú nổi tiếng nào ở đất nước này không?                  |
 | {{<audio-player src="audio/unit5c/sentences_padded/14_Is_there_a_dark_theater_in_this_building.wav">}}      | Is there a dark theater in this building?      | Có một rạp hát tối trong tòa nhà này không?                    |
+<<<<<<< HEAD
 =======
 | {{<audio-player src="audio/unit5c/sentences/00_Is_there_a_beautiful_park_near_your_house.wav">}}     | Is there a beautiful park near your house?     | Có một công viên đẹp gần nhà bạn không?                        |
 | {{<audio-player src="audio/unit5c/sentences/01_Are_there_any_quiet_libraries_in_this_city.wav">}}    | Are there any quiet libraries in this city?    | Có thư viện nào yên tĩnh ở thành phố này không?                |
@@ -82,3 +86,5 @@ seo:
 | {{<audio-player src="audio/unit5c/sentences/13_Are_there_any_popular_zoos_in_the_country.wav">}}     | Are there any popular zoos in the country?     | Có sở thú nổi tiếng nào ở đất nước này không?                  |
 | {{<audio-player src="audio/unit5c/sentences/14_Is_there_a_dark_theater_in_this_building.wav">}}      | Is there a dark theater in this building?      | Có một rạp hát tối trong tòa nhà này không?                    |
 >>>>>>> e7cc9b8 (unit5c)
+=======
+>>>>>>> 63edc8d (update padding sounds)
