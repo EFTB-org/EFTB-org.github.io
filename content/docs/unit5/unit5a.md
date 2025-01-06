@@ -74,3 +74,67 @@ seo:
 | {{<audio-player src="audio/unit5a/sentences/12_There_are_lots_of_loud_noises_from_the_street.wav">}}                     | There are lots of loud noises from the street.                      | Có nhiều tiếng ồn lớn từ ngoài đường.                                   |
 | {{<audio-player src="audio/unit5a/sentences/13_You_only_need_a_little_fast_movement_to_finish_this_exercise.wav">}}      | You only need a little fast movement to finish this exercise.       | Bạn chỉ cần chút động tác nhanh để hoàn thành bài tập này.              |
 | {{<audio-player src="audio/unit5a/sentences/14_He_has_a_few_strict_teachers_at_his_school_but_some_are_easygoing.wav">}} | He has a few strict teachers at his school, but some are easygoing. | Cậu ấy có vài giáo viên nghiêm khắc ở trường, nhưng một số thì dễ tính. |
+
+## 3. Listening
+
+### The Village of Many Colors
+
+#### Part 1:
+{{<audio-with-controls src="audio/unit5a/listening/part1.wav">}}
+> **The Village of Many Colors**
+> 
+> **Once upon a time**
+>
+> In a quiet village, there were lots of **old houses** made of stone. The roofs were **thick** and strong to protect the villagers from the rain. The air in the village was always **clean** and **fresh**, filled with the sweet smell of flowers.
+
+> But something was missing. The houses were all gray, and the villagers wanted their homes to look **bright** and cheerful.
+
+- **Questions:**
+  1. What were the old houses in the village made of?
+      * **Answer:** Stone.
+  2. What does the villagers wanted their homes to be?
+      * **Answer:** They wanted their homes to look bright and cheerful.
+
+#### Part 2:
+{{<audio-with-controls src="audio/unit5a/listening/part2.wav">}}
+
+> **One sunny morning**
+> 
+> A little girl named Lily had an idea. "Let’s paint the houses!" she said. "We can make them **warm** and happy with colors!"
+>
+> The villagers loved the idea. They brought **thin** brushes, some dark and bright paints colors like: **cool** blue paints, **warm** yellow shades,
+
+* **Questions**:
+  1.  Who came up with the idea to paint the houses?
+      * **Answer**: Lily, the little girl.
+  2. What colors did the villagers plan to use?
+      * **Answer**: dark, and bright colors like Cool blue, warm yellow,
+
+
+#### Part 3:
+{{<audio-with-controls src="audio/unit5a/listening/part3.wav">}}
+
+> **The Big Painting Day**
+> 
+> Everyone started painting. Mr. Adam painted his house **yellow**, Mrs. Oliva used **bright** red, and Lily’s family painted their home a soft **blue**. Even the **polite** dog wagged its tail happily, watching the fun.
+>
+> Some people spilled paint, and it got a little **dirty**, but they all laughed and helped each other clean up.
+
+* **Questions**:
+  1. What color did Mr. Brown / Oliva / Lily paint his house? 
+      * **Answer**: Yellow / Red / blue 
+  2. What happened when some villagers spilled paint?
+      * **Answer**: It got dirty, but they all laughed and helped clean up.
+
+
+#### Part 4:
+{{<audio-with-controls src="audio/unit5a/listening/part4.wav">}}
+> **The Magic Happened**
+> 
+> When they finished, the village looked magical! The **quiet** streets were now filled with **bright** colors, and visitors from far away came to see the beautiful homes. The villagers were proud, and the village became famous as "The Village of Many Colors."
+
+* **Questions**:
+  1. What name was given to the village after the houses were painted?
+      * **Answer**: "The Village of Many Colors."
+  2. Why did visitors come to see the village?
+      * **Answer**: Because of its beautiful and colorful houses.
