@@ -65,3 +65,43 @@ seo:
 | {{<audio-player src="audio/unit5b/sentences/12_There_is_a_small_room_next_to_the_queen_room_on_the_third_floor_US.wav">}}                        | There is a small room next to the queen room on the third floor (US).                     | Có một căn phòng nhỏ bên cạnh phòng cỡ lớn ở trên tầng hai (Mỹ).                                    |
 | {{<audio-player src="audio/unit5b/sentences/13_There_are_multiple_motels_with_big_rooms_near_the_highway.wav">}}                                 | There are multiple motels with big rooms near the highway.                                | Có rất nhiều nhà nghỉ trang bị nhiều phòng lớn gần đường cao tốc.                                   |
 | {{<audio-player src="audio/unit5b/sentences/14_There_is_a_person_under_the_basement.wav">}}                                                      | There is a person under the basement                                                      | Có 1 người nào đó đang ở dưới tầng hầm                                                              |
+
+
+## 4. Listening
+**Conversation: At the Hotel**
+
+**Characters:**
+- Anna (guest), Mark (hotel receptionist)
+
+{{<audio-with-controls src="audio/unit5b/listening/conversation.wav">}}
+
+> **Anna**: Hello! Is there any room available on the 21st?
+> 
+> **Mark**: Hi! Yes, there is a queen room available on the 21st. It is located on the first floor. Would you like that?
+> 
+> **Anna**: Oh, that sounds great! Is there a nice view in the queen room?
+> 
+> **Mark**: Yes, you can see the mountains from the window.
+> 
+> **Anna**: Wonderful! And what else I can do at the hostel?
+> 
+> **Mark**: Well, on the roof, there are spots for selfies, and you can watch the sunset.
+> 
+> **Anna**: That’s perfect! I love taking pictures. Is there anything interesting nearby?
+> 
+> **Mark**: Yes, there’s an ancient cave. Many people visit it to hear the story about hidden treasure.
+> 
+> **Anna**: Wow, a treasure story! I would love to visit the ancient cave.
+> 
+> **Mark**: Great! I can help you book a guide when you arrive at the Alibaba hotel.
+> 
+> **Anna**: Thank you so much! I can’t wait to travel there.
+> 
+> **Mark**: You’re welcome! I hope you will enjoy your stay.
+
+- **True or False:**
+  - a) Anna agree to book a queen room.
+  - b) The queen room is on the ground floor.
+  - c) Anna can see the ocean from her room.
+  - d) The hostel is near an ancient cave.
+
