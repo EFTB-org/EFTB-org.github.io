@@ -1,0 +1,22 @@
+| Audio                                                                                            | **Word**                         | **IPA**              | **Meaning**                        |
+|:-------------------------------------------------------------------------------------------------|:---------------------------------|:---------------------|:-----------------------------------|
+| {{<audio-player src="audio/unit6b/vocabularies/00_morning.wav">}}                                | Morning                          | /ˈmɔːrnɪŋ/           | Buổi sáng. (6 AM – 11:59 AM)       |
+| {{<audio-player src="audio/unit6b/vocabularies/01_noon.wav">}}                                   | Noon                             | \nuːn/               | Buổi trưa (12 PM – 1 PM)           |
+| {{<audio-player src="audio/unit6b/vocabularies/02_afternoon.wav">}}                              | Afternoon                        | /ˌæftərˈnuːn/        | Buổi chiều (1 PM – 5 PM)           |
+| {{<audio-player src="audio/unit6b/vocabularies/03_evening.wav">}}                                | Evening                          | /ˈiːvnɪŋ/            | Buổi tối (6 PM – 9 PM)             |
+| {{<audio-player src="audio/unit6b/vocabularies/04_night.wav">}}                                  | Night                            | \naɪt/               | Ban đêm (9 PM – 5 AM)              |
+| {{<audio-player src="audio/unit6b/vocabularies/05_meals.wav">}}                                  | Meals                            | /miːlz/              | Bữa ăn                             |
+| {{<audio-player src="audio/unit6b/vocabularies/06_breakfast.wav">}}                              | Breakfast                        | /ˈbrɛkfəst/          | Bữa sáng                           |
+| {{<audio-player src="audio/unit6b/vocabularies/07_brunch.wav">}}                                 | Brunch                           | /brʌntʃ/             | Bữa sáng muộn                      |
+| {{<audio-player src="audio/unit6b/vocabularies/08_lunch.wav">}}                                  | Lunch                            | /lʌntʃ/              | Bữa trưa                           |
+| {{<audio-player src="audio/unit6b/vocabularies/09_dinner.wav">}}                                 | Dinner                           | /ˈdɪnər/             | Bữa tối                            |
+| {{<audio-player src="audio/unit6b/vocabularies/10_routine.wav">}}                                | Routine                          | /ruːˈtiːn/           | Thói quen hằng ngày                |
+| {{<audio-player src="audio/unit6b/vocabularies/11_habit.wav">}}                                  | Habit                            | /ˈhæbɪt/             | Thói quen                          |
+| {{<audio-player src="audio/unit6b/vocabularies/12_weekdays.wav">}}                               | Weekdays                         | /ˈwiːkdeɪz/          | Các ngày trong tuần (thứ 2- thứ 6) |
+| {{<audio-player src="audio/unit6b/vocabularies/13_weekend.wav">}}                                | Weekend                          | /ˌwiːkˈɛnd/          | Cuối tuần (Thứ 7- Chủ nhật)        |
+| {{<audio-player src="audio/unit6b/vocabularies/14_once.wav">}}                                   | Once                             | /wʌns/               | Một lần                            |
+| {{<audio-player src="audio/unit6b/vocabularies/15_twice.wav">}}                                  | Twice                            | /twaɪs/              | Hai lần                            |
+| {{<audio-player src="audio/unit6b/vocabularies/16_thrice.wav">}}                                 | Thrice Three times               | /θraɪs/ /θriː taɪmz/ | Ba lần                             |
+| {{<audio-player src="audio/unit6b/vocabularies/17_for__br_for_eight_hours.wav">}}                | For ... \n For eight hours       | /fɔːr/               | Trong Trong 8 tiếng                |
+| {{<audio-player src="audio/unit6b/vocabularies/18_from___to_br_from_6_oclock_to_8_oclock.wav">}} | From ... to \n From 6:00 to 8:00 | /frʌm... tuː/        | Từ .. đến Từ 6:00 đến 8:00         |
+| {{<audio-player src="audio/unit6b/vocabularies/19_until__br_until_8_oclock.wav">}}               | Until ... \n Until 8:00          | /ʌnˈtɪl/             | Cho đến Cho đến 8:00               |
