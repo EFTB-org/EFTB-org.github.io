@@ -3,4 +3,5 @@
 .hugo_build.lock
 node_modules
 public
+__pycache__
 # resources
