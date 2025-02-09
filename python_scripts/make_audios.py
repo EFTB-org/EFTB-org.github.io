@@ -115,11 +115,13 @@ def main():
     )
 
     voices = {
-        "af_nicole": speech_generator.get_voice("af_nicole"),
+        # "af_nicole": speech_generator.get_voice("af_nicole"),
         "am_michael": speech_generator.get_voice("am_michael"),
         "am_puck": speech_generator.get_voice("am_puck"),
         # "am_onyx": speech_generator.get_voice("am_onyx"),
-        "am_adam": speech_generator.get_voice("am_adam"),
+        # "am_adam": speech_generator.get_voice("am_adam"),
+        "af_sarah": speech_generator.get_voice("af_sarah"),
+        "af_bella": speech_generator.get_voice("af_bella"),
         "af_bella&am_michael": speech_generator.mix_voice(
             "af_bella", "am_michael", 0.5
         ),
@@ -132,7 +134,7 @@ def main():
         task = progress.add_task("[green]Making sounds ...", total=len(df))
         for i, row in df.iterrows():
             voice = random.choice(list(voices.keys()))
-            text = f"{row['cleaned'].replace('**', '')}..."
+            text = f"{row['cleaned'].replace('**', '')}"
             # console.log(f"Using voice: {voice} for text: {text}")
             path = f"audio/{args.unit}/{args.type}/{i:02}_{normalize_filename(row['cleaned'])}.wav"
             save_path = "../static/" + path
