@@ -23,10 +23,11 @@ def normalize_filename(text):
     text (str): The input text to normalize.
 
     Returns:
-    str: The normalized filename.
+    str:The normalized filename.
     """
     # Normalize Unicode characters to their closest ASCII representation
-    text = unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode("ascii")
+    text = unicodedata.normalize("NFKD", text).encode(
+        "ascii", "ignore").decode("ascii")
 
     # Replace spaces with underscores
     text = text.replace(" ", "_")
@@ -62,8 +63,8 @@ class SpeechGenerator:
     def generate(
         self,
         text,
-        save_path,
         voice,
+        save_path=None,
         begin_duration=1.0,
         silent_duration=0.4,
         speed=1.0,
@@ -82,7 +83,10 @@ class SpeechGenerator:
                 (final_audio, np.zeros((int(silent_duration * 24000)))), axis=0
             )
 
-        sf.write(save_path, final_audio, 24000)
+        if save_path:
+            sf.write(save_path, final_audio, 24000)
+        else:
+            return final_audio
 
 
 def main():
@@ -136,10 +140,14 @@ def main():
             voice = random.choice(list(voices.keys()))
             text = f"{row['cleaned'].replace('**', '')}"
             # console.log(f"Using voice: {voice} for text: {text}")
-            path = f"audio/{args.unit}/{args.type}/{i:02}_{normalize_filename(row['cleaned'])}.wav"
+            path = f"audio/{args.unit}/{args.type}/{i:02}_{
+                normalize_filename(row['cleaned'])
+            }.wav"
             save_path = "../static/" + path
             voice = voices[voice]
-            speech_generator.generate(text, save_path, voice, speed=float(args.speed))
+            speech_generator.generate(
+                text, voice, save_path=save_path, speed=float(args.speed)
+            )
             audio_buttons.append("{{" + f'<audio-player src="{path}">' + "}}")
             progress.update(task, advance=1)
 

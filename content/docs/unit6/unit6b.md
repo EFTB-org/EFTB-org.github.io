@@ -81,3 +81,62 @@ and I go to work. I feel fine – I never feel tired
 | {{<audio-player src="audio/unit6b/sentences/13_i_usually_travel_twice_a_month_on_the_weekend_to_explore_new_places.wav">}}               | I usually travel **twice** a month on the **weekend** to explore new places.               | Tôi thường đi du lịch vào cuối tuần hai lần một tháng để khám phá những nơi mới.                        |
 | {{<audio-player src="audio/unit6b/sentences/14_i_only_study_for_3_hours_when_i_have_an_important_exam.wav">}}                            | I only study **for 3 hours** when I have an important exam.                                | Tôi chỉ học trong 3 giờ khi có một kỳ thi quan trọng.                                                   |
 | {{<audio-player src="audio/unit6b/sentences/15_i_exercise_from_4_oclock_to_5_oclock_every_morning_before_going_for_work.wav">}}          | I exercise **from 4:00 to 5:00** every morning before going for work                       | Tôi tập thể dục từ 4:00 đến 5:00 mỗi sáng trước khi đi làm.                                             |
+
+## 4. Practice
+
+### 1. Listening
+
+{{<audio-with-controls src="audio/unit6b/listening_conversation_part1.wav">}}
+
+> **Tom**: Morning Lisa!
+>
+> **Lisa**: Hi Tom! (YAWN)
+>
+> **Tom**: You look tired, What time did you sleep last night?
+>
+> **Lisa**: I usually sleep at 9:00 PM on weekdays. But last night I have to
+> stay up until 1 AM to do homework. (YAWN)
+
+- **Questions:**
+  - 1/ How does Lisa feel?
+  - 2/ What time does Lisa sleep on weekdays?
+  - 3/ What time did Lisa sleep last night?
+
+{{<audio-with-controls src="audio/unit6b/listening_conversation_part2.wav">}}
+
+> **Tom**: Wow, that’s really late. I guess that’s mean you finish your homework
+> then.
+>
+> **Lisa**: Sadly no. I wish someone can help me with my homework.
+>
+> **Tom**: Right right, Let’s go have some coffee first to help you feel more
+> energy. Then we can study together at noon.
+>
+> **Lisa**: Can we study in the evening? I have class at 2:00 PM
+>
+> **Tom**: I don’t mind. We will study at 6 after dinner. (Clinking plates and
+> fork)
+
+- **Questions**:
+  - 4/ Lisa finished her homework. YES or NO
+  - 5/ Tom suggests studying in the evening. YES or NO
+  - 6/ Lisa wants to study with Tom. YES or NO
+
+{{<audio-with-controls src="audio/unit6b/listening_conversation_part3.wav">}}
+
+> **Lisa**: You are so considerate, Tom. Let’s go have some coffee now. It’s my
+> treat
+>
+> **Tom**: Ok. Let’s go to Starbuck
+>
+> **Lisa**: Noooo, please!!! It’s so expensive there
+>
+> **Tom**: ha-ha just kidding; how about Phuc Long. It’s cheaper there
+>
+> **Lisa**: Yes, let’s go then. (motorbike sound)
+
+- **Questions**:
+  - 7/ They are going to have breakfast. YES or NO
+  - 8/ Who is going to pay for the coffee?
+  - 9/ Where are they going to drink?
+  - 10/ Why does Lisa say no to Star buck
