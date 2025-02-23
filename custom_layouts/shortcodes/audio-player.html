@@ -4,7 +4,7 @@
   <span class="play-text">Play</span>
   <span class="pause-text" style="display:none;">Pause</span>
 </button>
-<audio id="audio{{ $id }}">
+<audio id="audio{{ $id }}" preload="none">
   <source src="{{ $src | relURL }}" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>

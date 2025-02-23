@@ -2,7 +2,7 @@
 {{ $type := .Get "type" | default "audio/mpeg" }}
 {{ $preload := .Get "preload" | default "metadata" }}
 
-<audio controls preload="{{ $preload }}">
+<audio controls preload="none">
   <source src="{{ $src | relURL }}" type="{{ $type }}">
   Your browser does not support the audio element.
 </audio>
