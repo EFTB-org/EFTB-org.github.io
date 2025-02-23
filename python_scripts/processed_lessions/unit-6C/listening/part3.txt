@@ -1,0 +1,8 @@
+Waiter=am_puck
+Lisa=af_bella
+--
+effect: (DISHES)
+Waiter: Here is your soup and spaghetti. Enjoy your meal!
+Lisa: Thank you! This smells amazing.
+Waiter: Let me know if you need anything else.
+

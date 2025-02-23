@@ -1,0 +1,7 @@
+Waiter=am_puck
+Lisa=af_bella
+--
+effect: (RESTAURANT)
+Waiter: Good evening! Welcome to Bella's Café. How many people are in your group?
+Lisa: Just two, please.
+Waiter: Alright, follow me to your table. Here is your menu

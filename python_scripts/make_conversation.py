@@ -1,13 +1,14 @@
 import argparse
-from make_audios import SpeechGenerator
-import soundfile as sf
-import numpy as np
-from rich.console import Console
-from rich.progress import Progress, BarColumn, TextColumn
-from nltk.tokenize import sent_tokenize
+import os
 import re
 
-import os
+import numpy as np
+import soundfile as sf
+from nltk.tokenize import sent_tokenize
+from rich.console import Console
+from rich.progress import BarColumn, Progress, TextColumn
+
+from make_audios import SpeechGenerator
 
 console = Console()
 
@@ -25,6 +26,7 @@ def extract_sound_effects(text):
     clean_text = text
     for effect in effects:
         clean_text = clean_text.replace(effect, "")
+
     return clean_text.strip(), effects
 
 
@@ -39,11 +41,29 @@ def main():
     args = parser.parse_args()
 
     with open(args.input, "r") as f:
-        lines = f.readlines()
-        lines = [line.replace("\n", "").strip() for line in lines]
+        inputs = f.read()
+        # lines = f.readlines()
+        # lines = [line.replace("\n", "").strip() for line in lines]
+
+    voice_map_str = inputs.split("--")[0]
+    script = inputs.split("--")[1]
+
+    voice_map = {}
+    for line in voice_map_str.split("\n"):
+        line = line.strip()
+        if len(line) == 0:
+            continue
+        speaker, voice = line.split("=")
+        voice_map[speaker] = voice
+
+    print(voice_map)
 
     conversation = []
-    for line in lines:
+
+    for line in script.split("\n"):
+        line = line.strip()
+        if len(line) == 0:
+            continue
         speaker, text = line.split(": ")
         conversation.append((speaker, text))
 
@@ -62,21 +82,24 @@ def main():
 
     with progress:
         task = progress.add_task("[cyan]Generating audios...", total=len(conversation))
+
         for i, (speaker, text) in enumerate(conversation):
-            voice = speech_generator.get_voice(speaker)
-            text, effects = extract_sound_effects(text)
-            console.print(f"Text: {text}", f"Effects: {effects}")
-
-            sentences = sent_tokenize(text)
-            sentences = [text]
-
             sen_audios = []
-            for sentence in sentences:
-                sentence_audio = speech_generator.generate(
-                    sentence, voice, speed=float(args.speed), begin_duration=0
-                )
+            text, effects = extract_sound_effects(text)
 
-                sen_audios.append(sentence_audio)
+            console.print(f"Text: {text}", f"Effects: {effects}")
+            if speaker != "effect":
+                voice = speech_generator.get_voice(voice_map[speaker])
+
+                sentences = sent_tokenize(text)
+                sentences = [text]
+
+                for sentence in sentences:
+                    sentence_audio = speech_generator.generate(
+                        sentence, voice, speed=float(args.speed), begin_duration=0
+                    )
+
+                    sen_audios.append(sentence_audio)
 
             sen_audios += [get_sound_effect(effect) for effect in effects]
             line = np.zeros(1)

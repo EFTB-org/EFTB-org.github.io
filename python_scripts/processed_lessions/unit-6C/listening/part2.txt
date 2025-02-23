@@ -1,0 +1,9 @@
+Waiter=am_puck
+Lisa=af_bella
+--
+effect: (PAGE)
+Waiter: Are you ready to order?
+Lisa: Yes, I’d like a bowl of tomato soup and a plate of spaghetti.
+Waiter: Would you like anything to drink?
+Lisa: A glass of orange juice, please.
+
