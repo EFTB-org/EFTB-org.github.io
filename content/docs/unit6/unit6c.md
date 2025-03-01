@@ -171,3 +171,12 @@ Questions:
 - 10/ Why does Lisa pay for Tom?
     - Answer: this is for helping me with my homework
 
+
+
+### Sound effects
+| | |
+| -- | -- | 
+| **Starving** | {{<audio-with-controls src="/audio/unit6c/sound_effects/groaning.mp3">}} |
+| **Delicious** | {{<audio-with-controls src="/audio/unit6c/sound_effects/crunching.mp3">}} |
+| **Yuck** | {{<audio-with-controls src="/audio/unit6c/sound_effects/cough-vomit.mp3">}} |
+| **Stuffed** | {{<audio-with-controls src="/audio/unit6c/sound_effects/burp.mp3">}} |
