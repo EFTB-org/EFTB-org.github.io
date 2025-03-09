@@ -13,7 +13,7 @@ def main():
         data = f.read()
 
     data = mdpd.from_md(data)
-    data["cleaned"] = data["**Sentence**"]
+    data["cleaned"] = data["Sentence"]
     data.to_markdown(args.input.replace(".md", "_cleaned.md"), index=False)
 
 

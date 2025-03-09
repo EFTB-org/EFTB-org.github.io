@@ -1,16 +1,16 @@
-import mdpd
 import argparse
-import soundfile as sf
-from kokoro import KPipeline
-import unicodedata
-from rich.console import Console
-from rich.progress import Progress, BarColumn, TextColumn
-import torch
-import numpy as np
-
+import os
 import random
 import re
-import os
+import unicodedata
+
+import mdpd
+import numpy as np
+import soundfile as sf
+import torch
+from kokoro import KPipeline
+from rich.console import Console
+from rich.progress import BarColumn, Progress, TextColumn
 
 console = Console()
 
@@ -26,8 +26,7 @@ def normalize_filename(text):
     str:The normalized filename.
     """
     # Normalize Unicode characters to their closest ASCII representation
-    text = unicodedata.normalize("NFKD", text).encode(
-        "ascii", "ignore").decode("ascii")
+    text = unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode("ascii")
 
     # Replace spaces with underscores
     text = text.replace(" ", "_")
@@ -65,7 +64,7 @@ class SpeechGenerator:
         text,
         voice,
         save_path=None,
-        begin_duration=1.0,
+        begin_duration=0.8,
         silent_duration=0.4,
         speed=1.0,
     ):
@@ -133,12 +132,22 @@ def main():
 
     os.makedirs(f"../static/audio/{args.unit}/{args.type}", exist_ok=True)
 
+    map_voices = {
+        0: "af_bella",
+        1: "am_michael",
+        3: "am_puck",
+    }
+
     audio_buttons = []
     with progress:
         task = progress.add_task("[green]Making sounds ...", total=len(df))
         for i, row in df.iterrows():
-            voice = random.choice(list(voices.keys()))
+            if i in list(map_voices.keys()):
+                voice = map_voices[i]
+            else:
+                voice = random.choice(list(voices.keys()))
             text = f"{row['cleaned'].replace('**', '')}"
+            print(i, voice, text)
             # console.log(f"Using voice: {voice} for text: {text}")
             path = f"audio/{args.unit}/{args.type}/{i:02}_{
                 normalize_filename(row['cleaned'])
