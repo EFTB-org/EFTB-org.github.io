@@ -14580,11 +14580,4 @@ body {
 table {
   margin: 5px; }
 
-.transcript-line {
-  cursor: pointer; }
-
-.transcript-line.playing {
-  background-color: yellow;
-  /* Highlight style; adjust as desired */ }
-
 /*# sourceMappingURL=main.css.map */

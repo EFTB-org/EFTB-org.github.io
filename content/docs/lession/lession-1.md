@@ -3,7 +3,7 @@ title: "Lession 1"
 description: ""
 lead: "English for The Blind - Lession 1"
 draft: false
-weight: 701
+weight: 701 
 seo:
   title: "EFTB - Lession 1" # custom title (optional)
   description: "" # custom description (recommended)
@@ -11,8 +11,7 @@ seo:
   robots: "" # custom robot tags (optional)
 ---
 
-## Section 1
-### Vocabularies
+## Vocabularies
 | Audio                                                                                                             |   No | Word/ Phrase                                     | IPA                                            | Context                                           | Meaning                               |
 |:------------------------------------------------------------------------------------------------------------------|---------:|:-----------------------------------------------------|:---------------------------------------------------|:------------------------------------------------------|:------------------------------------------|
 | {{<audio-player src="audio/lession-1/vocabularies/00_curious.wav">}}                                              |        1 | Curious                                              | /ˈkjʊriəs/                                     | Khi muốn biết thứ gì                                  | Tò mò                                     |
@@ -52,7 +51,7 @@ seo:
 | {{<audio-player src="audio/lession-1/vocabularies/34_at_work.wav">}}                                              |       35 | at work                                              | /æt wɜːrk/                                         | Nói về ai đó đang làm việc                            | ở nơi làm việc                            |
 
 
-### Sentences
+## Sentences
 | Audio                                                                                                                  |   No | Sentence                                                      | Meaning                                                  |
 |:-----------------------------------------------------------------------------------------------------------------------|-----:|:--------------------------------------------------------------|:---------------------------------------------------------|
 | {{<audio-player src="audio/lession-1/sentences/00_hello_my_name_is_anna.wav">}}                                        |    1 | Hello, my name is Anna.                                       | Xin chào, tên tôi là Anna.                               |
@@ -72,30 +71,30 @@ seo:
 {{<audio-with-controls src="audio/lession-1/listening_part1.wav">}}
 
 > **Anna:** Hello, my name is Anna.
->
+> 
 > **David**: Hi, I’m David. Nice to meet you!
->
+> 
 > **Anna:** (giggle) Nice to meet you too, David. I’m curious, what’s your last name?
->
+> 
 > **David**: My last name is Smith, and my full name is David Oliver Smith
->
+> 
 > **Anna**: That’s a cool name. Oh, and I’d like you to meet our classmate, Emily
->
+> 
 > **David:** I don’t see anyone here
->
+> 
 > (Emily Rushing step)
->
+> 
 > **Anna:** This is our classmate, Emily.
->
+> 
 > **Emily**: (Gasping) Hey
->
+> 
 > **David:** Hi, Emily! It’s a pleasure to meet you
->
+> 
 > **Emily:** Sorry, my friend is in my class, waiting for me. See you later. (Running)
 >  (Bell ringing)
->
+> 
 > **Anna:** Oh, it’s time for class, remind me, what is our teacher’s name?
->
+> 
 > **David**: Our teacher’s name is Mr. Johnson. See you in class
 
 
@@ -119,68 +118,20 @@ seo:
 {{<audio-with-controls src="audio/lession-1/listening_part2.wav">}}
 
 > **(Outdoor cleaning)**
->
+> 
 > **John**: Good morning, Mr. Parker! How are you?
->
+> 
 > **Parker**: I’m fine, thank you. And you? How it’s going?
->
+> 
 > **John**: I’m alright, just moved to the new place. My neighbor is very nice.
->
+> 
 > **Parker**: Nice to hear that. Do you see where the boss at?
->
+> 
 > **John**: Yes, our boss is at work now.
->
+> 
 > **Parker**: I hear you. Hey, look at that, a stranger is in the park.
->
+> 
 > **John**: Nah, it’s our boss. Have a nice day. See you later
->
+> 
 > **Parker**: Goodbye! See you tomorrow. It’s a pleasure to meet my new colleague.
-
-
-## Section 2
-
-**Practice: Pronunciation + listening**
-
-### A: pronunciation
-
-**Listen. Notice how to is reduced in these sentences:**
-| Audio | Word | IPA |
-| -- | -- | -- |
-| {{<audio-player src="audio/lession-1/pactice/tə.mp3">}} | To | /tə/ |
-
-**Examples:**
-
-| Audio | Example |
-| --- | --- |
-| {{<audio-player src="audio/lession-1/pactice/nice_to_meet_you.wav">}} | Nice to meet you |
-| {{<audio-player src="audio/lession-1/pactice/id_like_you_to_meet_my_classmate.wav">}} | I’d like you to meet my classmate |
-| {{<audio-player src="audio/lession-1/pactice/its_great_to_meet_you.wav">}} | It’s great to meet you |
-
-
-#### Shadowing practice
-*Để nghe riêng từng câu bấm chuột vào câu.*
-
-**Part 1**
-{{<audio_script json="/audio/lession-1/pactice/conversation_0.json" audiopath="/audio/lession-1/pactice/generated_audios/">}}
-
-**Part 2**
-{{<audio_script json="/audio/lession-1/pactice/conversation_1.json" audiopath="/audio/lession-1/pactice/generated_audios/">}}
-
-**Part 3**
-{{<audio_script json="/audio/lession-1/pactice/conversation_2.json" audiopath="/audio/lession-1/pactice/generated_audios/">}}
-
-**Practice: APPLY:**
-
-**Chia nhóm thực hành**
-
-| **1. Introducing Yourself & Others:** | **1. Giới thiệu bản thân & người khác** |
-| --- | --- |
-| Hello, my name is \_\_\_\_\_\_\_\_.  Hi, I’m \_\_\_\_\_\_\_\_. Nice to meet you!  What’s your name?  My last name is \_\_\_\_\_\_\_\_, and my full name is \_\_\_\_\_\_.  I’d like you to meet my classmate, \_\_\_\_\_\_\_ .  This is our teacher, \_\_\_\_\_\_\_\_ .  It’s a pleasure to meet you. | Xin chào, tôi tên là \_\_\_\_\_\_\_\_.  Chào, tôi là \_\_\_\_\_\_\_\_. Rất vui được gặp bạn!  Tên của bạn là gì?  Họ của tôi là \_\_\_\_\_\_\_\_, và tên đầy đủ của tôi là \_\_\_\_\_\_\_\_.  Tôi muốn giới thiệu bạn với bạn chung lớp của tôi, \_\_\_\_\_\_\_\_.  Đây là giáo viên của chúng tôi, \_\_\_\_\_\_\_\_.  Rất hân hạnh được gặp bạn. |
-| **2. Greetings & Asking About Well-being** | **2. Chào hỏi & hỏi thăm sức khỏe** |
-| Good \_\_\_\_\_\_\_, Mr/ Mrs \_\_\_\_\_\_\_! How are you?  How are you today?  I’m \_\_\_\_\_\_\_\_, thank you.  How’s it going? | Chào buổi \_\_\_\_\_\_\_, anh/chị \_\_\_\_\_\_\_! Anh/ chị khỏe không?  Hôm nay bạn thế nào?  Tôi \_\_\_\_\_\_\_\_, cảm ơn bạn.  Dạo này bạn thế nào? |
-| **3. Talking About People in Your Life** | **3. Nói về những người xung quanh bạn** |
-| My \_\_\_\_\_\_\_\_ is in my class.  My \_\_\_\_\_\_\_\_ is very nice.  Our \_\_\_\_\_\_\_\_ is at work now.  A \_\_\_\_\_\_\_\_ is in the park.  It’s a pleasure to meet my new \_\_\_\_\_\_\_\_. | \_\_\_\_\_\_\_\_ của tôi học cùng lớp với tôi.  \_\_\_\_\_\_\_\_ của tôi rất tốt bụng.  \_\_\_\_\_\_\_\_ của tôi đang ở nơi làm việc.  Một \_\_\_\_\_\_\_\_ đang ở trong công viên.  Rất vui được gặp \_\_\_\_\_\_\_\_ mới của tôi. |
-| **4. Ending Conversations & Saying Goodbye** | **4. Kết thúc cuộc trò chuyện & tạm biệt** |
-| Have a nice day! See you later.  Goodbye! See you tomorrow. | Chúc bạn một ngày tốt lành! Hẹn gặp lại sau.  Tạm biệt! Hẹn gặp lại ngày mai. |
-
 
