@@ -4,4 +4,5 @@
 node_modules
 public
 __pycache__
+hugo_stats.json
 # resources
