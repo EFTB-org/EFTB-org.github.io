@@ -4,153 +4,170 @@
 </div>
 
 <script>
-  (function () {
+  (function() {
     const ordinal = {{ .Ordinal }};
-  const playerId = `audio-player-${ordinal}`;
-  const playButtonId = `play-button-${ordinal}`;
-  const transcriptId = `transcript-${ordinal}`;
+    const playerId = `audio-player-${ordinal}`;
+    const playButtonId = `play-button-${ordinal}`;
+    // const currentLineId = `current-line-${ordinal}`;
+    const transcriptId = `transcript-${ordinal}`;
 
-  const scriptJson = '{{ .Get "json" }}';
-  const audioPath = '{{ .Get "audiopath" }}';
-  const pauseDuration = 1000; // milliseconds
+    const scriptJson = '{{ .Get "json" }}';
+    const audioPath = '{{ .Get "audiopath" }}';
+    const pauseDuration = 1000; // Pause duration in milliseconds between lines
 
-  fetch(scriptJson)
-    .then(response => response.json())
-    .then(scriptArray => {
-      const transcriptDiv = document.getElementById(transcriptId);
-      scriptArray.forEach((item, index) => {
-        const lineElement = document.createElement('p');
-        lineElement.classList.add('transcript-line');
-        if (item.type === 'dialogue') {
-          // Create a <strong> element for the speaker's name
-          const speakerElement = document.createElement('strong');
-          speakerElement.textContent = item.speaker;
-          lineElement.appendChild(speakerElement);
-          // Add the colon and text as plain text nodes
-          lineElement.appendChild(document.createTextNode(': '));
-          lineElement.appendChild(document.createTextNode(item.text));
-        } else if (item.type === 'effect') {
-          const effectElement = document.createElement('i');
-          effectElement.textContent = `Effect: ${item.name}`;
-          lineElement.appendChild(effectElement);
-        }
-        lineElement.dataset.index = index;
-        lineElement.addEventListener('click', () => playSingleClip(index));
-        transcriptDiv.appendChild(lineElement);
-      });
+    fetch(scriptJson)
+      .then(response => response.json())
+      .then(scriptArray => {
+        // Step 1: Preload all audio files into an array
+        const preloadedAudios = scriptArray.map(item => new Audio(audioPath + item.audio));
 
-      let currentAudio = null;
-      let currentIndex = -1;
-      let state = 'stopped'; // 'stopped', 'playing', 'paused'
-      let isInPauseInterval = false;
-      let pausedDuringPauseInterval = false;
-      let timeoutId = null;
-      const playButton = document.getElementById(playButtonId);
-
-      function playSingleClip(index) {
-        if (timeoutId) clearTimeout(timeoutId);
-        isInPauseInterval = false;
-        pausedDuringPauseInterval = false;
-        state = 'stopped';
-        playButton.textContent = 'Play the conversation';
-        if (currentAudio) currentAudio.pause();
-        currentIndex = index;
-        highlightLine(index);
-        const item = scriptArray[index];
-        currentAudio = new Audio(audioPath + item.audio);
-        currentAudio.play();
-        currentAudio.onended = () => removeHighlight();
-      }
-
-      function playSequence() {
-        if (timeoutId) clearTimeout(timeoutId);
-        isInPauseInterval = false;
-        if (state === 'paused') {
-          if (pausedDuringPauseInterval) {
-            isInPauseInterval = true;
-            timeoutId = setTimeout(() => {
-              isInPauseInterval = false;
-              currentIndex++;
-              playNext();
-            }, pauseDuration);
-          } else if (currentAudio && currentAudio.paused) {
-            currentAudio.play();
+        // Set up the transcript display
+        const transcriptDiv = document.getElementById(transcriptId);
+        scriptArray.forEach((item, index) => {
+          const lineElement = document.createElement('p');
+          lineElement.classList.add('transcript-line');
+          if (item.type === 'dialogue') {
+            // Create a <strong> element for the speaker's name
+            const speakerElement = document.createElement('strong');
+            speakerElement.textContent = item.speaker;
+            lineElement.appendChild(speakerElement);
+            // Add the colon and text as plain text nodes
+            lineElement.appendChild(document.createTextNode(': '));
+            lineElement.appendChild(document.createTextNode(item.text));
+          } else if (item.type === 'effect') {
+            const effectElement = document.createElement('i');
+            effectElement.textContent = `Effect: ${item.name}`;
+            lineElement.appendChild(effectElement);
           }
-          state = 'playing';
-          playButton.textContent = 'Pause the conversation';
-        } else {
-          if (currentAudio) currentAudio.pause();
-          state = 'playing';
-          playButton.textContent = 'Pause the conversation';
-          currentIndex = 0;
-          playNext();
-        }
-      }
+          lineElement.dataset.index = index;
+          lineElement.addEventListener('click', () => playSingleClip(index));
+          transcriptDiv.appendChild(lineElement);
+        });
 
-      function pausePlayback() {
-        if (isInPauseInterval) {
-          clearTimeout(timeoutId);
-          pausedDuringPauseInterval = true;
-        } else {
+        // Playback state variables
+        let currentAudio = null;
+        let currentIndex = -1;
+        let state = 'stopped'; // Possible states: 'stopped', 'playing', 'paused'
+        let isInPauseInterval = false;
+        let pausedDuringPauseInterval = false;
+        let timeoutId = null;
+
+        const playButton = document.getElementById(playButtonId);
+        // const currentLineDiv = document.getElementById(currentLineId);
+
+        // Play a single clip when a transcript line is clicked
+        function playSingleClip(index) {
+          if (timeoutId) clearTimeout(timeoutId);
+          isInPauseInterval = false;
           pausedDuringPauseInterval = false;
-        }
-        if (currentAudio) currentAudio.pause();
-        state = 'paused';
-        playButton.textContent = 'Resume the conversation';
-      }
-
-      function playNext() {
-        if (currentIndex >= scriptArray.length) {
           state = 'stopped';
           playButton.textContent = 'Play the conversation';
-          removeHighlight();
-          return;
+          if (currentAudio) currentAudio.pause();
+          currentIndex = index;
+          highlightLine(index);
+          currentAudio = preloadedAudios[index]; // Use preloaded audio
+          currentAudio.play();
+          currentAudio.onended = () => removeHighlight();
         }
-        highlightLine(currentIndex);
-        const item = scriptArray[currentIndex];
-        currentAudio = new Audio(audioPath + item.audio);
-        currentAudio.play();
-        currentAudio.onended = () => {
-          if (state === 'playing') {
-            if (currentIndex < scriptArray.length - 1) {
+
+        // Play or resume the conversation sequence
+        function playSequence() {
+          if (timeoutId) clearTimeout(timeoutId);
+          isInPauseInterval = false;
+          if (state === 'paused') {
+            if (pausedDuringPauseInterval) {
               isInPauseInterval = true;
               timeoutId = setTimeout(() => {
                 isInPauseInterval = false;
                 currentIndex++;
                 playNext();
               }, pauseDuration);
+            } else if (currentAudio && currentAudio.paused) {
+              currentAudio.play();
+            }
+            state = 'playing';
+            playButton.textContent = 'Pause the conversation';
+          } else {
+            if (currentAudio) currentAudio.pause();
+            state = 'playing';
+            playButton.textContent = 'Pause the conversation';
+            currentIndex = 0;
+            playNext();
+          }
+        }
+
+        // Pause the playback
+        function pausePlayback() {
+          if (isInPauseInterval) {
+            clearTimeout(timeoutId);
+            pausedDuringPauseInterval = true;
+          } else {
+            pausedDuringPauseInterval = false;
+          }
+          if (currentAudio) currentAudio.pause();
+          state = 'paused';
+          playButton.textContent = 'Resume the conversation';
+        }
+
+        // Play the next line in the sequence
+        function playNext() {
+          if (currentIndex >= scriptArray.length) {
+            state = 'stopped';
+            playButton.textContent = 'Play the conversation';
+            removeHighlight();
+            return;
+          }
+          highlightLine(currentIndex);
+          currentAudio = preloadedAudios[currentIndex]; // Use preloaded audio
+          currentAudio.play();
+          currentAudio.onended = () => {
+            if (state === 'playing') {
+              if (currentIndex < scriptArray.length - 1) {
+                isInPauseInterval = true;
+                timeoutId = setTimeout(() => {
+                  isInPauseInterval = false;
+                  currentIndex++;
+                  playNext();
+                }, pauseDuration);
+              } else {
+                state = 'stopped';
+                playButton.textContent = 'Play the conversation';
+                removeHighlight();
+              }
             } else {
-              state = 'stopped';
-              playButton.textContent = 'Play the conversation';
               removeHighlight();
             }
-          } else {
-            removeHighlight();
-          }
-        };
-      }
+          };
+        }
 
-      function highlightLine(index) {
-        const lines = document.querySelectorAll(`#${transcriptId} .transcript-line`);
-        lines.forEach(el => el.classList.remove('playing'));
-        const lineElement = lines[index];
-        if (lineElement) lineElement.classList.add('playing');
-        const item = scriptArray[index];
-      }
+        // Highlight the current line in the transcript
+        function highlightLine(index) {
+          const lines = document.querySelectorAll(`#${transcriptId} .transcript-line`);
+          lines.forEach(el => el.classList.remove('playing'));
+          const lineElement = lines[index];
+          if (lineElement) lineElement.classList.add('playing');
+          const item = scriptArray[index];
+          // currentLineDiv.textContent = item.type === 'dialogue' ? `${item.speaker}: ${item.text}` : `Effect: ${item.name}`;
+        }
 
-      function removeHighlight() {
-        const lines = document.querySelectorAll(`#${transcriptId} .transcript-line`);
-        lines.forEach(el => el.classList.remove('playing'));
-      }
+        // Remove highlight from the transcript
+        function removeHighlight() {
+          const lines = document.querySelectorAll(`#${transcriptId} .transcript-line`);
+          lines.forEach(el => el.classList.remove('playing'));
+          // currentLineDiv.textContent = '';
+        }
 
-      playButton.addEventListener('click', () => {
-        if (state === 'playing') pausePlayback();
-        else playSequence();
-      });
-    })
-    .catch(error => console.error('Error loading JSON:', error));
-  }) ();
-</script>
+        // Toggle play/pause on button click
+        playButton.addEventListener('click', () => {
+          if (state === 'playing') pausePlayback();
+          else playSequence();
+        });
+      })
+      .catch(error => console.error('Error loading JSON:', error));
+  })();
+  </script>
+
+
 <style>
   .conversation-button {
     border-radius: 6px;
