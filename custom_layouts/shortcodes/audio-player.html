@@ -1,6 +1,7 @@
 {{ $src := .Get "src" }}
 {{ $id := delimit (shuffle (seq 999)) "" }}
 <button id="audioButton{{ $id }}" class="audio-button">
+  <span class="spinner" style="display:none;"></span>
   <span class="play-text">Play</span>
   <span class="pause-text" style="display:none;">Pause</span>
 </button>
@@ -13,48 +14,59 @@
 (function() {
   const button = document.getElementById('audioButton{{ $id }}');
   const audio = document.getElementById('audio{{ $id }}');
+  const spinner = button.querySelector('.spinner');
   const playText = button.querySelector('.play-text');
   const pauseText = button.querySelector('.pause-text');
 
   button.addEventListener('click', function() {
-
     if (audio.paused || audio.ended) {
-      // Only reset currentTime if the audio is ended
+      // Show spinner while loading
+      spinner.style.display = 'inline-block';
+      playText.style.display = 'none';
+      pauseText.style.display = 'none';
+
+      // Reset currentTime only if the audio has ended
       if (audio.ended) {
         audio.currentTime = 0;
       }
-      audio.load();
-      audio.play();
-      playText.style.display = 'none';
-      pauseText.style.display = 'inline';
+
+      // Play the audio and handle the Promise
+      audio.play().then(() => {
+        // Playback started, hide spinner and show pause text
+        spinner.style.display = 'none';
+        pauseText.style.display = 'inline';
+      }).catch((error) => {
+        // Playback failed, revert to play state
+        console.error('Playback failed:', error);
+        spinner.style.display = 'none';
+        playText.style.display = 'inline';
+      });
     } else {
+      // Pause the audio
       audio.pause();
-      // audio.currentTime = 0;
-      playText.style.display = 'inline';
       pauseText.style.display = 'none';
+      playText.style.display = 'inline';
+      spinner.style.display = 'none';
     }
   });
 
   // Reset button text when audio ends
   audio.addEventListener('ended', function() {
-    playText.style.display = 'inline';
     pauseText.style.display = 'none';
-    // Reset currentTime when the audio finishes playing
-    audio.currentTime = 0;
+    playText.style.display = 'inline';
+    spinner.style.display = 'none';
   });
 })();
 </script>
 
 <style>
 .audio-button {
-  width: 50px;
-  height: 25px;
+  min-width: 50px;
   border-radius: 6px;
   background-color: #0a37a7;
   color: rgb(255, 255, 255);
   border: none;
   cursor: pointer;
-  display: flex;
   align-items: center;
   justify-content: center;
   transition: background-color 0.3s;
@@ -64,6 +76,20 @@
 .audio-button:hover {
   background-color: #707070;
   color: rgb(239, 239, 239);
+}
+
+.spinner {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #fff;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
 }
 
 .play-text, .pause-text {
