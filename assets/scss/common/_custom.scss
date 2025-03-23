@@ -28,3 +28,21 @@ table {
 .transcript-line.playing {
   background-color: yellow; /* Highlight style; adjust as desired */
 }
+
+/* geist-mono-regular - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/geist-mono-v1-latin_latin-ext-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* geist-mono-500 - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 500;
+  src: url('/fonts/geist-mono-v1-latin_latin-ext-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}

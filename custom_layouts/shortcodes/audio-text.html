@@ -1,0 +1,96 @@
+{{ $text := .Get "text" }}
+{{ $src := .Get "src" }}
+{{ $id := delimit (shuffle (seq 999)) "" }}
+
+<span class="audio-text" id="audioText{{ $id }}" role="button" aria-label="Play audio: {{ $text }}" tabindex="0">
+  {{ $text }}
+  <span class="spinner" style="display:none;" aria-hidden="true"></span>
+</span>
+
+<audio id="audio{{ $id }}" preload="none">
+  <source src="{{ $src | relURL }}" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<script>
+(function() {
+  const audioText = document.getElementById('audioText{{ $id }}');
+  const spinner = audioText.querySelector('.spinner');
+  const audio = document.getElementById('audio{{ $id }}');
+
+  function updateAriaLabelAndStyle() {
+    if (audio.paused || audio.ended) {
+      audioText.setAttribute('aria-label', 'Play audio: {{ $text }}');
+      audioText.classList.remove('playing');
+    } else {
+      audioText.setAttribute('aria-label', 'Pause audio: {{ $text }}');
+      audioText.classList.add('playing');
+    }
+  }
+
+  audioText.addEventListener('click', function() {
+    if (audio.paused || audio.ended) {
+      spinner.style.display = 'inline-block';
+      audioText.classList.add('loading');
+      audioText.setAttribute('aria-busy', 'true');
+      if (audio.ended) {
+        audio.currentTime = 0;
+      }
+      audio.play().then(() => {
+        spinner.style.display = 'none';
+        audioText.classList.remove('loading');
+        audioText.setAttribute('aria-busy', 'false');
+        updateAriaLabelAndStyle();
+      }).catch((error) => {
+        console.error('Playback failed:', error);
+        spinner.style.display = 'none';
+        audioText.classList.remove('loading');
+        audioText.setAttribute('aria-busy', 'false');
+        updateAriaLabelAndStyle();
+      });
+    } else {
+      audio.pause();
+      updateAriaLabelAndStyle();
+    }
+  });
+
+  audio.addEventListener('ended', function() {
+    updateAriaLabelAndStyle();
+  });
+
+  updateAriaLabelAndStyle(); // Set initial state
+})();
+</script>
+
+<style>
+.audio-text {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+  transition: color 0.3s, font-style 0.3s; /* Smooth transition for visual cue */
+}
+
+.audio-text.playing {
+  color: green; /* Visual cue when playing */
+  font-style: italic;
+}
+
+.audio-text.loading {
+  opacity: 0.5;
+}
+
+.spinner {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #000;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-left: 5px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+</style>

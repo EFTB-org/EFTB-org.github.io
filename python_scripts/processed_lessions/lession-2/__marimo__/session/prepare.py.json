@@ -1,0 +1,749 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.11.20"
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "9131990317900e639ab514bd6de03b4b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "XiOs",
+      "code_hash": null,
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<span class=\"markdown prose dark:prose-invert\"><h2 id=\"vocabularies\">Vocabularies</h2></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "reOD",
+      "code_hash": null,
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='reOD-0' random-id='dd055512-f6f4-b938-7f2d-2cf7a6f9492a'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;./@file/1250-769-FOb97C0Z.csv&quot;' data-total-rows='17' data-total-columns='4' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;Word/ Phrase&quot;, [&quot;string&quot;, &quot;object&quot;]], [&quot;IPA&quot;, [&quot;string&quot;, &quot;object&quot;]], [&quot;Context&quot;, [&quot;string&quot;, &quot;object&quot;]], [&quot;Meaning&quot;, [&quot;string&quot;, &quot;object&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='true' data-row-headers='[]' data-has-stable-row-id='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "tETx",
+      "code_hash": null,
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "nblU",
+      "code_hash": null,
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<span class=\"markdown prose dark:prose-invert\"><h3 id=\"prepare-data\">Prepare data</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "RAcj",
+      "code_hash": null,
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<span class=\"markdown prose dark:prose-invert\"><h3 id=\"generate-english-sound\">Generate English sound</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "xcvL",
+      "code_hash": null,
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "/home/viet/code/EFTB-org.github.io/python_scripts/.venv/lib/python3.12/site-packages/torch/nn/modules/rnn.py:123: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.2 and num_layers=1\n  warnings.warn(\n"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "/home/viet/code/EFTB-org.github.io/python_scripts/.venv/lib/python3.12/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.\n  WeightNorm.apply(module, name, dim)\n"
+        }
+      ]
+    },
+    {
+      "id": "FLwH",
+      "code_hash": null,
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Hzxe",
+      "code_hash": null,
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\r0it [00:00, ?it/s]"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\r1it [00:01,  1.31s/it]"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\r2it [00:01,  1.60it/s]"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\r3it [00:01,  2.50it/s]"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\r4it [00:01,  3.35it/s]"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\r5it [00:01,  3.64it/s]"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\r6it [00:02,  3.66it/s]"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\r7it [00:02,  4.40it/s]"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\r8it [00:02,  3.71it/s]"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\r9it [00:02,  4.36it/s]"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\r10it [00:03,  4.85it/s]"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\r11it [00:03,  4.51it/s]"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\r12it [00:03,  5.12it/s]"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\r13it [00:03,  5.35it/s]"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\r14it [00:03,  5.00it/s]"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\r15it [00:04,  4.62it/s]"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\r16it [00:04,  5.18it/s]"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\r17it [00:04,  5.74it/s]\r17it [00:04,  3.92it/s]\n"
+        }
+      ]
+    },
+    {
+      "id": "ZYSv",
+      "code_hash": null,
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<span class=\"markdown prose dark:prose-invert\"><h3 id=\"generate-vietnamese-sounds\">Generate Vietnamese sounds</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "mflS",
+      "code_hash": null,
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "XnLj",
+      "code_hash": null,
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Xin ch\u00e0o \n"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": " T\u00f4i t\u00ean l\u00e0 vi\u1ec7t.\n"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "(1, 74976)\n"
+        }
+      ]
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "0a1b0d3a20ebad0e9c2623834952cad3",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<span class=\"markdown prose dark:prose-invert\"><h2 id=\"vocabularies\">Vocabularies</h2></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "da03558c54262151f3d6ce787c9d3dee",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<span class=\"markdown prose dark:prose-invert\"><h3 id=\"prepare-data\">Prepare data</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "6d1681269a891ea5811de479a6793e36",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='bkHC-0' random-id='0e26c4d0-ac27-143b-0c9d-961e0d4cc97a'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;./@file/1250-496-Ud0dYN2V.csv&quot;' data-total-rows='17' data-total-columns='4' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;Word/ Phrase&quot;, [&quot;string&quot;, &quot;object&quot;]], [&quot;IPA&quot;, [&quot;string&quot;, &quot;object&quot;]], [&quot;Context&quot;, [&quot;string&quot;, &quot;object&quot;]], [&quot;Meaning&quot;, [&quot;string&quot;, &quot;object&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='true' data-row-headers='[]' data-has-stable-row-id='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "d3f1dc125c330fc80ede36dd83a2ceba",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "b1c50a69c26c93afad916598767bd265",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<span class=\"markdown prose dark:prose-invert\"><h3 id=\"generate-english-sound\">Generate English sound</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "1807911c9738587507d84527f1d1e5e7",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "SFPL",
+      "code_hash": "c7c01f1ceace76ffb7a11c58b1a5291a",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "BYtC",
+      "code_hash": "d91076b4a886278c0950d7e03aaa2aae",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "/home/viet/code/EFTB-org.github.io/python_scripts/.venv/lib/python3.12/site-packages/torch/nn/modules/rnn.py:123: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.2 and num_layers=1\n  warnings.warn(\n"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "/home/viet/code/EFTB-org.github.io/python_scripts/.venv/lib/python3.12/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.\n  WeightNorm.apply(module, name, dim)\n"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\r0it [00:00, ?it/s]"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "af_sarah\n"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\r1it [00:00,  7.55it/s]"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "af_bella&am_michael\n"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\r2it [00:00,  7.91it/s]"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "af_sarah\n"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\r3it [00:00,  8.62it/s]"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "af_bella&am_michael\n"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "af_bella&am_michael\n"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\r5it [00:00,  5.03it/s]"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "af_sarah\n"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\r6it [00:01,  4.22it/s]"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "af_bella&am_michael\n"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "af_bella&am_michael\n"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\r8it [00:01,  4.69it/s]"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "af_sarah\n"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "af_bella&am_michael\n"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\r10it [00:01,  6.08it/s]"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "af_bella&am_michael\n"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\r11it [00:02,  5.16it/s]"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "af_sarah\n"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\r12it [00:02,  5.82it/s]"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "af_sarah\n"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\r13it [00:02,  5.34it/s]"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "af_sarah\n"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\r14it [00:02,  5.32it/s]"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "af_sarah\n"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\r15it [00:02,  5.27it/s]"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "af_bella&am_michael\n"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "af_bella&am_michael\n"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\r17it [00:03,  5.96it/s]\r17it [00:03,  5.56it/s]\n"
+        }
+      ]
+    },
+    {
+      "id": "RGSE",
+      "code_hash": "9b0989683d233dc5b6f6854f0000b541",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "Kclp",
+      "code_hash": "d0aea8f6c8784b8fc81ad2d3ccacfa3b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "emfo",
+      "code_hash": "17e06fca96ad24ab6338d394a1735980",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\r0it [00:00, ?it/s]"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\r1it [00:00,  2.57it/s]"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\r2it [00:00,  2.36it/s]"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\r3it [00:01,  2.56it/s]"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\r4it [00:01,  2.53it/s]"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\r5it [00:01,  2.67it/s]"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\r6it [00:02,  2.52it/s]"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\r7it [00:02,  2.48it/s]"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\r8it [00:03,  2.42it/s]"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\r9it [00:03,  2.60it/s]"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\r10it [00:03,  2.74it/s]"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\r11it [00:04,  2.94it/s]"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\r12it [00:04,  2.79it/s]"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\r13it [00:04,  2.86it/s]"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\r14it [00:05,  2.85it/s]"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\r15it [00:06,  2.01it/s]"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\r16it [00:06,  1.78it/s]"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "\r17it [00:07,  1.99it/s]\r17it [00:07,  2.38it/s]\n"
+        }
+      ]
+    },
+    {
+      "id": "GNRh",
+      "code_hash": "7613f453ba0c4b18a4e7dd73a8b4c674",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<span class=\"markdown prose dark:prose-invert\"><h3 id=\"generate-table\">Generate Table</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "xVdR",
+      "code_hash": "762554868482e64a074cbe4b890e6180",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "| Word/ Phrase                                                                                                                               | IPA                                               | Context                                                                 | Meaning                                                                                                              |\n|:-------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------|:------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------|\n| {{<audio-player src=\"../static/audio/lession-2/english/email.mp3\">}} Email                                                                 | /\u02c8i\u02d0me\u026al/                                         | M\u1ed9t tin nh\u1eafn \u0111i\u1ec7n t\u1eed \u0111\u01b0\u1ee3c g\u1eedi qua internet.                             | {{<audio-player src=\"../static/audio/lession-2/vietnamese/thu_ien_tu.mp3\">}} Th\u01b0 \u0111i\u1ec7n t\u1eed                             |\n| {{<audio-player src=\"../static/audio/lession-2/english/email_address.mp3\">}} Email address                                                 | /\u02c8i\u02d0me\u026al \u0259\u02c8dr\u025bs/                                  | \u0110\u1ecba ch\u1ec9 \u0111i\u1ec7n t\u1eed \u0111\u1ec3 g\u1eedi v\u00e0 nh\u1eadn email.                                   | {{<audio-player src=\"../static/audio/lession-2/vietnamese/ia_chi_email.mp3\">}} \u0110\u1ecba ch\u1ec9 email                         |\n| {{<audio-player src=\"../static/audio/lession-2/english/letter.mp3\">}} Letter                                                               | /\u02c8l\u025bt\u0259r/                                          | M\u1ed9t tin nh\u1eafn vi\u1ebft tay ho\u1eb7c \u0111\u00e1nh m\u00e1y g\u1eedi qua \u0111\u01b0\u1eddng b\u01b0u \u0111i\u1ec7n              | {{<audio-player src=\"../static/audio/lession-2/vietnamese/la_thu.mp3\">}} L\u00e1 th\u01b0                                      |\n| {{<audio-player src=\"../static/audio/lession-2/english/instant.mp3\">}} Instant                                                             | /\u02c8\u026anst\u0259nt/                                        | kh\u00f4ng c\u1ea7n ch\u1edd \u0111\u1ee3i ho\u1eb7c tr\u00ec ho\u00e3n.                                        | {{<audio-player src=\"../static/audio/lession-2/vietnamese/ngay_lap_tuc.mp3\">}} Ngay l\u1eadp t\u1ee9c                          |\n| {{<audio-player src=\"../static/audio/lession-2/english/message_br_text.mp3\">}} Message/ text                                               | /\u02c8m\u025bs\u026ad\u0292/ /tekst/                                 | M\u1ed9t \u0111o\u1ea1n v\u0103n b\u1ea3n ng\u1eafn g\u1eedi qua \u0111i\u1ec7n tho\u1ea1i ho\u1eb7c internet.                 | {{<audio-player src=\"../static/audio/lession-2/vietnamese/tin_nhan.mp3\">}} Tin nh\u1eafn                                  |\n| {{<audio-player src=\"../static/audio/lession-2/english/instant_message_br_instant_text.mp3\">}} instant message/ Instant text               | /\u02c8\u026anst\u0259nt \u02c8m\u025bs\u026ad\u0292/ \\- /\u02c8\u026anst\u0259nt tekst/            | giao ti\u1ebfp nhanh qua m\u1ea1ng, gi\u1eefa ng\u01b0\u1eddi g\u1eedi v\u00e0 ng\u01b0\u1eddi nh\u1eadn                  | {{<audio-player src=\"../static/audio/lession-2/vietnamese/tin_nhan_tuc_thi.mp3\">}} Tin nh\u1eafn t\u1ee9c th\u00ec                  |\n| {{<audio-player src=\"../static/audio/lession-2/english/send.mp3\">}} send                                                                   | /s\u025bnd/                                            | chuy\u1ec3n th\u00f4ng tin, v\u1eadt ph\u1ea9m ho\u1eb7c d\u1eef li\u1ec7u t\u1eeb m\u1ed9t ng\u01b0\u1eddi \u0111\u1ebfn m\u1ed9t ng\u01b0\u1eddi kh\u00e1c | {{<audio-player src=\"../static/audio/lession-2/vietnamese/gui.mp3\">}} G\u1eedi                                            |\n| {{<audio-player src=\"../static/audio/lession-2/english/send_a_text_br_send_a_letter_br_send_a_message.mp3\">}} send a text/ letter/ message | /s\u025bnd \u0259 tekst/ \\- /l\u025bt\u0259r/ \\- /m\u025bs\u026ad\u0292/             | chuy\u1ec3n n\u1ed9i dung vi\u1ebft tay ho\u1eb7c v\u0103n b\u1ea3n k\u1ef9 thu\u1eadt s\u1ed1 t\u1eeb b\u1ea1n \u0111\u1ebfn ng\u01b0\u1eddi kh\u00e1c | {{<audio-player src=\"../static/audio/lession-2/vietnamese/gui_tin_nhan_gui_thu.mp3\">}} G\u1eedi tin nh\u1eafn/ th\u01b0             |\n| {{<audio-player src=\"../static/audio/lession-2/english/meet.mp3\">}} Meet                                                                   | /mi\u02d0t/                                            | c\u00f9ng xu\u1ea5t hi\u1ec7n \u1edf m\u1ed9t \u0111\u1ecba \u0111i\u1ec3m n\u00e0o \u0111\u00f3 \u0111\u1ec3 tr\u00f2 chuy\u1ec7n, l\u00e0m vi\u1ec7c            | {{<audio-player src=\"../static/audio/lession-2/vietnamese/gap_go.mp3\">}} G\u1eb7p g\u1ee1                                      |\n| {{<audio-player src=\"../static/audio/lession-2/english/in_person.mp3\">}} in person                                                         | /\u026an \u02c8p\u025c\u02d0rs\u0259n/                                     | g\u1eb7p g\u1ee1 ng\u01b0\u1eddi kh\u00e1c \u1edf ngo\u00e0i \u0111\u1eddi                                           | {{<audio-player src=\"../static/audio/lession-2/vietnamese/truc_tiep.mp3\">}} Tr\u1ef1c ti\u1ebfp                                |\n| {{<audio-player src=\"../static/audio/lession-2/english/meet_in_person_br_see_in_person.mp3\">}} Meet/ see in person                         | /mi\u02d0t \u026an \u02c8p\u025c\u02d0rs\u0259n/                                | G\u1eb7p m\u1eb7t ai \u0111\u00f3 ngo\u00e0i \u0111\u1eddi th\u1ef1c, kh\u00f4ng qua \u0111i\u1ec7n tho\u1ea1i ho\u1eb7c internet.       | {{<audio-player src=\"../static/audio/lession-2/vietnamese/gap_truc_tiep.mp3\">}} G\u1eb7p tr\u1ef1c ti\u1ebfp                        |\n| {{<audio-player src=\"../static/audio/lession-2/english/video_chat.mp3\">}} Video chat                                                       | /\u02c8v\u026adi.o\u028a t\u0283\u00e6t/                                   | Cu\u1ed9c tr\u00f2 chuy\u1ec7n c\u00f3 s\u1eed d\u1ee5ng video qua internet.                          | {{<audio-player src=\"../static/audio/lession-2/vietnamese/tro_chuyen_video.mp3\">}} Tr\u00f2 chuy\u1ec7n video                  |\n| {{<audio-player src=\"../static/audio/lession-2/english/have_a_video_chat_with_so.mp3\">}} Have a video chat with SO                         | /h\u00e6v \u0259 \u02c8v\u026adi.o\u028a t\u0283\u00e6t w\u026a\u00f0 \u02c8s\u028cmb\u0259di/                | s\u1eed d\u1ee5ng c\u00f4ng ngh\u1ec7 \u0111\u1ec3 giao ti\u1ebfp v\u1edbi ai \u0111\u00f3 b\u1eb1ng c\u1ea3 h\u00ecnh \u1ea3nh v\u00e0 \u00e2m thanh,  | {{<audio-player src=\"../static/audio/lession-2/vietnamese/goi_video_voi_ai_o.mp3\">}} G\u1ecdi video v\u1edbi ai \u0111\u00f3             |\n| {{<audio-player src=\"../static/audio/lession-2/english/social_network_br_social_media.mp3\">}} Social network/ social media                 | /\u02c8so\u028a\u0283l \u02c8n\u025bt\u02ccw\u025c\u02d0rk/                               | C\u00e1c n\u1ec1n t\u1ea3ng tr\u1ef1c tuy\u1ebfn \u0111\u1ec3 giao ti\u1ebfp v\u00e0 k\u1ebft n\u1ed1i v\u1edbi m\u1ecdi ng\u01b0\u1eddi.          | {{<audio-player src=\"../static/audio/lession-2/vietnamese/mang_xa_hoi.mp3\">}} M\u1ea1ng x\u00e3 h\u1ed9i                            |\n| {{<audio-player src=\"../static/audio/lession-2/english/use_social_network_br_use_social_media.mp3\">}} Use social network/ social media     | /ju\u02d0z \u02c8so\u028a\u0283l \u02c8n\u025bt\u02ccw\u025c\u02d0rk/ \\- /ju\u02d0z \u02c8so\u028a\u0283l \u02c8mi\u02d0di\u0259/ | truy c\u1eadp v\u00e0o c\u00e1c n\u1ec1n t\u1ea3ng tr\u1ef1c tuy\u1ebfn \u0111\u1ec3 t\u01b0\u01a1ng t\u00e1c v\u1edbi ng\u01b0\u1eddi kh\u00e1c        | {{<audio-player src=\"../static/audio/lession-2/vietnamese/su_dung_mang_xa_hoi.mp3\">}} S\u1eed d\u1ee5ng m\u1ea1ng x\u00e3 h\u1ed9i            |\n| {{<audio-player src=\"../static/audio/lession-2/english/talk_on_the_phone.mp3\">}} Talk on the phone                                         | /t\u0254\u02d0k \u0251\u02d0n \u00f0\u0259 fo\u028an/                                | Cu\u1ed9c tr\u00f2 chuy\u1ec7n gi\u1eefa hai ng\u01b0\u1eddi qua \u0111i\u1ec7n tho\u1ea1i.                          | {{<audio-player src=\"../static/audio/lession-2/vietnamese/noi_chuyen_qua_ien_thoai.mp3\">}} N\u00f3i chuy\u1ec7n qua \u0111i\u1ec7n tho\u1ea1i |\n| {{<audio-player src=\"../static/audio/lession-2/english/username.mp3\">}} Username                                                           | /\u02c8ju\u02d0z\u0259rne\u026am/                                     | danh t\u00ednh c\u00e1 nh\u00e2n tr\u00ean m\u1ea1ng                                             | {{<audio-player src=\"../static/audio/lession-2/vietnamese/ten_nguoi_dung.mp3\">}} T\u00ean ng\u01b0\u1eddi d\u00f9ng                      |\n"
+        }
+      ]
+    },
+    {
+      "id": "fInO",
+      "code_hash": "e43c8db36948bef5f4b6513eed97dc30",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='fInO-0' random-id='7ca8cf3b-3394-969c-95ce-413906b8c2ce'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;./@file/1250-496-GVh78raM.csv&quot;' data-total-rows='17' data-total-columns='4' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;Word/ Phrase&quot;, [&quot;string&quot;, &quot;object&quot;]], [&quot;IPA&quot;, [&quot;string&quot;, &quot;object&quot;]], [&quot;Context&quot;, [&quot;string&quot;, &quot;object&quot;]], [&quot;Meaning&quot;, [&quot;string&quot;, &quot;object&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='true' data-row-headers='[]' data-has-stable-row-id='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "cmep",
+      "code_hash": "bb2c67a6e9c8f34aa0c9e1af2a90d828",
+      "outputs": [
+        {
+          "type": "error",
+          "ename": "exception",
+          "evalue": "This cell raised an exception: TypeError('BaseEventLoop.create_connection() got an unexpected keyword argument 'extra_headers'')",
+          "traceback": []
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Loaded as API: https://ntt123-vietnam-female-voice-tts.hf.space/ \u2714\n"
+        },
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "<span class=\"codehilite\"><div class=\"highlight\"><pre><span></span><span class=\"gt\">Traceback (most recent call last):</span>\n  File <span class=\"nb\">&quot;/home/viet/code/EFTB-org.github.io/python_scripts/.venv/lib/python3.12/site-packages/marimo/_runtime/executor.py&quot;</span>, line <span class=\"m\">141</span>, in <span class=\"n\">execute_cell</span>\n<span class=\"w\">    </span><span class=\"n\">exec</span><span class=\"p\">(</span><span class=\"n\">cell</span><span class=\"o\">.</span><span class=\"n\">body</span><span class=\"p\">,</span> <span class=\"n\">glbls</span><span class=\"p\">)</span>\n  File <span class=\"nb\">&quot;/tmp/marimo_496/__marimo__cell_cmep_.py&quot;</span>, line <span class=\"m\">4</span>, in <span class=\"n\">&lt;module&gt;</span>\n<span class=\"w\">    </span><span class=\"n\">result</span> <span class=\"o\">=</span> <span class=\"n\">client</span><span class=\"o\">.</span><span class=\"n\">predict</span><span class=\"p\">(</span>\n<span class=\"w\">             </span><span class=\"pm\">^^^^^^^^^^^^^^^</span>\n  File <span class=\"nb\">&quot;/home/viet/code/EFTB-org.github.io/python_scripts/.venv/lib/python3.12/site-packages/gradio_client/client.py&quot;</span>, line <span class=\"m\">478</span>, in <span class=\"n\">predict</span>\n<span class=\"w\">    </span><span class=\"p\">)</span><span class=\"o\">.</span><span class=\"n\">result</span><span class=\"p\">()</span>\n<span class=\"w\">      </span><span class=\"pm\">^^^^^^^^</span>\n  File <span class=\"nb\">&quot;/home/viet/code/EFTB-org.github.io/python_scripts/.venv/lib/python3.12/site-packages/gradio_client/client.py&quot;</span>, line <span class=\"m\">1539</span>, in <span class=\"n\">result</span>\n<span class=\"w\">    </span><span class=\"k\">return</span> <span class=\"nb\">super</span><span class=\"p\">()</span><span class=\"o\">.</span><span class=\"n\">result</span><span class=\"p\">(</span><span class=\"n\">timeout</span><span class=\"o\">=</span><span class=\"n\">timeout</span><span class=\"p\">)</span>\n<span class=\"w\">           </span><span class=\"pm\">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</span>\n  File <span class=\"nb\">&quot;/usr/lib/python3.12/concurrent/futures/_base.py&quot;</span>, line <span class=\"m\">456</span>, in <span class=\"n\">result</span>\n<span class=\"w\">    </span><span class=\"k\">return</span> <span class=\"bp\">self</span><span class=\"o\">.</span><span class=\"n\">__get_result</span><span class=\"p\">()</span>\n<span class=\"w\">           </span><span class=\"pm\">^^^^^^^^^^^^^^^^^^^</span>\n  File <span class=\"nb\">&quot;/usr/lib/python3.12/concurrent/futures/_base.py&quot;</span>, line <span class=\"m\">401</span>, in <span class=\"n\">__get_result</span>\n<span class=\"w\">    </span><span class=\"k\">raise</span> <span class=\"bp\">self</span><span class=\"o\">.</span><span class=\"n\">_exception</span>\n  File <span class=\"nb\">&quot;/usr/lib/python3.12/concurrent/futures/thread.py&quot;</span>, line <span class=\"m\">58</span>, in <span class=\"n\">run</span>\n<span class=\"w\">    </span><span class=\"n\">result</span> <span class=\"o\">=</span> <span class=\"bp\">self</span><span class=\"o\">.</span><span class=\"n\">fn</span><span class=\"p\">(</span><span class=\"o\">*</span><span class=\"bp\">self</span><span class=\"o\">.</span><span class=\"n\">args</span><span class=\"p\">,</span> <span class=\"o\">**</span><span class=\"bp\">self</span><span class=\"o\">.</span><span class=\"n\">kwargs</span><span class=\"p\">)</span>\n<span class=\"w\">             </span><span class=\"pm\">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</span>\n  File <span class=\"nb\">&quot;/home/viet/code/EFTB-org.github.io/python_scripts/.venv/lib/python3.12/site-packages/gradio_client/compatibility.py&quot;</span>, line <span class=\"m\">64</span>, in <span class=\"n\">_inner</span>\n<span class=\"w\">    </span><span class=\"n\">predictions</span> <span class=\"o\">=</span> <span class=\"n\">_predict</span><span class=\"p\">(</span><span class=\"o\">*</span><span class=\"n\">data</span><span class=\"p\">)</span>\n<span class=\"w\">                  </span><span class=\"pm\">^^^^^^^^^^^^^^^</span>\n  File <span class=\"nb\">&quot;/home/viet/code/EFTB-org.github.io/python_scripts/.venv/lib/python3.12/site-packages/gradio_client/compatibility.py&quot;</span>, line <span class=\"m\">95</span>, in <span class=\"n\">_predict</span>\n<span class=\"w\">    </span><span class=\"n\">result</span> <span class=\"o\">=</span> <span class=\"n\">utils</span><span class=\"o\">.</span><span class=\"n\">synchronize_async</span><span class=\"p\">(</span><span class=\"bp\">self</span><span class=\"o\">.</span><span class=\"n\">_ws_fn</span><span class=\"p\">,</span> <span class=\"n\">data</span><span class=\"p\">,</span> <span class=\"n\">hash_data</span><span class=\"p\">,</span> <span class=\"n\">helper</span><span class=\"p\">)</span>\n<span class=\"w\">             </span><span class=\"pm\">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</span>\n  File <span class=\"nb\">&quot;/home/viet/code/EFTB-org.github.io/python_scripts/.venv/lib/python3.12/site-packages/gradio_client/utils.py&quot;</span>, line <span class=\"m\">890</span>, in <span class=\"n\">synchronize_async</span>\n<span class=\"w\">    </span><span class=\"k\">return</span> <span class=\"n\">fsspec</span><span class=\"o\">.</span><span class=\"n\">asyn</span><span class=\"o\">.</span><span class=\"n\">sync</span><span class=\"p\">(</span><span class=\"n\">fsspec</span><span class=\"o\">.</span><span class=\"n\">asyn</span><span class=\"o\">.</span><span class=\"n\">get_loop</span><span class=\"p\">(),</span> <span class=\"n\">func</span><span class=\"p\">,</span> <span class=\"o\">*</span><span class=\"n\">args</span><span class=\"p\">,</span> <span class=\"o\">**</span><span class=\"n\">kwargs</span><span class=\"p\">)</span>  <span class=\"c1\"># type: ignore</span>\n<span class=\"w\">           </span><span class=\"pm\">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</span>\n  File <span class=\"nb\">&quot;/home/viet/code/EFTB-org.github.io/python_scripts/.venv/lib/python3.12/site-packages/fsspec/asyn.py&quot;</span>, line <span class=\"m\">103</span>, in <span class=\"n\">sync</span>\n<span class=\"w\">    </span><span class=\"k\">raise</span> <span class=\"n\">return_result</span>\n  File <span class=\"nb\">&quot;/home/viet/code/EFTB-org.github.io/python_scripts/.venv/lib/python3.12/site-packages/fsspec/asyn.py&quot;</span>, line <span class=\"m\">56</span>, in <span class=\"n\">_runner</span>\n<span class=\"w\">    </span><span class=\"n\">result</span><span class=\"p\">[</span><span class=\"mi\">0</span><span class=\"p\">]</span> <span class=\"o\">=</span> <span class=\"k\">await</span> <span class=\"n\">coro</span>\n<span class=\"w\">                </span><span class=\"pm\">^^^^^^^^^^</span>\n  File <span class=\"nb\">&quot;/home/viet/code/EFTB-org.github.io/python_scripts/.venv/lib/python3.12/site-packages/gradio_client/compatibility.py&quot;</span>, line <span class=\"m\">335</span>, in <span class=\"n\">_ws_fn</span>\n<span class=\"w\">    </span><span class=\"k\">async</span> <span class=\"k\">with</span> <span class=\"n\">websockets</span><span class=\"o\">.</span><span class=\"n\">connect</span><span class=\"p\">(</span>  <span class=\"c1\"># type: ignore</span>\n  File <span class=\"nb\">&quot;/home/viet/code/EFTB-org.github.io/python_scripts/.venv/lib/python3.12/site-packages/websockets/asyncio/client.py&quot;</span>, line <span class=\"m\">587</span>, in <span class=\"n\">__aenter__</span>\n<span class=\"w\">    </span><span class=\"k\">return</span> <span class=\"k\">await</span> <span class=\"bp\">self</span>\n<span class=\"w\">           </span><span class=\"pm\">^^^^^^^^^^</span>\n  File <span class=\"nb\">&quot;/home/viet/code/EFTB-org.github.io/python_scripts/.venv/lib/python3.12/site-packages/websockets/asyncio/client.py&quot;</span>, line <span class=\"m\">541</span>, in <span class=\"n\">__await_impl__</span>\n<span class=\"w\">    </span><span class=\"bp\">self</span><span class=\"o\">.</span><span class=\"n\">connection</span> <span class=\"o\">=</span> <span class=\"k\">await</span> <span class=\"bp\">self</span><span class=\"o\">.</span><span class=\"n\">create_connection</span><span class=\"p\">()</span>\n<span class=\"w\">                      </span><span class=\"pm\">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</span>\n  File <span class=\"nb\">&quot;/home/viet/code/EFTB-org.github.io/python_scripts/.venv/lib/python3.12/site-packages/websockets/asyncio/client.py&quot;</span>, line <span class=\"m\">467</span>, in <span class=\"n\">create_connection</span>\n<span class=\"w\">    </span><span class=\"n\">_</span><span class=\"p\">,</span> <span class=\"n\">connection</span> <span class=\"o\">=</span> <span class=\"k\">await</span> <span class=\"n\">loop</span><span class=\"o\">.</span><span class=\"n\">create_connection</span><span class=\"p\">(</span><span class=\"n\">factory</span><span class=\"p\">,</span> <span class=\"o\">**</span><span class=\"n\">kwargs</span><span class=\"p\">)</span>\n<span class=\"w\">                          </span><span class=\"pm\">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</span>\n<span class=\"gr\">TypeError</span>: <span class=\"n\">BaseEventLoop.create_connection() got an unexpected keyword argument &#39;extra_headers&#39;</span>\n</pre></div>\n</span>"
+        }
+      ]
+    },
+    {
+      "id": "Lsoe",
+      "code_hash": "364b0be2444c278258edcb5ef5aebaec",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "['Email', 'Email address', 'Letter', 'Instant', 'Message/ text', 'instant message/ Instant text', 'send', 'send a text/ letter/ message', 'Meet', 'in person', 'Meet/ see in person', 'Video chat', 'Have a video chat with SO', 'Social network/ social media', 'Use social network/ social media', 'Talk on the phone', 'Username']\n"
+        }
+      ]
+    }
+  ]
+}
