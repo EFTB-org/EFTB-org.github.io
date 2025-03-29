@@ -16,10 +16,11 @@ def _():
     import soundfile as sf
     import random
     from tqdm import tqdm
-    from IPython.display import Audio
+    from IPython.display import Audio, display
     return (
         Audio,
         SpeechGenerator,
+        display,
         mdpd,
         mo,
         normalize_filename,
@@ -29,6 +30,134 @@ def _():
         sys,
         tqdm,
     )
+
+
+@app.cell
+def _(SpeechGenerator):
+    speechGenerator = SpeechGenerator()
+    return (speechGenerator,)
+
+
+@app.cell
+def _(Audio, display, speech_generator):
+    def _():
+        import numpy as np
+        import soundfile as sf
+        import re
+        from nltk.tokenize import sent_tokenize
+
+        gen_conversation_input = '''Teo: Hello.
+        Ty: Hi, [Tẹo](/teo6/). It's me.
+        Teo: Huh. who is this?
+        Ty: It's me! [Tý](/ti5/) here.
+        Ty: I just got a new phone number.
+        Teo: Oh, [Tý](/ti5/). What's up?
+        Ty: Can you help me with my homework?
+        Teo: Sure, but I'm a bit busy right now.
+        Teo: Can you give me an email?
+        Ty: What's your email address?
+        Teo: It's T E O at gmail dot com.
+        '''
+
+        gen_conversation_input = '''Teo: Hello.
+    Ty: Hi, Teeoh. It's me.
+    Teo: Huh, who is this?
+    Ty: It's me! Tee here.
+    Ty: I just got a new phone number.
+    Teo: Oh, Tee. What's up?
+    Ty: Can you help me with my homework?
+    Teo: Sure, but I'm a bit busy right now.
+    Teo: Can you give me an email?
+    Ty: What's your email address?
+    Teo: It's teeoh at gmail dot com.
+    Ty: Huh? Can you repeat that?
+    Teo: It’s t e o at gmail dot com!
+    '''
+
+        conversation = []
+
+        for line in gen_conversation_input.split("\n"):
+            line = line.strip()
+            if len(line) == 0:
+                continue
+            speaker, text = line.split(": ")
+            conversation.append((speaker, text))
+
+        speechs = []
+        speed = 1
+
+        voice_map = {
+            'Ty': 'af_heart',
+            'Teo': 'am_eric'
+        }
+
+        for i, (speaker, text) in enumerate(conversation):
+            sen_audios = []
+
+            voice = speech_generator.get_voice(voice_map[speaker])
+
+            sentences = text.split('. ')
+            sentences = [text]
+
+            for j, sentence in enumerate(sentences):
+                # print(sentence, j)
+                begin_duration=0
+                if i == 2 and j==1:
+                    print(sentence)
+                    begin_duration=0.2
+                sentence_audio = speech_generator.generate(
+                    sentence, voice, speed=float(speed), begin_duration=begin_duration
+                )
+
+                sen_audios.append(sentence_audio)
+
+            line = np.zeros(1)
+
+            for sen_audio in sen_audios:
+                line = np.concatenate((line, sen_audio), axis=0)
+                line = np.concatenate((line, np.zeros((int(0.0 * 24000)))), axis=0)
+            speechs.append(
+                {
+                    "audio": line,
+                    "name": f"{i}_{speaker}",
+                }
+            ) 
+        return speechs
+
+
+    speechs = _()
+
+    for speech in speechs:
+      display(Audio(speech['audio'], rate=24000))
+    return speech, speechs
+
+
+@app.cell
+def _(Audio, display, sf, speech_generator):
+    for v in ["am_michael", "af_heart"]:
+        save_path = f"processed_lessions/lession-2/pronun_audios/{v}.wav"
+        example_line = "like a super Mario level. Like it's very like high detail. And like, once you get into the park, it just like, everything looks like a computer game and they have all these, like, you know, if, if there's like a, you know, like in a Mario game, they will have like a question block. And if you like, you know, punch it, a coin will come out. So like everyone, when they come into the park, they get like this little bracelet and then you can go punching question blocks around."
+        example_audio = speech_generator.generate(
+            example_line, speech_generator.get_voice(v), speed=1, begin_duration=0
+        )
+    
+        sf.write(save_path, example_audio, 24000)
+
+        display(Audio(example_audio, rate=24000))
+    return example_audio, example_line, save_path, v
+
+
+@app.cell
+def _(os, sf, speechs):
+    def _():
+        save_dir = "processed_lessions/lession-2/pronun_audios/"
+        os.makedirs(save_dir, exist_ok=True)
+        for speech in speechs:
+            sf.write(f"{save_dir}{speech['name']}.wav", speech['audio'], 24000)
+
+
+    _()
+    return
 
 
 @app.cell
@@ -122,14 +251,8 @@ def _(vocab_table):
 
 
 @app.cell
-def _(english):
-    print(english)
-    return
-
-
-@app.cell
-def _(mo):
-    mo.md(r"""### Generate English sound""")
+def _():
+    ### Generate English sound
     return
 
 
@@ -169,7 +292,7 @@ def _(SpeechGenerator, cleaned_english, normalize_filename, os, random, tqdm):
 
             english_audio[i] = path
         return english_audio
-    
+
     english_audio = make_english_sounds()
     return english_audio, make_english_sounds, speech_generator
 
@@ -277,6 +400,12 @@ def _(english_audio, vietnamese_audio, vocab_table):
         vi_audio_buttons,
         vie_text,
     )
+
+
+@app.cell
+def _(mo):
+    mo.md(r"""### Generate conversation""")
+    return
 
 
 if __name__ == "__main__":

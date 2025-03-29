@@ -125,3 +125,26 @@ seo:
 |    Tý     | (tiếng karoke ở ngoài) Hả? Cậu nhắc lại giúp tớ với\!        | Huh? Can you repeat that?           |
 |    Tẹo    | Là t-e-o-@-gmail.com đó\!                                    | It’s t-e-o-@gmail.com\!             |
 
+## Section 2
+### 1. Pronunciation
+
+Listen the conversation again and repeat:
+
+{{<audio_script json="/audio/lession-2/conversation_eng/conversation.json" audiopath="/audio/lession-2/conversation_eng/">}}
+
+### 2.	Speak with confidence
+
+Class activity: Make a list by asking your classmates for their names, phone numbers, username and email address. Ask for repetition as needed
+
+Example:
+
+| Name           | Phone number | Username | E-mail address |
+| -------------- | ------------ | -------- | -------------- |
+| Nguyễn Văn Tẹo | 090 875 4343 | Teo123   | teo@gmail.com  |
+| Sam Vu         | 076 576 2312 | Samvu321 | Sam@gmail.com  |
+
+
+- Hello Teo, what is your full name?
+- My full name is Nguyễn Văn Tẹo
+- Can you repeat that?
+- Sure, It is Nguyễn Văn Tẹo
