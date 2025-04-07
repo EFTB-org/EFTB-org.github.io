@@ -1,0 +1,86 @@
+[
+  {
+    "type": "dialogue",
+    "audio": "Teo-1.mp3",
+    "speaker": "Tẹo",
+    "text": "Chào Tý!"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty-1.mp3",
+    "speaker": "Tý",
+    "text": "Ồ, chào Tẹo!"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Teo-2.mp3",
+    "speaker": "Tẹo",
+    "text": "Hôm nay trời đẹp ghê ha?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty-2.mp3",
+    "speaker": "Tý",
+    "text": "Ừ, đẹp xỉu!"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Teo-3.mp3",
+    "speaker": "Tẹo",
+    "text": "Dạo này ở trường sao rồi?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty-3.mp3",
+    "speaker": "Tý",
+    "text": "Cũng ổn."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty-4.mp3",
+    "speaker": "Tý",
+    "text": "Học kỳ này bận rộn ghê á, phải không?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Teo-4.mp3",
+    "speaker": "Tẹo",
+    "text": "Tớ biết mà."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Teo-5.mp3",
+    "speaker": "Tẹo",
+    "text": "Thiệt luôn, chẳng còn thời gian rảnh nữa."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty-5.mp3",
+    "speaker": "Tý",
+    "text": "Tớ cũng vậy đó."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty-6.mp3",
+    "speaker": "Tý",
+    "text": "Cậu đang nghe gì đó?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Teo-6.mp3",
+    "speaker": "Tẹo",
+    "text": "À, bài hát ưa thích của tớ nè."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Teo-7.mp3",
+    "speaker": "Tẹo",
+    "text": "Nè, nghe thử xem!"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty-7.mp3",
+    "speaker": "Tý",
+    "text": "Ờm... cũng... thú vị ghê đó."
+  }
+]
