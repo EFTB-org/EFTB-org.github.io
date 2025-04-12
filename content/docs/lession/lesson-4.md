@@ -1,11 +1,11 @@
 ---
-title: "Lession 3: NICE WEATHER, ISNT IT"
+title: "Lession 4: NICE WEATHER, ISNT IT"
 description: ""
-lead: "English for The Blind - Lession 3"
+lead: "English for The Blind - Lession 4"
 draft: false
 weight: 701
 seo:
-  title: "EFTB - Lession 3: NICE WEATHER, ISNT IT" # custom title (optional)
+  title: "EFTB - Lession 4: NICE WEATHER, ISNT IT" # custom title (optional)
   description: "" # custom description (recommended)
   canonical: "" # custom canonical URL (optional)
   robots: "" # custom robot tags (optional)
@@ -187,14 +187,14 @@ seo:
       <td>{{< audio-text text="Tui cũng không (đồng ý với câu phủ định)" src="audio/lession-3/vocabularies_vie/tui_cung_khong_ong_y_voi_cau_phu_inh.mp3">}}</td>
     </tr>
     <tr>
-        <td colspan="2" style="text-align:center">Describing State or Condition</td>
-        <td colspan="2" style="text-align:center">Mô tả trạng thái hoặc điều kiện</td>
-    </tr>
-    <tr>
       <td>25</td>
       <td>{{< audio-text text="Me too" src="audio/lession-3/vocabularies/me_too.mp3">}}</td>
       <td>/mi tuː/</td>
       <td>{{< audio-text text="Tui đồng ý (đồng ý với câu khẳng định)" src="audio/lession-3/vocabularies_vie/tui_ong_y_ong_y_voi_cau_khang_inh.mp3">}}</td>
+    </tr>
+    <tr>
+        <td colspan="2" style="text-align:center">Describing State or Condition</td>
+        <td colspan="2" style="text-align:center">Mô tả trạng thái hoặc điều kiện</td>
     </tr>
     <tr>
       <td>26</td>
@@ -254,7 +254,7 @@ seo:
 
 | Sentences                                                                                                                                                                               | Meaning                                                           |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
-| {{< audio-text text="It's been a really busy semester, isn’t it?" src="audio/lession-3/sentences/its_been_a_really_busy_semester.mp3">}}                                        | Học kỳ này thật sự bận rộn, phải không?                           |
+| {{< audio-text text="It's been a really busy semester, isn’t it?" src="audio/lession-3/sentences/its_been_a_really_busy_semester.mp3">}}                                                | Học kỳ này thật sự bận rộn, phải không?                           |
 | {{< audio-text text="Terrible weather, huh?" src="audio/lession-3/sentences/terrible_weather_huh.mp3">}}                                                                                | Thời tiết tệ quá, hả?                                             |
 | {{< audio-text text="We talk about TV shows and music" src="audio/lession-3/sentences/we_talk_about_tv_shows_and_music.mp3">}}                                                          | Chúng tôi nói về các chương trình truyền hình và âm nhạc.         |
 | {{< audio-text text="We don’t talk about money and family" src="audio/lession-3/sentences/we_dont_talk_about_money_and_family.mp3">}}                                                   | Chúng tôi không nói về tiền bạc và gia đình.                      |
@@ -294,4 +294,65 @@ Tẹo và Tý là đôi bạn thân học lớp 8, đang trò chuyện vui vẻ 
 
 ## II. Section 2: Practice
 
-Work in progress...
+### 1. Pronunciation
+
+| The intonation goes up at the end of the thought group.                                                                                   |
+| ----------------------------------------------------------------------------------------------------------------------------------------- |
+| {{< audio-text text="A beautiful day, isn’t it?" src="audio/lession-3/pronunciation/a_beautiful_day_isnt_it.mp3">}}                       |
+| {{< audio-text text="This is a really fun party, isn’t it?" src="audio/lession-3/pronunciation/this_is_a_really_fun_party_isnt_it.mp3">}} |
+| {{< audio-text text="A busy semester, huh?" src="audio/lession-3/pronunciation/a_busy_semester_huh.mp3">}}                                |
+
+
+
+**Practice**: Listen carefully to the attached dialogue **3-5 times**. Focus on how each speaker expresses their emotions, uses pauses, and stresses important words. Then, speak out loud.
+
+{{<audio_script json="/audio/lession-3/conversation_eng/conversation.json" audiopath="/audio/lession-3/conversation_eng/">}}
+
+| Nhân vật | Tiếng Việt                                | English                             |
+| -------- | ----------------------------------------- | ----------------------------------- |
+| Tẹo      | Chào Tý!                                  | Hi, Ty!                             |
+| Tý       | Ồ, chào Tẹo!                              | Hey, Teo!                           |
+| Tẹo      | Hôm nay trời đẹp ghê ha?                  | It's really nice today, isn't it?   |
+| Tý       | Ừ, đẹp xỉu!                               | Yeah, it's beautiful.               |
+| Tẹo      | Dạo này ở trường sao rồi?                 | So, how are things at school?       |
+| Tý       | Cũng ổn.                                  | They're OK.                         |
+| Tý       | Học kỳ này bận rộn ghê á, phải không?     | It's a busy semester, isn't it?     |
+| Tẹo      | Tớ biết mà.                               | I know.                             |
+| Tẹo      | Thiệt luôn, chẳng còn thời gian rảnh nữa. | It is. I don't have much free time. |
+| Tý       | Tớ cũng vậy đó.                           | Me neither.                         |
+| Tý       | Cậu đang nghe gì đó?                      | What are you listening to?          |
+| Tẹo      | À, bài hát ưa thích của tớ nè.            | Oh, it's my favorite song.          |
+| Tẹo      | Nè, nghe thử xem!                         | Here, listen.                       |
+| Tý       | Ờm... cũng... thú vị ghê đó.              | It's... um... interesting.          |
+
+### 2.Speak with confidence:
+**Class Activity: Small Talk Practice at a Party**
+
+**Scenario**:
+
+You are at a class party. Walk around and talk to 3 different classmates. Each conversation should focus on a different topic from the list below. Use the small talk expressions you've learned, or come up with your own.
+
+
+**Topics** (choose 3):
+- School
+- Music
+- Movies
+- Money
+- Family
+- Sports
+- Hobbies
+- TV shows
+- Weather
+
+**Example Conversation**:
+> **Tẹo**: This is a great birthday party.
+>
+> **Tý**: It sure is! The music’s really great.
+>
+> **Tẹo**: Excellent food, isn’t it?
+>
+> **Tý**: I know, it’s delicious.
+>
+> **Tẹo**: I don’t want this birthday party to end.
+>
+> **Tý**: Me neither. It’s a really nice party.

@@ -1,0 +1,86 @@
+[
+  {
+    "type": "dialogue",
+    "audio": "Teo - 1.mp3",
+    "speaker": "Teo",
+    "text": "Hi, Tee!"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 1.mp3",
+    "speaker": "Ty",
+    "text": "Hey, Teeoh!"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Teo - 2.mp3",
+    "speaker": "Teo",
+    "text": "It's really nice today, isn't it?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 2.mp3",
+    "speaker": "Ty",
+    "text": "Yeah, it's beautiful."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Teo - 3.mp3",
+    "speaker": "Teo",
+    "text": "So, how are things at school?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 3.mp3",
+    "speaker": "Ty",
+    "text": "They're OK."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 4.mp3",
+    "speaker": "Ty",
+    "text": "It's a busy semester, isn't it?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Teo - 4.mp3",
+    "speaker": "Teo",
+    "text": "I know."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Teo - 5.mp3",
+    "speaker": "Teo",
+    "text": "It is. I don't have much free time."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 5.mp3",
+    "speaker": "Ty",
+    "text": "Me neither."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 6.mp3",
+    "speaker": "Ty",
+    "text": "What are you listening to?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Teo - 6.mp3",
+    "speaker": "Teo",
+    "text": "Oh, it's my favorite song."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Teo - 7.mp3",
+    "speaker": "Teo",
+    "text": "Here, listen."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 7.mp3",
+    "speaker": "Ty",
+    "text": "It's... um... interesting."
+  }
+]

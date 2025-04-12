@@ -1,13 +1,13 @@
 ---
-title: "Lession 2: CAN YOU SAY THAT AGAIN?"
+title: "Lession 3: CAN YOU SAY THAT AGAIN?"
 description: ""
-lead: "English for The Blind - Lession 2"
+lead: "English for The Blind - Lession 3"
 draft: false
 weight: 701
 sidebar:
   collapsed: true
 seo:
-  title: "EFTB - Lession 2: CAN YOU SAY THAT AGAIN? " # custom title (optional)
+  title: "EFTB - Lession 3: CAN YOU SAY THAT AGAIN? " # custom title (optional)
   description: "" # custom description (recommended)
   canonical: "" # custom canonical URL (optional)
   robots: "" # custom robot tags (optional)
