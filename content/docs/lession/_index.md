@@ -1,11 +1,11 @@
 ---
-title: "Lessions"
+title: "Lessons"
 description: ""
-lead: "English for The Blind - Lessions"
+lead: "English for The Blind - Lessons"
 draft: false
 weight: 700
 seo:
-  title: "EFTB - Lessions" # custom title (optional)
+  title: "EFTB - Lessons" # custom title (optional)
   description: "" # custom description (recommended)
   canonical: "" # custom canonical URL (optional)
   robots: "" # custom robot tags (optional)

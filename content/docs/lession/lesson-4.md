@@ -1,11 +1,11 @@
 ---
-title: "Lession 4: NICE WEATHER, ISNT IT"
+title: "Lesson 4: NICE WEATHER, ISNT IT"
 description: ""
-lead: "English for The Blind - Lession 4"
+lead: "English for The Blind - Lesson 4"
 draft: false
 weight: 701
 seo:
-  title: "EFTB - Lession 4: NICE WEATHER, ISNT IT" # custom title (optional)
+  title: "EFTB - Lesson 4: NICE WEATHER, ISNT IT" # custom title (optional)
   description: "" # custom description (recommended)
   canonical: "" # custom canonical URL (optional)
   robots: "" # custom robot tags (optional)
