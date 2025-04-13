@@ -308,7 +308,7 @@ Tẹo và Tý là đôi bạn thân học lớp 8, đang trò chuyện vui vẻ 
 
 {{<audio_script json="/audio/lession-3/conversation_eng/conversation.json" audiopath="/audio/lession-3/conversation_eng/">}}
 
-| Nhân vật | Tiếng Việt                                | English                             |
+<!-- | Nhân vật | Tiếng Việt                                | English                             |
 | -------- | ----------------------------------------- | ----------------------------------- |
 | Tẹo      | Chào Tý!                                  | Hi, Ty!                             |
 | Tý       | Ồ, chào Tẹo!                              | Hey, Teo!                           |
@@ -323,7 +323,7 @@ Tẹo và Tý là đôi bạn thân học lớp 8, đang trò chuyện vui vẻ 
 | Tý       | Cậu đang nghe gì đó?                      | What are you listening to?          |
 | Tẹo      | À, bài hát ưa thích của tớ nè.            | Oh, it's my favorite song.          |
 | Tẹo      | Nè, nghe thử xem!                         | Here, listen.                       |
-| Tý       | Ờm... cũng... thú vị ghê đó.              | It's... um... interesting.          |
+| Tý       | Ờm... cũng... thú vị ghê đó.              | It's... um... interesting.          | -->
 
 ### 2.Speak with confidence:
 **Class Activity: Small Talk Practice at a Party**
