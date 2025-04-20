@@ -219,7 +219,7 @@ seo:
       <td>{{<audio-text text="I really dislike jazz" src="audio/lesson-5/sen-struc/i_really_dislike_jazz.mp3">}}</td>
     </tr>
     <tr>
-      <td colspan="4">Same dislikes</td>
+      <th colspan="4" style="text-align:center">Same dislikes</th>
     </tr>
     <tr>
       <td>Me neither</td>
