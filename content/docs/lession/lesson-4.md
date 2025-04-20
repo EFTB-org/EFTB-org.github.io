@@ -3,7 +3,7 @@ title: "Lesson 4: NICE WEATHER, ISN'T IT"
 description: ""
 lead: "English for The Blind - Lesson 4"
 draft: false
-weight: 701
+weight: 703
 seo:
   title: "EFTB - Lesson 4: NICE WEATHER, ISN'T IT" # custom title (optional)
   description: "" # custom description (recommended)
