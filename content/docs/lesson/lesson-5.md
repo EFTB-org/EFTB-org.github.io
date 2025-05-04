@@ -270,7 +270,6 @@ seo:
 
 {{<audio-with-controls src="audio/lesson-5/vie-con/context.mp3">}}
 
-{{<audio_script json="/audio/lesson-5/eng-con/conversation.json" audiopath="/audio/lesson-5/eng-con/">}}
 {{<audio_script json="/audio/lesson-5/vie-con/conversation.json" audiopath="/audio/lesson-5/vie-con/">}}
 
 | **Nhân vật** | **Tiếng Việt**                                                        | **English**                                                |
@@ -285,4 +284,21 @@ seo:
 | Tý           | Không hợp gu tớ lắm.                                                  | I don’t like this song.                                    |
 | Tẹo          | Trời, tớ ghiền! Mở to lên cho đã!                                     | I love it! Turn it up!                                     |
 
-II. Section 2: Practice
+
+## II/ Section 2:Practice
+### 1.	Pronunciation
+**Practice**: Listen carefully to the attached dialogue **3-5 times**. Focus on how each speaker expresses their emotions, uses pauses, and stresses important words. Then, speak out loud.
+
+{{<audio_script json="/audio/lesson-5/eng-con/conversation.json" audiopath="/audio/lesson-5/eng-con/">}}
+
+### 2.	Speak with confidence:
+A/Complete these sentences with your own opinion
+
+1. I like………………..(Music genre)…….a lot
+2. I don’t like…………(Music genre)...very much
+3. I really like……………(a singer)…….a lot
+4. I don’t like…………….(a singer)…….at all
+5. I don’t like…………….(a song)……….
+6. I don’t really like……..(a band)……….
+
+B/ Group work: Now take turns asking and answering questions about likes and dislikes with your classmates. Use the answer above.
