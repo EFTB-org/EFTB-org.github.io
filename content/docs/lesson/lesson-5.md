@@ -286,12 +286,12 @@ seo:
 
 
 ## II/ Section 2:Practice
-### 1.	Pronunciation
+### 1. Pronunciation
 **Practice**: Listen carefully to the attached dialogue **3-5 times**. Focus on how each speaker expresses their emotions, uses pauses, and stresses important words. Then, speak out loud.
 
 {{<audio_script json="/audio/lesson-5/eng-con/conversation.json" audiopath="/audio/lesson-5/eng-con/">}}
 
-### 2.	Speak with confidence:
+### 2. Speak with confidence:
 A/Complete these sentences with your own opinion
 
 1. I like………………..(Music genre)…….a lot
