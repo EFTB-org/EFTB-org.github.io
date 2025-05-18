@@ -2,13 +2,16 @@
 title: "TEST VOCABULARIES LESSON 1 2 3 4"
 description: ""
 lead: "English for The Blind - TEST VOCABULARIES LESSON 1 2 3 4"
-draft: true
+draft: false
 weight: 706
 seo:
   title: "EFTB - TEST VOCABULARIES LESSON 1 2 3 4" # custom title (optional)
   description: "" # custom description (recommended)
   canonical: "" # custom canonical URL (optional)
   robots: "" # custom robot tags (optional)
+_build:
+  list: never
+  render: true
 ---
 
 ## YES/NO questions
