@@ -24,7 +24,7 @@ _build:
     <th></th>
   </tr>
   <tr>
-    <td>a neighbor</td>
+    <td>{{<audio-text text="a neighbor" src="/audio/test-lesson1234/is_your_neighbor_someone_who_lives_next_to_your_house.mp3">}}</td>
     <td>
       <ul>
         <li>A neighbor</li>
@@ -35,7 +35,7 @@ _build:
     <td><strong>YES</strong></td>
   </tr>
   <tr>
-    <td>a boss</td>
+    <td>{{<audio-text text="a boss" src="/audio/test-lesson1234/is_your_boss_the_person_who_tells_you_what_to_do_at_work.mp3">}}</td>
     <td>
       <ul>
         <li>A boss</li>
@@ -46,7 +46,7 @@ _build:
     <td><strong>YES</strong></td>
   </tr>
   <tr>
-    <td>Semester</td>
+    <td>{{<audio-text text="Semester" src="/audio/test-lesson1234/is_a_semester_one_day_of_school.mp3">}}</td>
     <td>
       <ul>
         <li>Semester</li>
@@ -57,7 +57,7 @@ _build:
     <td><strong>NO</strong></td>
   </tr>
   <tr>
-    <td>TV shows</td>
+    <td>{{<audio-text text="TV shows" src="/audio/test-lesson1234/can_you_watch_tv_shows_on_television_or_a_phone.mp3">}}</td>
     <td>
       <ul>
         <li>TV shows</li>
@@ -68,7 +68,7 @@ _build:
     <td><strong>YES</strong></td>
   </tr>
   <tr>
-    <td>Small talk</td>
+    <td>{{<audio-text text="Small talk" src="/audio/test-lesson1234/is_small_talk_a_long_and_serious_conversation.mp3">}}</td>
     <td>
       <ul>
         <li>Small talk</li>
@@ -79,7 +79,7 @@ _build:
     <td><strong>NO</strong></td>
   </tr>
   <tr>
-    <td>favorite</td>
+    <td>{{<audio-text text="favorite" src="/audio/test-lesson1234/is_your_favorite_fruit_the_one_you_hate_the_most.mp3">}}</td>
     <td>
       <ul>
         <li>Favorite</li>
@@ -90,7 +90,7 @@ _build:
     <td><strong>NO</strong></td>
   </tr>
   <tr>
-    <td>busy</td>
+    <td>{{<audio-text text="busy" src="/audio/test-lesson1234/are_you_busy_when_you_have_a_lot_of_work.mp3">}}</td>
     <td>
       <ul>
         <li>Busy</li>
@@ -101,7 +101,7 @@ _build:
     <td><strong>YES</strong></td>
   </tr>
   <tr>
-    <td>Email address</td>
+    <td>{{<audio-text text="Email address" src="/audio/test-lesson1234/is_emma_at_gmailcom_an_email_address.mp3">}}</td>
     <td>
       <ul>
         <li>Email address</li>
@@ -112,7 +112,7 @@ _build:
     <td><strong>YES</strong></td>
   </tr>
   <tr>
-    <td>Letter</td>
+    <td>{{<audio-text text="Letter" src="/audio/test-lesson1234/is_a_letter_something_you_write_and_send_by_mail.mp3">}}</td>
     <td>
       <ul>
         <li>Letter</li>
@@ -123,7 +123,7 @@ _build:
     <td><strong>YES</strong></td>
   </tr>
   <tr>
-    <td>Video chat</td>
+    <td>{{<audio-text text="Video chat" src="/audio/test-lesson1234/can_you_see_and_talk_to_your_friend_directly_face_to_face_in_person_on_a_video_chat.mp3">}}</td>
     <td>
       <ul>
         <li>Video chat</li>
@@ -138,32 +138,32 @@ _build:
 ## A and B questions
 <table>
   <tr>
-    <td>a classmate</td>
+    <td>{{<audio-text text="a classmate" src="/audio/test-lesson1234/who_sits_next_to_you_in_your_class_and_learns_with_you_a_a_classmate_b_a_teacher.mp3">}}</td>
     <td><strong>Q:</strong> Who sits next to you in your class and learns with you?
       <br>🧑 <strong>A</strong>: A classmate. B: A teacher</td>
   </tr>
   <tr>
-    <td>a stranger</td>
+    <td>{{<audio-text text="a stranger" src="/audio/test-lesson1234/what_do_you_call_someone_you_dont_know_a_a_friend_b_a_stranger.mp3">}}</td>
     <td><strong>Q:</strong> What do you call someone you don't know?
       <br>🧑 A: A friend <strong>B</strong>: A stranger.</td>
   </tr>
   <tr>
-    <td>Money</td>
+    <td>{{<audio-text text="Money" src="/audio/test-lesson1234/what_do_you_need_to_buy_snacks_at_the_store_a_money_b_hobbies.mp3">}}</td>
     <td><strong>Q:</strong> What do you need to buy snacks at the store?
       <br>🧑 <strong>A</strong>: Money. B: Hobbies</td>
   </tr>
   <tr>
-    <td>Sports</td>
+    <td>{{<audio-text text="Sports" src="/audio/test-lesson1234/what_do_you_play_like_football_basketball_or_tennis_a_music_b_sports.mp3">}}</td>
     <td><strong>Q:</strong> What do you play like football, basketball, or tennis?
       <br>🧑 A: Music <strong>B</strong>: Sports.</td>
   </tr>
   <tr>
-    <td>Sunny</td>
+    <td>{{<audio-text text="Sunny" src="/audio/test-lesson1234/what_kind_of_day_is_it_when_the_sun_is_bright_in_the_sky_b_cloudy_a_sunny.mp3">}}</td>
     <td><strong>Q:</strong> What kind of day is it when the sun is bright in the sky?
       <br>🧑 B: Cloudy <strong>A</strong>: Sunny.</td>
   </tr>
   <tr>
-    <td>social media</td>
+    <td>{{<audio-text text="social media" src="/audio/test-lesson1234/where_do_people_post_online_on_facebook_zalo_instagram_a_social_media_b_letter.mp3">}}</td>
     <td><strong>Q:</strong> Where do people post online on Facebook, Zalo, Instagram?
       <br>🧑 <strong>A</strong>: Social media. B: Letter</td>
   </tr>
