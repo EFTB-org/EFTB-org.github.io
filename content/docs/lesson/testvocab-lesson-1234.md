@@ -101,7 +101,7 @@ _build:
     <td><strong>YES</strong></td>
   </tr>
   <tr>
-    <td>{{<audio-text text="Email address" src="/audio/test-lesson1234/is_emma_at_gmailcom_an_email_address.mp3">}}</td>
+    <td>{{<audio-text text="Email address" src="/audio/test-lesson1234/is_emma_at_gmail_dot_com_an_email_address.mp3">}}</td>
     <td>
       <ul>
         <li>Email address</li>
@@ -158,9 +158,9 @@ _build:
       <br>🧑 A: Music <strong>B</strong>: Sports.</td>
   </tr>
   <tr>
-    <td>{{<audio-text text="Sunny" src="/audio/test-lesson1234/what_kind_of_day_is_it_when_the_sun_is_bright_in_the_sky_b_cloudy_a_sunny.mp3">}}</td>
+    <td>{{<audio-text text="Sunny" src="/audio/test-lesson1234/what_kind_of_day_is_it_when_the_sun_is_bright_in_the_sky_a_sunny_b_cloudy.mp3">}}</td>
     <td><strong>Q:</strong> What kind of day is it when the sun is bright in the sky?
-      <br>🧑 B: Cloudy <strong>A</strong>: Sunny.</td>
+      <br>🧑<strong>A</strong>: Sunny B: Cloudy.</td>
   </tr>
   <tr>
     <td>{{<audio-text text="social media" src="/audio/test-lesson1234/where_do_people_post_online_on_facebook_zalo_instagram_a_social_media_b_letter.mp3">}}</td>
