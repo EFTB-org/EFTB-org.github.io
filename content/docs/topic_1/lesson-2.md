@@ -1,11 +1,11 @@
 ---
-title: "Lesson 1 + 2: HOW ARE YOU? – NICE TO MEET YOU"
+title: "Lesson 2: NICE TO MEET YOU"
 description: ""
-lead: "English for The Blind - Lesson 1 + 2"
+lead: "English for The Blind - Lesson 2"
 draft: false
 weight: 701
 seo:
-  title: "EFTB - Lesson 1 + 2: HOW ARE YOU? – NICE TO MEET YOU" # custom title (optional)
+  title: "EFTB - Lesson 2: NICE TO MEET YOU" # custom title (optional)
   description: "" # custom description (recommended)
   canonical: "" # custom canonical URL (optional)
   robots: "" # custom robot tags (optional)

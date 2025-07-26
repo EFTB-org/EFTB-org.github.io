@@ -1,11 +1,11 @@
 ---
-title: "Unit 3"
+title: "TOPIC 2: INTERESTS"
 description: ""
-lead: "English for The Blind - Unit 3"
+lead: "English for The Blind - TOPIC 2: INTERESTS"
 draft: false
-weight: 300
+weight: 100
 seo:
-  title: "EFTB - Unit 3" # custom title (optional)
+  title: "EFTB - Lessons" # custom title (optional)
   description: "" # custom description (recommended)
   canonical: "" # custom canonical URL (optional)
   robots: "" # custom robot tags (optional)

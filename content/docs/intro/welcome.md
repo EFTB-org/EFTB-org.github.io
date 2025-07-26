@@ -1,14 +1,14 @@
 ---
 weight: 1
 bookFlatSection: true
-title: "Welcome to our Teaching Resources Hub"
+title: "Welcome to our Teaching Resource Hub"
 description: "What do you study?"
 summary: ""
 draft: false
 weight: 1
 toc: true
 seo:
-  title: "EFTB - Welcome to our Teaching Resources Hub" # custom title (optional)
+  title: "EFTB - Welcome to our Teaching Resource Hub" # custom title (optional)
   description: "" # custom description (recommended)
   canonical: "" # custom canonical URL (optional)
   robots: "" # custom robot tags (optional)

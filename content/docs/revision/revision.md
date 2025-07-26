@@ -1,11 +1,11 @@
 ---
-title: "REVISION"
+title: "REVISION 1"
 description: ""
-lead: "English for The Blind - REVISION"
+lead: "English for The Blind - REVISION 1"
 draft: false
 weight: 705
 seo:
-  title: "EFTB - REVISION" # custom title (optional)
+  title: "EFTB - REVISION 1" # custom title (optional)
   description: "" # custom description (recommended)
   canonical: "" # custom canonical URL (optional)
   robots: "" # custom robot tags (optional)
