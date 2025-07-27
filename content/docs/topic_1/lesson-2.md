@@ -11,8 +11,8 @@ seo:
   robots: "" # custom robot tags (optional)
 ---
 
-## Section 1
-### Vocabularies
+## Section 1:
+### 1. Vocabulary
 | Audio                                                                                                             |   No | Word/ Phrase                                     | IPA                                            | Context                                           | Meaning                               |
 |:------------------------------------------------------------------------------------------------------------------|---------:|:-----------------------------------------------------|:---------------------------------------------------|:------------------------------------------------------|:------------------------------------------|
 | {{<audio-player src="audio/lession-1/vocabularies/00_curious.wav">}}                                              |        1 | Curious                                              | /ˈkjʊriəs/                                     | Khi muốn biết thứ gì                                  | Tò mò                                     |
@@ -52,7 +52,7 @@ seo:
 | {{<audio-player src="audio/lession-1/vocabularies/34_at_work.wav">}}                                              |       35 | at work                                              | /æt wɜːrk/                                         | Nói về ai đó đang làm việc                            | ở nơi làm việc                            |
 
 
-### Sentences
+### 2. Language Booster
 | Audio                                                                                                                  |   No | Sentence                                                      | Meaning                                                  |
 |:-----------------------------------------------------------------------------------------------------------------------|-----:|:--------------------------------------------------------------|:---------------------------------------------------------|
 | {{<audio-player src="audio/lession-1/sentences/00_hello_my_name_is_anna.wav">}}                                        |    1 | Hello, my name is Anna.                                       | Xin chào, tên tôi là Anna.                               |
@@ -66,7 +66,7 @@ seo:
 | {{<audio-player src="audio/lession-1/sentences/08_what_is_our_teachers_name.wav">}}                                    |    9 | what is our teacher’s name?                               | Tên của giáo viên chúng ta là gì?                        |
 | {{<audio-player src="audio/lession-1/sentences/09_our_teachers_name_is_mr_johnson.wav">}}                              |   10 | Our teacher’s name is Mr. Johnson.                            | Tên giáo viên của chúng ta là thầy Johnson.              |
 
-
+### 3. Think and Speak:
 **EX: Scenario 1: First time introduction**
 
 {{<audio-with-controls src="audio/lession-1/listening_part1.wav">}}
@@ -104,14 +104,13 @@ seo:
 |:-----------------------------------------------------------------------------------------------------------------------|-----:|:--------------------------------------------------------------|:---------------------------------------------------------|
 | {{<audio-player src="audio/lession-1/sentences/10_good_morning_mr_parker_how_are_you.wav">}}                           |   11 | Good morning, Mr. Parker! How are you?                        | Chào buổi sáng, anh Parker! anh khỏe không?              |
 | {{<audio-player src="audio/lession-1/sentences/11_how_are_you_today.wav">}}                                            |   12 | How are you today?                                            | Hôm nay bạn thế nào?                                     |
-| {{<audio-player src="audio/lession-1/sentences/12_im_fine_thank_you.wav">}}                                            |   13 | I’m fine, thank you.                                          | Tôi khỏe, cảm ơn bạn.                                    |
-| {{<audio-player src="audio/lession-1/sentences/13_im_alright_how_its_going.wav">}}                                     |   14 | I’m alright. How it’s going?                                  | Mọi thứ đều tốt. dạo này bạn thế nào?                    |
-| {{<audio-player src="audio/lession-1/sentences/14_my_neighbor_is_very_nice.wav">}}                                     |   15 | My neighbor is very nice.                                     | Hàng xóm của tôi rất tốt bụng.                           |
-| {{<audio-player src="audio/lession-1/sentences/15_our_boss_is_at_work_now.wav">}}                                      |   16 | Our boss is at work now.                                      | Sếp của tôi đang ở nơi làm việc.                         |
-| {{<audio-player src="audio/lession-1/sentences/16_a_stranger_is_in_the_park.wav">}}                                    |   17 | A stranger is in the park.                                    | Một người lạ đang ở trong công viên.                     |
-| {{<audio-player src="audio/lession-1/sentences/17_have_a_nice_day_see_you_later.wav">}}                                |   18 | Have a nice day! See you later.                               | Chúc bạn một ngày tốt lành! Hẹn gặp lại sau.             |
-| {{<audio-player src="audio/lession-1/sentences/18_goodbye_see_you_tomorrow.wav">}}                                     |   19 | Goodbye! See you tomorrow.                                    | Tạm biệt! Hẹn gặp lại ngày mai.                          |
-| {{<audio-player src="audio/lession-1/sentences/19_its_a_pleasure_to_meet_my_new_colleague.wav">}}                      |   20 | It’s a pleasure to meet my new colleague                      | Rất vui được gặp bạn cùng lớp mới của tôi.               |
+| {{<audio-player src="audio/lession-1/sentences/13_im_fine_thank_you.wav">}}                                            |   13 | I’m fine, thank you.                                          | Tôi khỏe, cảm ơn bạn.                                    |
+| {{<audio-player src="audio/lession-1/sentences/14_im_alright_how_its_going.wav">}}                                     |   14 | I’m alright. How it’s going?                                  | Mọi thứ đều tốt. dạo này bạn thế nào?                    |
+| {{<audio-player src="audio/lession-1/sentences/15_my_neighbor_is_very_nice.wav">}}                                     |   15 | My neighbor is very nice.                                     | Hàng xóm của tôi rất tốt bụng.                           |
+| {{<audio-player src="audio/lession-1/sentences/16_a_stranger_is_in_the_park.wav">}}                                    |   16 | A stranger is in the park.                                    | Một người lạ đang ở trong công viên.                     |
+| {{<audio-player src="audio/lession-1/sentences/17_have_a_nice_day_see_you_later.wav">}}                                |   17 | Have a nice day! See you later.                               | Chúc bạn một ngày tốt lành! Hẹn gặp lại sau.             |
+| {{<audio-player src="audio/lession-1/sentences/18_goodbye_see_you_tomorrow.wav">}}                                     |   18 | Goodbye! See you tomorrow.                                    | Tạm biệt! Hẹn gặp lại ngày mai.                          |
+| {{<audio-player src="audio/lession-1/sentences/19_its_a_pleasure_to_meet_my_new_colleague.wav">}}                      |   19 | It’s a pleasure to meet my new colleague                      | Rất vui được gặp bạn cùng lớp mới của tôi.               |
 
 
 **EX: Scenario 2: Meeting at the park**
@@ -137,12 +136,9 @@ seo:
 > **Parker**: Goodbye! See you tomorrow. It’s a pleasure to meet my new colleague.
 
 
-## Section 2
-
-**Practice: Pronunciation + listening**
-
-### A: pronunciation
-
+## Section 2:
+### 1. Conversation:
+#### Listening:
 **Listen. Notice how to is reduced in these sentences:**
 | Audio | Word | IPA |
 | -- | -- | -- |
@@ -157,7 +153,7 @@ seo:
 | {{<audio-player src="audio/lession-1/pactice/its_great_to_meet_you.wav">}} | It’s great to meet you |
 
 
-#### Shadowing practice
+##### Shadowing practice
 *Để nghe riêng từng câu bấm chuột vào câu.*
 
 **Part 1**
@@ -169,18 +165,15 @@ seo:
 **Part 3**
 {{<audio_script json="/audio/lession-1/pactice/conversation_2.json" audiopath="/audio/lession-1/pactice/generated_audios/">}}
 
-**Practice: APPLY:**
-
+#### Speaking:
 **Chia nhóm thực hành**
 
 | **1. Introducing Yourself & Others:** | **1. Giới thiệu bản thân & người khác** |
 | --- | --- |
-| Hello, my name is \_\_\_\_\_\_\_\_.  Hi, I’m \_\_\_\_\_\_\_\_. Nice to meet you!  What’s your name?  My last name is \_\_\_\_\_\_\_\_, and my full name is \_\_\_\_\_\_.  I’d like you to meet my classmate, \_\_\_\_\_\_\_ .  This is our teacher, \_\_\_\_\_\_\_\_ .  It’s a pleasure to meet you. | Xin chào, tôi tên là \_\_\_\_\_\_\_\_.  Chào, tôi là \_\_\_\_\_\_\_\_. Rất vui được gặp bạn!  Tên của bạn là gì?  Họ của tôi là \_\_\_\_\_\_\_\_, và tên đầy đủ của tôi là \_\_\_\_\_\_\_\_.  Tôi muốn giới thiệu bạn với bạn chung lớp của tôi, \_\_\_\_\_\_\_\_.  Đây là giáo viên của chúng tôi, \_\_\_\_\_\_\_\_.  Rất hân hạnh được gặp bạn. |
+| Hello, my name is ________.  Hi, I’m ________. Nice to meet you!  What’s your name?  My last name is ________, and my full name is _______.  I’d like you to meet my classmate, _______ .  This is our teacher, ________ .  It’s a pleasure to meet you. | Xin chào, tôi tên là ________.  Chào, tôi là ________. Rất vui được gặp bạn!  Tên của bạn là gì?  Họ của tôi là ________, và tên đầy đủ của tôi là ________.  Tôi muốn giới thiệu bạn với bạn chung lớp của tôi, ________.  Đây là giáo viên của chúng tôi, ________.  Rất hân hạnh được gặp bạn. |
 | **2. Greetings & Asking About Well-being** | **2. Chào hỏi & hỏi thăm sức khỏe** |
-| Good \_\_\_\_\_\_\_, Mr/ Mrs \_\_\_\_\_\_\_! How are you?  How are you today?  I’m \_\_\_\_\_\_\_\_, thank you.  How’s it going? | Chào buổi \_\_\_\_\_\_\_, anh/chị \_\_\_\_\_\_\_! Anh/ chị khỏe không?  Hôm nay bạn thế nào?  Tôi \_\_\_\_\_\_\_\_, cảm ơn bạn.  Dạo này bạn thế nào? |
+| Good _______, Mr/ Mrs _______! How are you?  How are you today?  I’m _______, thank you.  How’s it going? | Chào buổi _______, anh/chị _______! Anh/ chị khỏe không?  Hôm nay bạn thế nào?  Tôi _______, cảm ơn bạn.  Dạo này bạn thế nào? |
 | **3. Talking About People in Your Life** | **3. Nói về những người xung quanh bạn** |
-| My \_\_\_\_\_\_\_\_ is in my class.  My \_\_\_\_\_\_\_\_ is very nice.  Our \_\_\_\_\_\_\_\_ is at work now.  A \_\_\_\_\_\_\_\_ is in the park.  It’s a pleasure to meet my new \_\_\_\_\_\_\_\_. | \_\_\_\_\_\_\_\_ của tôi học cùng lớp với tôi.  \_\_\_\_\_\_\_\_ của tôi rất tốt bụng.  \_\_\_\_\_\_\_\_ của tôi đang ở nơi làm việc.  Một \_\_\_\_\_\_\_\_ đang ở trong công viên.  Rất vui được gặp \_\_\_\_\_\_\_\_ mới của tôi. |
+| My ________ is in my class.  My ________ is very nice.  Our ________ is at work now.  A ________ is in the park.  It’s a pleasure to meet my new ________. | ________ của tôi học cùng lớp với tôi.  ________ của tôi rất tốt bụng.  ________ của tôi đang ở nơi làm việc.  Một ________ đang ở trong công viên.  Rất vui được gặp ________ mới của tôi. |
 | **4. Ending Conversations & Saying Goodbye** | **4. Kết thúc cuộc trò chuyện & tạm biệt** |
 | Have a nice day! See you later.  Goodbye! See you tomorrow. | Chúc bạn một ngày tốt lành! Hẹn gặp lại sau.  Tạm biệt! Hẹn gặp lại ngày mai. |
-
-

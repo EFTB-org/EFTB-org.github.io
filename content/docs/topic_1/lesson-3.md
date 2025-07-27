@@ -13,8 +13,8 @@ seo:
   robots: "" # custom robot tags (optional)
 ---
 
-## Section 1: How do you communicate with your friends?
-### 1. Vocabularies
+## Section 1:
+### 1. Vocabulary
 
 | Word/ Phrase                                                                                                                      | IPA                                               | Context                                                                 | Meaning                                                                                                           |
 | :-------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------ | :---------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------- |
@@ -36,7 +36,7 @@ seo:
 | {{< audio-text text="Talk on the phone" src="audio/lession-2/english/talk_on_the_phone.mp3" >}}                                   | /tɔːk ɑːn ðə foʊn/                                | Cuộc trò chuyện giữa hai người qua điện thoại.                          | {{< audio-text text="Nói chuyện qua điện thoại" src="audio/lession-2/vietnamese/noi_chuyen_qua_ien_thoai.mp3" >}} |
 | {{< audio-text text="Username" src="audio/lession-2/english/username.mp3" >}}                                                     | /ˈjuːzərneɪm/                                     | danh tính cá nhân trên mạng                                             | {{< audio-text text="Tên người dùng" src="audio/lession-2/vietnamese/ten_nguoi_dung.mp3" >}}                      |
 
-### 2. Sentences
+### 2. Language Booster
 
 <table>
     <tr>
@@ -99,7 +99,7 @@ seo:
     </tr>
 </table>
 
-### 3. Conversation
+### 3. Think and Speak:
 
 **Ngữ cảnh:**
 
@@ -125,14 +125,15 @@ seo:
 |    Tý     | (tiếng karoke ở ngoài) Hả? Cậu nhắc lại giúp tớ với\!        | Huh? Can you repeat that?           |
 |    Tẹo    | Là t-e-o-@-gmail.com đó\!                                    | It’s t-e-o-@gmail.com\!             |
 
-## Section 2
-### 1. Pronunciation
+## Section 2:
+### 1. Conversation:
+#### Listening:
 
 Listen the conversation again and repeat:
 
 {{<audio_script json="/audio/lession-2/conversation_eng/conversation.json" audiopath="/audio/lession-2/conversation_eng/">}}
 
-### 2.	Speak with confidence
+#### Speaking:
 
 Class activity: Make a list by asking your classmates for their names, phone numbers, username and email address. Ask for repetition as needed
 

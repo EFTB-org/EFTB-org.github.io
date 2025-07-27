@@ -12,9 +12,9 @@ seo:
 ---
 
 
-## I/ Section 1:
+## Section 1:
 
-### 1.Vocabulary (18 Words)
+### 1. Vocabulary
 
 <table>
   <thead>
@@ -146,7 +146,7 @@ seo:
   </tbody>
 </table>
 
-### 2. Sentence structure
+### 2. Language Booster
 
 <table>
   <thead>
@@ -242,7 +242,7 @@ seo:
   </tbody>
 </table>
 
-**Let’s practice:**
+### 3. Think and Speak:
 
 **These are some examples, the topic is about music, listen and repeat:**
 
@@ -255,14 +255,15 @@ seo:
 | {{<audio-text text="It sounds like heavy metal" src="/audio/lesson-5/sents/it_sounds_like_heavy_metal.wav" >}}                    | Nghe giống heavy metal                 |
 | {{<audio-text text="I really like folk" src="/audio/lesson-5/sents/i_really_like_folk.wav" >}}                                    | Mình rất thích nhạc dân ca.            |
 | {{<audio-text text="So do I" src="/audio/lesson-5/sents/so_do_i.wav" >}}                                                          | Mình cũng thích                        |
-| {{<audio-text text="I love techno" src="/audio/lesson-5/sents/i_love_techno.wav" >}}                                              | Mình yêu nhạc techno.                  |
-| {{<audio-text text="Oh, I don’t" src="/audio/lesson-5/sents/oh_i_dont.wav" >}}                                                    | Ồ, mình thì không                      |
-| {{<audio-text text="I don’t like classical at all" src="/audio/lesson-5/sents/i_dont_like_classical_at_all.wav" >}}               | Mình chẳng thích nhạc cổ điển chút nào |
-| {{<audio-text text="Me neither" src="/audio/lesson-5/sents/me_neither.wav" >}}                                                    | Mình cũng không.                       |
-| {{<audio-text text="I don’t really like country" src="/audio/lesson-5/sents/i_dont_really_like_country.wav" >}}                   | Mình không thực sự thích nhạc đồng quê |
-| {{<audio-text text="Really? I do" src="/audio/lesson-5/sents/really_i_do.wav" >}}                                                 | Mình lại thích đấy                     |
+| {{<audio-text text="I love techno" src="audio/lesson-5/sents/i_love_techno.wav" >}}                                              | Mình yêu nhạc techno.                  |
+| {{<audio-text text="Oh, I don’t" src="audio/lesson-5/sents/oh_i_dont.wav" >}}                                                    | Ồ, mình thì không                      |
+| {{<audio-text text="I don’t like classical at all" src="audio/lesson-5/sents/i_dont_like_classical_at_all.wav" >}}               | Mình chẳng thích nhạc cổ điển chút nào |
+| {{<audio-text text="Me neither" src="audio/lesson-5/sents/me_neither.wav" >}}                                                    | Mình cũng không.                       |
+| {{<audio-text text="I don’t really like country" src="audio/lesson-5/sents/i_dont_really_like_country.wav" >}}                   | Mình không thực sự thích nhạc đồng quê |
+| {{<audio-text text="Really? I do" src="audio/lesson-5/sents/really_i_do.wav" >}}                                                 | Mình lại thích đấy                     |
 
-### 3. Conversation
+## Section 2:
+### 1. Conversation:
 
 **Instructions:** You and your close friend (Teo and Ty) are talking about music after school. Read the Vietnamese prompts and respond in English using the vocabulary and sentence structures you have learned. Speak naturally, like you’re really having a conversation with a classmate!
 
@@ -285,13 +286,13 @@ seo:
 | Tẹo          | Trời, tớ ghiền! Mở to lên cho đã!                                     | I love it! Turn it up!                                     |
 
 
-## II/ Section 2:Practice
-### 1. Pronunciation
+### 2. Application
+#### Listening:
 **Practice**: Listen carefully to the attached dialogue **3-5 times**. Focus on how each speaker expresses their emotions, uses pauses, and stresses important words. Then, speak out loud.
 
 {{<audio_script json="/audio/lesson-5/eng-con/conversation.json" audiopath="/audio/lesson-5/eng-con/">}}
 
-### 2. Speak with confidence:
+#### Speaking:
 A/Complete these sentences with your own opinion
 
 1. I like………………..(Music genre)…….a lot

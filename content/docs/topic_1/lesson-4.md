@@ -12,9 +12,9 @@ seo:
 ---
 
 
-## I. Section 1
+## Section 1:
 
-### 1.Vocabulary (27 Words)
+### 1. Vocabulary
 
 <table>
   <thead>
@@ -211,7 +211,7 @@ seo:
   </tbody>
 </table>
 
-### 2. Sentence (10 sentences)
+### 2. Language Booster
 
 <table>
   <thead>
@@ -265,7 +265,7 @@ seo:
 | {{< audio-text text="My friend and I don’t talk about weather" src="audio/lession-3/sentences/my_friend_and_i_dont_talk_about_weather.mp3">}}                                           | Tôi và bạn tôi không nói về thời tiết.                            |
 | {{< audio-text text="Me neither. We don’t talk about weather" src="audio/lession-3/sentences/me_neither_we_dont_talk_about_weather.mp3">}}                                              | Tôi cũng không. Chúng tôi không nói về thời tiết.                 |
 
-### 3. Conversation
+### 3. Think and Speak:
 
 **Ngữ cảnh:**
 
@@ -292,9 +292,10 @@ Tẹo và Tý là đôi bạn thân học lớp 8, đang trò chuyện vui vẻ 
 | Tẹo      | Nè, nghe thử xem!                         | Here, listen.                       |
 | Tý       | Ờm... cũng... thú vị ghê đó.              | It's... um... interesting.          |
 
-## II. Section 2: Practice
+## Section 2: 
 
-### 1. Pronunciation
+### 1. Conversation:
+#### Listening:
 
 | The intonation goes up at the end of the thought group.                                                                                   |
 | ----------------------------------------------------------------------------------------------------------------------------------------- |
@@ -325,7 +326,7 @@ Tẹo và Tý là đôi bạn thân học lớp 8, đang trò chuyện vui vẻ 
 | Tẹo      | Nè, nghe thử xem!                         | Here, listen.                       |
 | Tý       | Ờm... cũng... thú vị ghê đó.              | It's... um... interesting.          | -->
 
-### 2.Speak with confidence:
+### Speaking:
 **Class Activity: Small Talk Practice at a Party**
 
 **Scenario**:
