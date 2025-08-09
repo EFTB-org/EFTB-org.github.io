@@ -89,4 +89,4 @@ copyRight = "Copyright (c) 2020-2024 Thulite"
 # Navigation
 [params.navigation]
   #other stuff
-  logo = "eftb_logo.jpg"
+  logo = "eftb_logo.svg"

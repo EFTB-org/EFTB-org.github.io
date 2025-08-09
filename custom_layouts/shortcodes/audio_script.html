@@ -19,7 +19,7 @@
 <script>
 (function() {
   // Constants and DOM elements
-  const ordinal = {{ .Ordinal }};
+  const ordinal = Number('{{ .Ordinal }}');
   const playButton = document.getElementById(`play-button-${ordinal}`);
   const prevButton = document.getElementById(`prev-button-${ordinal}`);
   const nextButton = document.getElementById(`next-button-${ordinal}`);
@@ -244,12 +244,15 @@
   border: none;
   padding: 5px 15px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.05s ease;
 }
 
 .conversation-button:hover {
   background-color: #082d8a;
 }
+
+.conversation-button:active { transform: translateY(1px); }
+.conversation-button:focus-visible { outline: none; box-shadow: 0 0 0 3px rgba(10, 102, 194, 0.35), 0 0 0 5px rgba(10, 102, 194, 0.18); }
 
 .skip-button {
   background-color: #666;
@@ -258,12 +261,15 @@
   border-radius: 6px;
   padding: 5px 10px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.05s ease;
 }
 
 .skip-button:hover {
   background-color: #444;
 }
+
+.skip-button:active { transform: translateY(1px); }
+.skip-button:focus-visible { outline: none; box-shadow: 0 0 0 3px rgba(10, 102, 194, 0.35), 0 0 0 5px rgba(10, 102, 194, 0.18); }
 
 select {
   background-color: #0a37a7;
@@ -308,4 +314,30 @@ select option {
   background-color: #e0e0e0;
   font-weight: bold;
 }
+
+/* Dark mode (user preference) */
+@media (prefers-color-scheme: dark) {
+  .conversation-button { background-color: #1e293b; color: #dbe5ff; }
+  .conversation-button:hover { background-color: #243043; }
+  .skip-button { background-color: #334155; color: #e2e8f0; }
+  .skip-button:hover { background-color: #1f2937; }
+  select { background-color: #1e293b; color: #dbe5ff; }
+  select:hover { background-color: #243043; }
+  select option { background-color: #0b1220; color: #e2e8f0; }
+  .loading { color: #c9d4f0; }
+  .transcript-container { border-color: #2b3a55; }
+  .transcript-line.playing { background-color: #1f2b46; color: #f5f7ff; }
+}
+
+/* Respect theme toggle via Bootstrap data attribute */
+[data-bs-theme="dark"] .conversation-button { background-color: #1e293b; color: #dbe5ff; }
+[data-bs-theme="dark"] .conversation-button:hover { background-color: #243043; }
+[data-bs-theme="dark"] .skip-button { background-color: #334155; color: #e2e8f0; }
+[data-bs-theme="dark"] .skip-button:hover { background-color: #1f2937; }
+[data-bs-theme="dark"] select { background-color: #1e293b; color: #dbe5ff; }
+[data-bs-theme="dark"] select:hover { background-color: #243043; }
+[data-bs-theme="dark"] select option { background-color: #0b1220; color: #e2e8f0; }
+[data-bs-theme="dark"] .loading { color: #c9d4f0; }
+[data-bs-theme="dark"] .transcript-container { border-color: #2b3a55; }
+[data-bs-theme="dark"] .transcript-line.playing { background-color: #1f2b46; color: #f5f7ff; }
 </style>
