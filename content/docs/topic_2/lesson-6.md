@@ -231,7 +231,7 @@ Listen carefully and answer the questions:
   <td>No</td>
     </tr>
     <tr>
-<td>{{<audio-text text="Is Ty's favorite actress Minh Hang?" src="audio/lesson-6/listening_comprehension/listening_comprehension_2s.mp3">}}</td>
+<td>{{<audio-text text="Is Ty's favorite actress Minh Hang?" src="audio/lesson-6/listening_comprehension/listening_comprehension_2.mp3">}}</td>
   <td>Yes</td>
     </tr>
     <tr>

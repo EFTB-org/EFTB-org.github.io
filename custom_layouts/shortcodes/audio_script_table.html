@@ -507,18 +507,28 @@ select option { background-color: white; color: black; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 1px, 1px); white-space: nowrap; border: 0; }
 
 /* Transcript table */
-.transcript-table-container { overflow-x: hidden; overflow-y: auto; border: 3px dashed #e0e0e0; border-radius: 5px; }
+.transcript-table-container { overflow-x: auto; overflow-y: auto; border: 3px dashed #e0e0e0; border-radius: 5px; -webkit-overflow-scrolling: touch; overscroll-behavior: contain; }
 .transcript-table { width: 100%; max-width: 100%; border-collapse: collapse; table-layout: fixed; }
 .transcript-table col.col-speaker { width: 10ch; }
 .transcript-table col.col-text { width: auto; }
 .transcript-table col.col-meaning { width: 28ch; }
-.transcript-table th, .transcript-table td { border-bottom: 1px solid #eee; padding: 6px 8px; text-align: left; white-space: normal; overflow-wrap: anywhere; word-break: break-word; }
+.transcript-table th, .transcript-table td { border-bottom: 1px solid #eee; padding: 6px 8px; text-align: left; white-space: normal; overflow-wrap: break-word; word-break: normal; hyphens: auto; }
 .transcript-row { cursor: pointer; }
 .transcript-table tr.transcript-row td { transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out; }
 .audio-player .transcript-table tr.transcript-row td:first-child { border-left: 4px solid transparent; }
 .audio-player .transcript-table tr.transcript-row.playing td { background-color: #eaf3ff !important; }
 .audio-player .transcript-table tr.transcript-row.playing td:first-child { border-left: 4px solid #0a37a7; }
 .audio-player .transcript-table tr.transcript-row:focus { outline: 2px solid #0a37a7; outline-offset: -2px; }
+
+/* Mobile optimizations */
+@media (max-width: 520px) {
+  /* Give browser freedom to size columns better */
+  .transcript-table { table-layout: auto; min-width: 640px; }
+  /* Tighten speaker column to free space for text */
+  .transcript-table col.col-speaker { width: 6ch; }
+  /* Slightly reduce cell padding on small screens */
+  .transcript-table th, .transcript-table td { padding: 6px; }
+}
 
 /* Dark mode adjustments */
 @media (prefers-color-scheme: dark) {
