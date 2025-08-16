@@ -95,6 +95,8 @@
   let playbackSpeed = 1.0;
   let timeoutId = null;
   let hasFocus = false;
+  // Track whether the last initiated playback was a single line (not the full sequence)
+  let lastSingleClip = false;
 
   // Utilities
   const clamp = (n, min, max) => Math.max(min, Math.min(max, n));
@@ -302,10 +304,16 @@
             highlightRow(currentIndex);
             currentAudio.play();
             state = 'playing';
+            lastSingleClip = true; // mark mode
             setPlayVisual('pause');
             statusLive.textContent = `Playing line ${currentIndex + 1} of ${scriptArray.length}`;
             attachAudioHandlers(currentAudio);
-            currentAudio.onended = () => { removeHighlight(); setPlayVisual('play'); };
+            currentAudio.onended = () => {
+              // Keep highlight so user sees reference point
+              state = 'stopped';
+              setPlayVisual('play');
+              statusLive.textContent = `Finished line ${currentIndex + 1}. Press Play to continue with the conversation.`;
+            };
           }
 
           function playSequence() {
@@ -388,8 +396,23 @@
 
           // Play/Pause toggle
           playButton.addEventListener('click', () => {
-            if (state === 'playing') pausePlayback();
-            else playSequence();
+            if (state === 'playing') {
+              pausePlayback();
+            } else {
+              // If we just finished (or are stopped after) a single clip, advance to the next line for sequence playback
+              if (lastSingleClip && state !== 'paused') {
+                // Only advance if not already at final line
+                if (currentIndex < scriptArray.length - 1) {
+                  currentIndex = currentIndex + 1; // start sequence from the following line
+                } else {
+                  // If user was on last line, restart sequence from beginning
+                  currentIndex = 0;
+                  statusLive.textContent = 'Restarting from the beginning.';
+                }
+                lastSingleClip = false; // reset flag
+              }
+              playSequence();
+            }
           });
 
           // Progress/seek

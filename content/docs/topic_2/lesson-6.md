@@ -11,9 +11,13 @@ seo:
   robots: "" # custom robot tags (optional)
 ---
 
-## Section 1:
+## Section 1 {#section-1 .toc-only}
 
-### 1. Vocabulary
+{{< header-audio text="Section 1" src="audio/common/headers/section_1.mp3" level="2" id="section-1" >}}
+
+### 1. Vocabulary {#vocabulary .toc-only}
+
+{{< header-audio text="1. Vocabulary" src="audio/common/headers/1_vocabulary.mp3" level="3" id="vocabulary" >}}
 
 <!-- markdownlint-disable MD033 -->
 <!-- markdownlint-disable-next-line MD033 -->
@@ -109,9 +113,13 @@ seo:
   </table>
 <!-- markdownlint-enable MD033 -->
 
-### 2. Language Booster
+### 2. Language Booster {.toc-only}
 
-#### Structures
+{{< header-audio text="2. Language Booster" src="audio/common/headers/2_language_booster.mp3" level="3" >}}
+
+#### Structures {.toc-only}
+
+{{< header-audio text="Structures" src="audio/common/headers/structures.mp3" level="4" >}}
 
 <!-- markdownlint-disable MD033 -->
 
@@ -188,7 +196,9 @@ seo:
 <!-- markdownlint-enable MD033 -->
 
 
-#### Let's practice:
+#### Let's practice {.toc-only}
+
+{{< header-audio text="Let's practice" src="audio/common/headers/lets_practice.mp3" level="4" >}}
 
 | Sentences | Meaning |
 | ----- | ----- |
@@ -200,7 +210,9 @@ seo:
 | Do you like any books in particular? | Bạn có đặc biệt thích quyển sách nào không? |
 | I particularly like “Nhà Giả Kim”. What’s yours? | Tôi đặc biệt thích *Nhà Giả Kim*. Còn bạn thì sao? |
 
-### 3. Think and Speak
+### 3. Think and Speak {.toc-only}
+
+{{< header-audio text="3. Think and Speak" src="audio/common/headers/3_think_and_speak.mp3" level="3" >}}
 
 {{<audio-with-controls src="audio/lesson-6/conversation-context-vie.mp3">}}
 
@@ -208,13 +220,19 @@ seo:
 
 {{<audio_script_table json="/audio/lesson-6/vie-con/conversation.json" audiopath="/audio/lesson-6/vie-con/" meaningField="en" headerSpeaker="Character" headerText="Vietnamese" headerMeaning="English">}}
 
-## Section 2:
+## Section 2 {.toc-only}
 
-### 1. Conversation
+{{< header-audio text="Section 2" src="audio/common/headers/section_2.mp3" level="2" >}}
+
+### 1. Conversation {.toc-only}
+
+{{< header-audio text="1. Conversation" src="audio/common/headers/1_conversation.mp3" level="3" >}}
 
 {{<audio_script_table json="/audio/lesson-6/eng-con/conversation.json" audiopath="/audio/lesson-6/eng-con/" headerSpeaker="Character" headerText="English" headerMeaning=" ">}}
 
-#### Listening Comprehension
+#### Listening Comprehension {.toc-only}
+
+{{< header-audio text="Listening Comprehension" src="audio/common/headers/listening_comprehension.mp3" level="4" >}}
 
 Listen carefully and answer the questions:
 
@@ -241,17 +259,25 @@ Listen carefully and answer the questions:
   </tbody>
 </table>
 
-#### Listening and Speaking:
+#### Listening and Speaking {.toc-only}
+
+{{< header-audio text="Listening and Speaking" src="audio/common/headers/listening_and_speaking.mp3" level="4" >}}
 
 Listen to the audio and imitate the speaker’s pronunciation, rhythm, and intonation.
 
-### 2. Application
+### 2. Application {.toc-only}
 
-#### Group activities: Ask your classmates about their favorites.
+{{< header-audio text="2. Application" src="audio/common/headers/2_application.mp3" level="3" >}}
+
+#### Group activities: Ask your classmates about their favorites {.toc-only}
+
+{{< header-audio text="Group activities: Ask your classmates about their favorites." src="audio/lesson-6/group_activities_ask_your_classmates_about_their_favorites.mp3" level="4" >}}
 
 - **Favorites:** Food, sport, TV show, celebrity, video game, place to travel, and shopping.
 
-#### Example:
+#### Example {.toc-only}
+
+{{< header-audio text="Example" src="audio/common/headers/example.mp3" level="4" >}}
 
 {{<audio-with-controls src="audio/lesson-6/Application.mp3">}}
 

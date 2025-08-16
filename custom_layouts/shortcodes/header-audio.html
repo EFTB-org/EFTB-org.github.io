@@ -1,0 +1,132 @@
+{{/*
+Shortcode: header-audio
+Usage:
+  {{< header-audio text="Vocabulary" src="audio/common/headers/vocabulary.mp3" level="3" >}}
+
+Params:
+  text  (required) - Visible heading text
+  src   (required) - Audio file path (relative to site root or content)
+  level (optional) - Heading level 2..6 (default 3)
+  id    (optional) - Custom anchor id (defaults to slug/anchorize of text)
+
+Renders an accessible heading with an inline play/pause button that plays the
+associated audio clip. Script & styles injected only once per page.
+*/}}
+{{ $text := .Get "text" }}
+{{ $src := .Get "src" }}
+{{ $lvl := .Get "level" | default "3" }}
+{{ $id := .Get "id" | default (anchorize $text) }}
+{{ $lvlInt := int $lvl }}
+{{ if or (lt $lvlInt 2) (gt $lvlInt 6) }}{{ $lvlInt = 3 }}{{ end }}
+
+{{/* Output the heading tag dynamically (kept explicit for readability) */}}
+{{ if eq $lvlInt 2 }}<h2 id="{{ $id }}" class="sc-header-audio heading-audio" data-plain-text="{{ $text | plainify }}">{{ end }}
+{{ if eq $lvlInt 3 }}<h3 id="{{ $id }}" class="sc-header-audio heading-audio" data-plain-text="{{ $text | plainify }}">{{ end }}
+{{ if eq $lvlInt 4 }}<h4 id="{{ $id }}" class="sc-header-audio heading-audio" data-plain-text="{{ $text | plainify }}">{{ end }}
+{{ if eq $lvlInt 5 }}<h5 id="{{ $id }}" class="sc-header-audio heading-audio" data-plain-text="{{ $text | plainify }}">{{ end }}
+{{ if eq $lvlInt 6 }}<h6 id="{{ $id }}" class="sc-header-audio heading-audio" data-plain-text="{{ $text | plainify }}">{{ end }}
+  <span class="ha-header-trigger" id="haHeader{{ $id }}" role="button" tabindex="0" aria-label="Play audio: {{ $text | plainify }}" aria-pressed="false" aria-controls="ha-audio-{{ $id }}">
+    {{ $text | safeHTML }}
+    <span class="ha-spinner" aria-hidden="true" style="display:none"></span>
+  </span>
+  <audio id="ha-audio-{{ $id }}" preload="none" class="ha-audio-el" tabindex="-1">
+    <source src="{{ $src | relURL }}" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+{{ if eq $lvlInt 2 }}</h2>{{ end }}
+{{ if eq $lvlInt 3 }}</h3>{{ end }}
+{{ if eq $lvlInt 4 }}</h4>{{ end }}
+{{ if eq $lvlInt 5 }}</h5>{{ end }}
+{{ if eq $lvlInt 6 }}</h6>{{ end }}
+
+{{ if not (.Page.Scratch.Get "headerAudioOnce") }}
+<script>
+(function(){
+  if(window.__headerAudioOnce) return; window.__headerAudioOnce = true;
+  function setState(trigger, audio){
+    if(!trigger || !audio) return;
+    const base = trigger.getAttribute('data-plain-text') || trigger.textContent.trim();
+    if(audio.paused || audio.ended){
+      trigger.classList.remove('playing');
+      trigger.setAttribute('aria-pressed','false');
+      trigger.setAttribute('aria-label','Play audio: '+ base);
+      trigger.setAttribute('title','Play audio: '+ base);
+    } else {
+      trigger.classList.add('playing');
+      trigger.setAttribute('aria-pressed','true');
+      trigger.setAttribute('aria-label','Pause audio: '+ base);
+      trigger.setAttribute('title','Pause audio: '+ base);
+    }
+  }
+  function pauseOthers(except){
+    document.querySelectorAll('.ha-header-trigger.playing').forEach(function(tr){
+      if(tr===except) return;
+      const aid = tr.getAttribute('aria-controls');
+      const a = aid && document.getElementById(aid);
+      if(a && !a.paused) a.pause();
+      setState(tr, a||{paused:true, ended:true});
+    });
+  }
+  document.addEventListener('click', function(e){
+    const trigger = e.target.closest('.ha-header-trigger');
+    if(!trigger) return;
+    const aid = trigger.getAttribute('aria-controls');
+    const audio = aid && document.getElementById(aid);
+    if(!audio) return;
+    const spinner = trigger.querySelector('.ha-spinner');
+    if(audio.paused || audio.ended){
+      pauseOthers(trigger);
+      if(audio.ended) audio.currentTime=0;
+      if(spinner){ spinner.style.display='inline-block'; trigger.classList.add('loading'); trigger.setAttribute('aria-busy','true'); }
+      const p = audio.play();
+      if(p && p.then){
+        p.then(()=>{
+          if(spinner){ spinner.style.display='none'; trigger.classList.remove('loading'); trigger.removeAttribute('aria-busy'); }
+          setState(trigger,audio);
+        }).catch(err=>{
+          if(spinner){ spinner.style.display='none'; trigger.classList.remove('loading'); trigger.removeAttribute('aria-busy'); }
+          console.error('Header audio play failed', err);
+          setState(trigger,audio);
+        });
+      } else { setState(trigger,audio); }
+    } else {
+      audio.pause();
+      setState(trigger,audio);
+    }
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key !== ' ' && e.key !== 'Spacebar' && e.key !== 'Enter') return;
+    const trigger = e.target.closest('.ha-header-trigger');
+    if(!trigger) return; e.preventDefault(); trigger.click();
+  });
+  document.addEventListener('ended', function(e){
+    if(!(e.target && e.target.matches && e.target.matches('.ha-audio-el'))) return;
+    const audio = e.target; const trigger = document.querySelector('.ha-header-trigger[aria-controls="'+audio.id+'"]');
+    if(trigger) setState(trigger,audio);
+  }, true);
+})();
+</script>
+<style>
+/* Header Audio Shortcode (mimics audio-text) */
+.heading-audio, .sc-header-audio { --ha-fg:#0a66c2; --ha-fg-hover:#084c93; --ha-fg-playing:#128a3e; --ha-bg-hover:rgba(10,102,194,.08); --ha-bg-active:rgba(10,102,194,.12); --ha-bg-playing:rgba(18,138,62,.12); }
+.ha-header-trigger { display:inline-flex; align-items:center; gap:.4em; cursor:pointer; color:var(--ha-fg); text-decoration:none; border-radius:.4rem; padding:.15rem .45rem; line-height:1.2; position:relative; outline:none; transition:color .2s ease, background-color .2s ease, box-shadow .2s ease, transform .05s ease; }
+.ha-header-trigger:hover { background:var(--ha-bg-hover); color:var(--ha-fg-hover); }
+.ha-header-trigger:active { background:var(--ha-bg-active); transform:translateY(1px); }
+.ha-header-trigger:focus-visible { box-shadow:0 0 0 3px rgba(10,102,194,.35),0 0 0 5px rgba(10,102,194,.18); }
+.ha-header-trigger::before { content:'\25B6'; font-size:.82em; line-height:1; display:inline-block; transform:translateY(1px); transition:transform .25s ease, opacity .25s ease; }
+.ha-header-trigger.playing { color:var(--ha-fg-playing); background:var(--ha-bg-playing); font-style:italic; }
+.ha-header-trigger.playing::before { content:'\23F8'; }
+.ha-header-trigger.loading { opacity:.65; }
+.ha-header-trigger .ha-spinner { width:.9em; height:.9em; border:2px solid currentColor; border-top-color:transparent; border-radius:50%; animation:ha-spin 1s linear infinite; }
+@keyframes ha-spin { to { transform:rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .ha-header-trigger { transition:none; } .ha-header-trigger .ha-spinner { animation:none; } }
+.ha-audio-el { display:none; }
+/* Visually hide headings used only in TOC while keeping them focusable & anchor targets */
+.toc-only { position:absolute !important; width:1px !important; height:1px !important; padding:0 !important; margin:-1px !important; overflow:hidden !important; clip:rect(0 0 0 0) !important; white-space:nowrap !important; border:0 !important; }
+@media (prefers-color-scheme: dark) { .heading-audio, .sc-header-audio { --ha-fg:#7ab5ff; --ha-fg-hover:#a8cdff; --ha-fg-playing:#69db8f; --ha-bg-hover:rgba(122,181,255,.12); --ha-bg-active:rgba(122,181,255,.18); --ha-bg-playing:rgba(105,219,143,.12); } }
+@media (forced-colors: active) { .ha-header-trigger { forced-color-adjust:auto; outline:1px solid CanvasText; } .ha-header-trigger:focus-visible { outline:2px solid Highlight; box-shadow:none; } }
+/* Utility (shared among shortcodes) */
+.heading-audio-wrap .visually-hidden { position:absolute !important; width:1px !important; height:1px !important; padding:0 !important; margin:-1px !important; overflow:hidden !important; clip:rect(0 0 0 0) !important; white-space:nowrap !important; border:0 !important; }
+</style>
+{{ .Page.Scratch.Set "headerAudioOnce" true }}
+{{ end }}
