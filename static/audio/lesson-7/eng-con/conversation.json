@@ -1,0 +1,44 @@
+[
+  {
+    "type": "dialogue",
+    "audio": "Na - 1.mp3",
+    "speaker": "Na",
+    "text": "Hi Tý. Are you almost ready?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 1.mp3",
+    "speaker": "Ty",
+    "text": "Almost. What time is it?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na - 2.mp3",
+    "speaker": "Na",
+    "text": "Five forty-five pm."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 2.mp3",
+    "speaker": "Ty",
+    "text": "What time is the “Anh Trai Say Hi” concert?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na - 3.mp3",
+    "speaker": "Na",
+    "text": "Seven thirty pm. By the way, what time is the bus? You look so relaxed."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 3.mp3",
+    "speaker": "Ty",
+    "text": "Six fifty pm. Wait for me a bit."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na - 4.mp3",
+    "speaker": "Na",
+    "text": "OK then! Hurry up, please!"
+  }
+]

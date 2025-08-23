@@ -1,0 +1,51 @@
+[
+  {
+    "type": "dialogue",
+    "audio": "Na - 1.mp3",
+    "speaker": "Na",
+    "text": "Êhhh Tý. Chuẩn bị xong chưa?",
+    "en": "Hi Ty. Are you almost ready?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 1.mp3",
+    "speaker": "Tý",
+    "text": "Tớ sắp xong rồi. Mấy giờ rồi nhỉ?",
+    "en": "Almost. What time is it?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na - 2.mp3",
+    "speaker": "Na",
+    "text": "5 giờ 45 rồi",
+    "en": "Five forty-five pm"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 2.mp3",
+    "speaker": "Tý",
+    "text": "Mấy giờ buổi diễn “Anh trai say hi” bắt đầu vậy ta?",
+    "en": "What time is the “Anh Trai Say Hi” concert?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na - 3.mp3",
+    "speaker": "Na",
+    "text": "7 giờ 30 đó. Mà nè, mấy giờ xe buýt đi mà thong thả thể?",
+    "en": "Seven thirty pm. By the way, what time is the bus? You look so relaxed"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 3.mp3",
+    "speaker": "Tý",
+    "text": "6 giờ 50 lận. Đợi tui chút",
+    "en": "Six fifty pm. Wait for me a bit"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na - 4.mp3",
+    "speaker": "Na",
+    "text": "OK nè! Nhưng mà nhanh lên giùm nha ông thần",
+    "en": "OK then! Hurry up please!"
+  }
+]
