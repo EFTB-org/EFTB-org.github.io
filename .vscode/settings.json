@@ -4,9 +4,5 @@
   "files.insertFinalNewline": true,
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
-  "workbench.colorCustomizations": {
-    "activityBar.background": "#392A28",
-    "titleBar.activeBackground": "#4F3B39",
-    "titleBar.activeForeground": "#FBFAFA"
-  }
+  "window.border": "green"
 }
