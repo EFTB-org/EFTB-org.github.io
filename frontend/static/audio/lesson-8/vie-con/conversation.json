@@ -1,0 +1,86 @@
+[
+  {
+    "type": "dialogue",
+    "audio": "Ty - 1.mp3",
+    "speaker": "Ty",
+    "text": "Wow, Đây là ngày đầu tiên của chúng ta ở Vũng Tàu.",
+    "en": "Wow, It's our first day in Vũng Tàu."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 2.mp3",
+    "speaker": "Ty",
+    "text": "Cậu nghĩ sao về trò chèo thuyền? Muốn chơi không?",
+    "en": "What do you think about kayaking? Want to try it?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na - 1.mp3",
+    "speaker": "Na",
+    "text": "Có vẻ như không an toàn cho lắm",
+    "en": "It doesn't seem safe to me."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 3.mp3",
+    "speaker": "Ty",
+    "text": "Vậy hả? Mình chắc chắn trò đó an toàn đó.",
+    "en": "Really? I'm sure it's safe."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 4.mp3",
+    "speaker": "Ty",
+    "text": "Thế cậu cảm thấy sao về leo núi?",
+    "en": "How do you feel about rock climbing?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na - 2.mp3",
+    "speaker": "Na",
+    "text": "Nhìn khó quá à",
+    "en": "It looks really hard."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na - 3.mp3",
+    "speaker": "Na",
+    "text": "Tụi mình thử trò khác đi",
+    "en": "How about we try another activity?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 5.mp3",
+    "speaker": "Ty",
+    "text": "Cậu nghĩ nhảy bungee vui không?",
+    "en": "Do you think bungee jumping looks fun?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na - 4.mp3",
+    "speaker": "Na",
+    "text": "Ừm không. Trò đó là thứ sợ nhất mà mình từng thấy",
+    "en": "Um, no. That is the scariest thing I have ever seen."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 6.mp3",
+    "speaker": "Ty",
+    "text": "Vậy, cậu muốn làm gì?",
+    "en": "So, what do you want to do?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na - 5.mp3",
+    "speaker": "Na",
+    "text": "Hôm nay, mình chỉ muốn đi dạo quanh thôi.",
+    "en": "I just want to walk around today"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 7.mp3",
+    "speaker": "Ty",
+    "text": "Haizzz, thôi được rồi",
+    "en": "Fine"
+  }
+]

@@ -1,0 +1,188 @@
+{{ $text := .Get "text" }}
+{{ $src := .Get "src" }}
+{{ $id := delimit (shuffle (seq 999)) "" }}
+
+<span class="audio-text" id="audioText{{ $id }}" role="button" aria-label="Play audio: {{ $text | plainify }}" data-plain-text="{{ $text | plainify }}" tabindex="0" aria-controls="audio{{ $id }}">
+  {{ $text | safeHTML }}
+  <span class="spinner" style="display:none;" aria-hidden="true"></span>
+</span>
+
+<audio id="audio{{ $id }}" preload="none">
+  <source src="{{ $src | relURL }}" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<script>
+(function() {
+  const audioText = document.getElementById('audioText{{ $id }}');
+  const spinner = audioText.querySelector('.spinner');
+  const audio = document.getElementById('audio{{ $id }}');
+
+  const baseText = audioText.getAttribute('data-plain-text') || '';
+
+  function updateAriaLabelAndStyle() {
+    if (audio.paused || audio.ended) {
+      audioText.setAttribute('aria-label', 'Play audio: ' + baseText);
+      audioText.setAttribute('title', 'Play audio: ' + baseText);
+      audioText.setAttribute('aria-pressed', 'false');
+      audioText.classList.remove('playing');
+    } else {
+      audioText.setAttribute('aria-label', 'Pause audio: ' + baseText);
+      audioText.setAttribute('title', 'Pause audio: ' + baseText);
+      audioText.setAttribute('aria-pressed', 'true');
+      audioText.classList.add('playing');
+    }
+  }
+
+  audioText.addEventListener('click', function() {
+    if (audio.paused || audio.ended) {
+      spinner.style.display = 'inline-block';
+      audioText.classList.add('loading');
+      audioText.setAttribute('aria-busy', 'true');
+      if (audio.ended) {
+        audio.currentTime = 0;
+      }
+      audio.play().then(() => {
+        spinner.style.display = 'none';
+        audioText.classList.remove('loading');
+        audioText.setAttribute('aria-busy', 'false');
+        updateAriaLabelAndStyle();
+      }).catch((error) => {
+        console.error('Playback failed:', error);
+        spinner.style.display = 'none';
+        audioText.classList.remove('loading');
+        audioText.setAttribute('aria-busy', 'false');
+        updateAriaLabelAndStyle();
+      });
+    } else {
+      audio.pause();
+      updateAriaLabelAndStyle();
+    }
+  });
+
+  // Keyboard accessibility: toggle with Enter or Space
+  audioText.addEventListener('keydown', function(e) {
+    const key = e.key || e.code;
+    if (key === 'Enter' || key === ' ' || key === 'Spacebar') {
+      e.preventDefault();
+      audioText.click();
+    }
+  });
+
+  audio.addEventListener('ended', function() {
+    updateAriaLabelAndStyle();
+  });
+
+  updateAriaLabelAndStyle(); // Set initial state
+})();
+</script>
+
+<style>
+/*
+  Audio Text Shortcode Styles
+  - Better hover/focus/active states
+  - Play/Pause indicator via ::before
+  - Spinner uses currentColor
+  - Dark-mode friendly via CSS variables
+  - Respects prefers-reduced-motion
+*/
+.audio-text {
+  --audio-text-fg: #0a66c2; /* default link-like color */
+  --audio-text-fg-hover: #084c93;
+  --audio-text-bg-hover: rgba(10, 102, 194, 0.08);
+  --audio-text-bg-active: rgba(10, 102, 194, 0.12);
+  --audio-text-playing: #128a3e; /* green-ish when playing */
+  --audio-text-playing-bg: rgba(18, 138, 62, 0.08);
+
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  cursor: pointer;
+  color: var(--audio-text-fg);
+  text-decoration: none;
+  border-radius: 0.375rem;
+  padding: 0.1rem 0.3rem;
+  line-height: 1.2;
+  position: relative;
+  outline: none;
+  transition: color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease, transform 0.05s ease, font-style 0.2s ease;
+}
+
+.audio-text:hover {
+  color: var(--audio-text-fg-hover);
+  background-color: var(--audio-text-bg-hover);
+}
+
+.audio-text:active {
+  transform: translateY(1px);
+  background-color: var(--audio-text-bg-active);
+}
+
+.audio-text:focus-visible {
+  box-shadow: 0 0 0 3px rgba(10, 102, 194, 0.35), 0 0 0 5px rgba(10, 102, 194, 0.18);
+}
+
+.audio-text::before {
+  content: '▶';
+  font-size: 0.9em;
+  line-height: 1;
+  display: inline-block;
+  transform: translateY(1px);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.audio-text.playing {
+  color: var(--audio-text-playing);
+  background-color: var(--audio-text-playing-bg);
+  font-style: italic;
+}
+
+.audio-text.playing::before {
+  content: '⏸';
+}
+
+.audio-text.loading {
+  opacity: 0.7;
+}
+
+.spinner {
+  display: inline-block;
+  width: 0.9em;
+  height: 0.9em;
+  border: 2px solid currentColor;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-left: 0.1rem;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .audio-text { transition: none; }
+  .spinner { animation: none; }
+}
+
+@media (prefers-color-scheme: dark) {
+  .audio-text {
+    --audio-text-fg: #7ab5ff;
+    --audio-text-fg-hover: #a8cdff;
+    --audio-text-bg-hover: rgba(122, 181, 255, 0.12);
+    --audio-text-bg-active: rgba(122, 181, 255, 0.18);
+    --audio-text-playing: #69db8f;
+    --audio-text-playing-bg: rgba(105, 219, 143, 0.12);
+  }
+}
+
+/* Respect theme toggle via Bootstrap's data attribute */
+[data-bs-theme="dark"] .audio-text {
+  --audio-text-fg: #7ab5ff;
+  --audio-text-fg-hover: #a8cdff;
+  --audio-text-bg-hover: rgba(122, 181, 255, 0.12);
+  --audio-text-bg-active: rgba(122, 181, 255, 0.18);
+  --audio-text-playing: #69db8f;
+  --audio-text-playing-bg: rgba(105, 219, 143, 0.12);
+}
+</style>

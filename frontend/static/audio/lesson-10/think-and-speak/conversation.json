@@ -1,0 +1,79 @@
+[
+  {
+    "type": "dialogue",
+    "audio": "Ty - 1.mp3",
+    "speaker": "Ty",
+    "text": "Chị kia là chị gái của cậu hả?",
+    "en": "Is that your older sister?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na - 1.mp3",
+    "speaker": "Na",
+    "text": "Ừa nè, chị đó là Linh. Chị ấy 19 tuổi rồi.",
+    "en": "Yeah, that's Linh. She's 19."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 2.mp3",
+    "speaker": "Ty",
+    "text": "Chị ấy có giống cậu không?",
+    "en": "Is she like you?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na - 2.mp3",
+    "speaker": "Na",
+    "text": "Có chứ, ở một vài điểm. Chị ấy rất vui tính. Và chị ấy cũng thân thiện, giống mình nè hihi.",
+    "en": "Yes, in some ways. She's very funny. And she's friendly, like me."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 3.mp3",
+    "speaker": "Ty",
+    "text": "Thiệt hông đó!",
+    "en": "Really?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na - 3.mp3",
+    "speaker": "Na",
+    "text": "Nhưng mà chúng mình cũng có nhiều điểm khác nhau lắm.",
+    "en": "But we're really different in some ways."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 4.mp3",
+    "speaker": "Ty",
+    "text": "Khác nhau như thế nào?",
+    "en": "How are you different?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na - 4.mp3",
+    "speaker": "Na",
+    "text": "À, chị ấy thì kiên nhẫn lắm. Còn mình thì chẳng kiên nhẫn tí nào.",
+    "en": "Well, she's very patient. I'm not patient at all."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 5.mp3",
+    "speaker": "Ty",
+    "text": "Đúng vậy, cậu còn cứng đầu nữa haha?",
+    "en": "Yeah, and you're also stubborn, haha."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na - 5.mp3",
+    "speaker": "Na",
+    "text": "Ê nha, hồi nàooooooooooo? (Giận dữ)",
+    "en": "Hey! When?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 6.mp3",
+    "speaker": "Ty",
+    "text": "Đó, còn hung dữ nữa chứ. Haizzz",
+    "en": "See? You're fierce too. Haizz."
+  }
+]

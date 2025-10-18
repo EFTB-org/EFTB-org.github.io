@@ -1,0 +1,79 @@
+[
+  {
+    "type": "dialogue",
+    "audio": "Ty - 1.mp3",
+    "speaker": "Ty",
+    "text": "Na ơi, bà mua quà cho gia đình chưa?",
+    "en": "Hi Na! Have you got gifts for your family yet?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na - 1.mp3",
+    "speaker": "Na",
+    "text": "Chưa, tui cũng chưa biết mua gì cho mấy chị em nữa.",
+    "en": "No, I have no idea what to get my sisters"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 2.mp3",
+    "speaker": "Ty",
+    "text": "Bà có mấy chị em vậy?",
+    "en": "How many sisters do you have?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na - 2.mp3",
+    "speaker": "Na",
+    "text": "Tui có hai bà chị với một nhỏ em gái.",
+    "en": "I have two older sisters and one younger sister"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 3.mp3",
+    "speaker": "Ty",
+    "text": "Ủa, vậy sao bà không mua cho họ móc chìa khóa?",
+    "en": "Why don’t you get them some key chains?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na - 3.mp3",
+    "speaker": "Na",
+    "text": "Nghe cũng hay đó. Nhưng còn phải kiếm gì cho thằng em trai tui nữa.",
+    "en": "That sounds good. And now something for my younger brother"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 4.mp3",
+    "speaker": "Ty",
+    "text": "Gia đình bà đông vui ghê! Em trai bà bao nhiêu tuổi rồi?",
+    "en": "You have a big family! How old is your younger brother?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na - 4.mp3",
+    "speaker": "Na",
+    "text": "Nó mới 12 thôi.",
+    "en": "He’s 12"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 5.mp3",
+    "speaker": "Ty",
+    "text": "Thằng bé tên gì ý nhờ?",
+    "en": "What’s his name?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na - 5.mp3",
+    "speaker": "Na",
+    "text": "Thằng nhóc đó tên Tèo á. Nghịch như khỉ vậy á!",
+    "en": "His name is Teo. He’s very mischievous."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 6.mp3",
+    "speaker": "Ty",
+    "text": "Ừa, chị e bà giống nhau mà. He he",
+    "en": "Yeah, you’re all the same. Haha."
+  }
+]

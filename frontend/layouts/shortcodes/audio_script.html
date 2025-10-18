@@ -1,0 +1,343 @@
+<div id="audio-player-{{ .Ordinal }}" class="audio-player" role="application" aria-label="Audio conversation player">
+  <div class="controls">
+    <button id="prev-button-{{ .Ordinal }}" class="skip-button" aria-label="Previous line">Previous</button>
+    <button id="play-button-{{ .Ordinal }}" class="conversation-button" aria-label="Play the conversation" disabled>Play the conversation</button>
+    <button id="next-button-{{ .Ordinal }}" class="skip-button" aria-label="Next line">Next</button>
+    <select id="speed-control-{{ .Ordinal }}" aria-label="Playback speed">
+      <option value="0.5">0.5x</option>
+      <option value="0.75">0.75x</option>
+      <option value="1.0" selected>1.0x</option>
+      <option value="1.25">1.25x</option>
+      <option value="1.5">1.5x</option>
+      <option value="2.0">2.0x</option>
+    </select>
+  </div>
+  <div id="loading-{{ .Ordinal }}" class="loading" aria-live="polite">Loading audio...</div>
+  <div class="transcript-container" id="transcript-{{ .Ordinal }}" aria-label="Conversation transcript"></div>
+</div>
+
+<script>
+(function() {
+  // Constants and DOM elements
+  const ordinal = Number('{{ .Ordinal }}');
+  const playButton = document.getElementById(`play-button-${ordinal}`);
+  const prevButton = document.getElementById(`prev-button-${ordinal}`);
+  const nextButton = document.getElementById(`next-button-${ordinal}`);
+  const speedControl = document.getElementById(`speed-control-${ordinal}`);
+  const transcriptContainer = document.getElementById(`transcript-${ordinal}`);
+  const loadingDiv = document.getElementById(`loading-${ordinal}`);
+
+  const scriptJson = '{{ .Get "json" }}';
+  const audioPath = '{{ .Get "audiopath" }}';
+  const pauseDuration = 1000; // Pause between lines in milliseconds
+
+  // Playback state
+  let preloadedAudios = [];
+  let currentAudio = null;
+  let currentIndex = -1;
+  let state = 'stopped'; // 'stopped', 'playing', 'paused'
+  let playbackSpeed = 1.0;
+  let timeoutId = null;
+
+  // Speed control handler
+  speedControl.addEventListener('change', () => {
+    playbackSpeed = parseFloat(speedControl.value);
+    if (currentAudio) currentAudio.playbackRate = playbackSpeed;
+  });
+
+  // Load and initialize audio
+  fetch(scriptJson)
+    .then(response => response.json())
+    .then(scriptArray => {
+      // Preload audio files
+      const preloadPromises = scriptArray.map(item => {
+        return new Promise((resolve, reject) => {
+          const audio = new Audio(audioPath + item.audio);
+          audio.preload = 'auto';
+          audio.addEventListener('canplaythrough', () => resolve(audio));
+          audio.addEventListener('error', () => reject(new Error(`Failed to load ${item.audio}`)));
+        });
+      });
+
+      loadingDiv.style.display = 'block';
+      Promise.all(preloadPromises)
+        .then(audios => {
+          preloadedAudios = audios;
+          loadingDiv.style.display = 'none';
+          playButton.disabled = false;
+          playButton.setAttribute('aria-disabled', 'false');
+
+          // Build transcript
+          scriptArray.forEach((item, index) => {
+            const lineElement = document.createElement('p');
+            lineElement.classList.add('transcript-line');
+            lineElement.setAttribute('role', 'button');
+            lineElement.setAttribute('tabindex', '0');
+            lineElement.setAttribute('aria-label', `Play line ${index + 1}: ${item.type === 'dialogue' ? `${item.speaker}: ${item.text}` : `Effect: ${item.name}`}`);
+            if (item.type === 'dialogue') {
+              const speaker = document.createElement('strong');
+              speaker.textContent = `${item.speaker}: `;
+              lineElement.appendChild(speaker);
+              lineElement.appendChild(document.createTextNode(item.text));
+            } else if (item.type === 'effect') {
+              const effect = document.createElement('i');
+              effect.textContent = `Effect: ${item.name}`;
+              lineElement.appendChild(effect);
+            }
+            lineElement.dataset.index = index;
+            lineElement.addEventListener('click', () => playSingleClip(index));
+            lineElement.addEventListener('keydown', e => {
+              if (e.key === 'Enter' || e.key === ' ') playSingleClip(index);
+            });
+            transcriptContainer.appendChild(lineElement);
+          });
+
+          // Playback functions
+          function playSingleClip(index) {
+            if (timeoutId) clearTimeout(timeoutId);
+            if (currentAudio) currentAudio.pause();
+            currentIndex = Math.max(0, Math.min(index, scriptArray.length - 1));
+            currentAudio = preloadedAudios[currentIndex];
+            currentAudio.currentTime = 0; // Reset to start
+            currentAudio.playbackRate = playbackSpeed;
+            highlightLine(currentIndex);
+            currentAudio.play();
+            state = 'stopped';
+            playButton.textContent = 'Play the conversation';
+            playButton.setAttribute('aria-label', 'Play the conversation');
+            currentAudio.onended = () => removeHighlight();
+          }
+
+          function playSequence() {
+            if (state === 'paused') {
+              currentAudio.play();
+              state = 'playing';
+            } else {
+              if (currentAudio) currentAudio.pause();
+              currentIndex = currentIndex < 0 ? 0 : currentIndex;
+              playNext();
+            }
+            state = 'playing';
+            playButton.textContent = 'Pause the conversation';
+            playButton.setAttribute('aria-label', 'Pause the conversation');
+          }
+
+          function pausePlayback() {
+            if (currentAudio) currentAudio.pause();
+            if (timeoutId) clearTimeout(timeoutId);
+            state = 'paused';
+            playButton.textContent = 'Resume the conversation';
+            playButton.setAttribute('aria-label', 'Resume the conversation');
+          }
+
+          function playNext() {
+            if (currentIndex >= scriptArray.length) {
+              state = 'stopped';
+              playButton.textContent = 'Play the conversation';
+              playButton.setAttribute('aria-label', 'Play the conversation');
+              removeHighlight();
+              return;
+            }
+            if (currentAudio) currentAudio.pause();
+            currentAudio = preloadedAudios[currentIndex];
+            currentAudio.currentTime = 0;
+            currentAudio.playbackRate = playbackSpeed;
+            highlightLine(currentIndex);
+            currentAudio.play();
+            currentAudio.onended = () => {
+              if (state === 'playing' && currentIndex < scriptArray.length - 1) {
+                timeoutId = setTimeout(() => {
+                  currentIndex++;
+                  playNext();
+                }, pauseDuration);
+              } else {
+                state = 'stopped';
+                playButton.textContent = 'Play the conversation';
+                playButton.setAttribute('aria-label', 'Play the conversation');
+                removeHighlight();
+              }
+            };
+          }
+
+          // Skip controls
+          prevButton.addEventListener('click', () => {
+            if (currentIndex > 0) {
+              currentIndex--;
+              if (state === 'playing') {
+                if (timeoutId) clearTimeout(timeoutId);
+                playNext();
+              } else {
+                playSingleClip(currentIndex);
+              }
+            }
+          });
+
+          nextButton.addEventListener('click', () => {
+            if (currentIndex < scriptArray.length - 1) {
+              currentIndex++;
+              if (state === 'playing') {
+                if (timeoutId) clearTimeout(timeoutId);
+                playNext();
+              } else {
+                playSingleClip(currentIndex);
+              }
+            } else if (currentIndex < 0) {
+              playSingleClip(0); // Start from first if no current index
+            }
+          });
+
+          // Play/Pause toggle
+          playButton.addEventListener('click', () => {
+            if (state === 'playing') pausePlayback();
+            else playSequence();
+          });
+
+          // Highlighting helpers
+          function highlightLine(index) {
+            transcriptContainer.querySelectorAll('.transcript-line').forEach(el => {
+              el.classList.remove('playing');
+              el.removeAttribute('aria-current');
+            });
+            const line = transcriptContainer.querySelector(`[data-index="${index}"]`);
+            if (line) {
+              line.classList.add('playing');
+              line.setAttribute('aria-current', 'true');
+            }
+          }
+
+          function removeHighlight() {
+            transcriptContainer.querySelectorAll('.transcript-line').forEach(el => {
+              el.classList.remove('playing');
+              el.removeAttribute('aria-current');
+            });
+          }
+        })
+        .catch(error => {
+          console.error('Error preloading audio:', error);
+          loadingDiv.textContent = 'Failed to load audio';
+          loadingDiv.setAttribute('aria-live', 'assertive');
+        });
+    })
+    .catch(error => {
+      console.error('Error loading JSON:', error);
+      loadingDiv.textContent = 'Failed to load script';
+    });
+})();
+</script>
+
+<style>
+.audio-player {
+  padding: 10px;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.conversation-button {
+  border-radius: 6px;
+  background-color: #0a37a7;
+  color: white;
+  border: none;
+  padding: 5px 15px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.05s ease;
+}
+
+.conversation-button:hover {
+  background-color: #082d8a;
+}
+
+.conversation-button:active { transform: translateY(1px); }
+.conversation-button:focus-visible { outline: none; box-shadow: 0 0 0 3px rgba(10, 102, 194, 0.35), 0 0 0 5px rgba(10, 102, 194, 0.18); }
+
+.skip-button {
+  background-color: #666;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.05s ease;
+}
+
+.skip-button:hover {
+  background-color: #444;
+}
+
+.skip-button:active { transform: translateY(1px); }
+.skip-button:focus-visible { outline: none; box-shadow: 0 0 0 3px rgba(10, 102, 194, 0.35), 0 0 0 5px rgba(10, 102, 194, 0.18); }
+
+select {
+  background-color: #0a37a7;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+select:hover {
+  background-color: #082d8a;
+}
+
+select option {
+  background-color: white;
+  color: black;
+}
+
+.loading {
+  display: none;
+  font-style: italic;
+  color: #666;
+  margin: 10px 0;
+}
+
+.transcript-container {
+  margin: 10px 0;
+  padding: 10px;
+  border: 3px dashed #e0e0e0;
+  border-radius: 5px;
+}
+
+.transcript-line {
+  cursor: pointer;
+  margin: 5px 0;
+  padding: 2px;
+}
+
+.transcript-line.playing {
+  background-color: #e0e0e0;
+  font-weight: bold;
+}
+
+/* Dark mode (user preference) */
+@media (prefers-color-scheme: dark) {
+  .conversation-button { background-color: #1e293b; color: #dbe5ff; }
+  .conversation-button:hover { background-color: #243043; }
+  .skip-button { background-color: #334155; color: #e2e8f0; }
+  .skip-button:hover { background-color: #1f2937; }
+  select { background-color: #1e293b; color: #dbe5ff; }
+  select:hover { background-color: #243043; }
+  select option { background-color: #0b1220; color: #e2e8f0; }
+  .loading { color: #c9d4f0; }
+  .transcript-container { border-color: #2b3a55; }
+  .transcript-line.playing { background-color: #1f2b46; color: #f5f7ff; }
+}
+
+/* Respect theme toggle via Bootstrap data attribute */
+[data-bs-theme="dark"] .conversation-button { background-color: #1e293b; color: #dbe5ff; }
+[data-bs-theme="dark"] .conversation-button:hover { background-color: #243043; }
+[data-bs-theme="dark"] .skip-button { background-color: #334155; color: #e2e8f0; }
+[data-bs-theme="dark"] .skip-button:hover { background-color: #1f2937; }
+[data-bs-theme="dark"] select { background-color: #1e293b; color: #dbe5ff; }
+[data-bs-theme="dark"] select:hover { background-color: #243043; }
+[data-bs-theme="dark"] select option { background-color: #0b1220; color: #e2e8f0; }
+[data-bs-theme="dark"] .loading { color: #c9d4f0; }
+[data-bs-theme="dark"] .transcript-container { border-color: #2b3a55; }
+[data-bs-theme="dark"] .transcript-line.playing { background-color: #1f2b46; color: #f5f7ff; }
+</style>

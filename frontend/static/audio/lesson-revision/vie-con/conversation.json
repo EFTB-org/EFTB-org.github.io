@@ -1,0 +1,110 @@
+[
+  {
+    "type": "dialogue",
+    "audio": "Teo_-2.mp3",
+    "speaker": "Tẹo",
+    "text": "Chào buổi chiều nha, Tý!"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Teo_-3.mp3",
+    "speaker": "Tẹo",
+    "text": "Ê Tý! Dạo này sao rồi?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty_1.mp3",
+    "speaker": "Tý",
+    "text": "Chào Tẹo! Tớ ổn lắm, cảm ơn nha. Còn cậu thì sao?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Teo_-4.mp3",
+    "speaker": "Tẹo",
+    "text": "Tớ cũng ổn nè! Mà... bạn kia là ai vậy?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty_2.mp3",
+    "speaker": "Tý",
+    "text": "À, đây là bạn tớ – Na. Cậu ấy mới chuyển tới trường mình á."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Teo_-5.mp3",
+    "speaker": "Tẹo",
+    "text": "Chào Na! Rất vui được gặp cậu. Tớ là Tẹo Nguyễn."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na-1.mp3",
+    "speaker": "Na",
+    "text": "Chào Tẹo! Tớ cũng vui được gặp cậu. Tớ là Na Lê."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Teo_-6.mp3",
+    "speaker": "Tẹo",
+    "text": "Ủa, cậu nói lại họ cậu được không?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na-3.mp3",
+    "speaker": "Na",
+    "text": "Dạ được. Họ của tớ là Lê – L-E."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Teo_-7.mp3",
+    "speaker": "Tẹo",
+    "text": "Ừa nè! Cậu cho tớ xin email được không?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na-5.mp3",
+    "speaker": "Na",
+    "text": "Email của tớ là: nana.le456@gmail.com nha."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty_3.mp3",
+    "speaker": "Tý",
+    "text": "Mà Na thường hay nói chuyện với bạn bè kiểu gì vậy?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na-9.mp3",
+    "speaker": "Na",
+    "text": "Tớ nhắn tin hoặc gặp trực tiếp nè. Tớ không xài mạng xã hội nhiều đâu."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Teo_-8.mp3",
+    "speaker": "Tẹo",
+    "text": "Tớ cũng vậy á. Tụi tớ hay tám chuyện về trường lớp với nhạc."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Teo_-9.mp3",
+    "speaker": "Tẹo",
+    "text": "Mà, thời tiết hôm nay đẹp ghê ha?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na-7.mp3",
+    "speaker": "Na",
+    "text": "Ừ, trời vừa ấm vừa có nắng nè ha!"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty_4.mp3",
+    "speaker": "Tý",
+    "text": "Hay tụi mình đi dạo tý đi?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Teo_-10.mp3",
+    "speaker": "Tẹo",
+    "text": "Được chứ, đi thuii."
+  }
+]

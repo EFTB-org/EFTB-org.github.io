@@ -1,0 +1,31 @@
+[
+  {
+    "type": "effect",
+    "name": "soft park ambiance",
+    "audio": "parkambience.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "John",
+    "text": "Good morning, Mr. Parker! How are you?",
+    "audio": "good_morning_mr_parker_how_are_you.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Mr. Parker",
+    "text": "I'm fine, thank you! And you?",
+    "audio": "im_fine_thank_you_and_you.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "John",
+    "text": "I'm good. I just moved to a new house.",
+    "audio": "im_good_i_just_moved_to_a_new_house.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Mr. Parker",
+    "text": "Oh! Where is your house?",
+    "audio": "oh_where_is_your_house.mp3"
+  }
+]

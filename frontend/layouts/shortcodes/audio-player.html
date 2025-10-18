@@ -1,0 +1,116 @@
+{{ $src := .Get "src" }}
+{{ $id := delimit (shuffle (seq 999)) "" }}
+<button id="audioButton{{ $id }}" class="audio-button">
+  <span class="spinner" style="display:none;"></span>
+  <span class="play-text">Play</span>
+  <span class="pause-text" style="display:none;">Pause</span>
+</button>
+<audio id="audio{{ $id }}" preload="none">
+  <source src="{{ $src | relURL }}" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<script>
+(function() {
+  const button = document.getElementById('audioButton{{ $id }}');
+  const audio = document.getElementById('audio{{ $id }}');
+  const spinner = button.querySelector('.spinner');
+  const playText = button.querySelector('.play-text');
+  const pauseText = button.querySelector('.pause-text');
+
+  button.addEventListener('click', function() {
+    if (audio.paused || audio.ended) {
+      // Show spinner while loading
+      spinner.style.display = 'inline-block';
+      playText.style.display = 'none';
+      pauseText.style.display = 'none';
+
+      // Reset currentTime only if the audio has ended
+      if (audio.ended) {
+        audio.currentTime = 0;
+      }
+
+      // Play the audio and handle the Promise
+      audio.play().then(() => {
+        // Playback started, hide spinner and show pause text
+        spinner.style.display = 'none';
+        pauseText.style.display = 'inline';
+      }).catch((error) => {
+        // Playback failed, revert to play state
+        console.error('Playback failed:', error);
+        spinner.style.display = 'none';
+        playText.style.display = 'inline';
+      });
+    } else {
+      // Pause the audio
+      audio.pause();
+      pauseText.style.display = 'none';
+      playText.style.display = 'inline';
+      spinner.style.display = 'none';
+    }
+  });
+
+  // Reset button text when audio ends
+  audio.addEventListener('ended', function() {
+    pauseText.style.display = 'none';
+    playText.style.display = 'inline';
+    spinner.style.display = 'none';
+  });
+})();
+</script>
+
+<style>
+.audio-button {
+  display: inline-flex;
+  min-width: 50px;
+  border-radius: 6px;
+  background-color: #0a37a7;
+  color: rgb(255, 255, 255);
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.05s ease;
+  padding: 0;
+}
+
+.audio-button:hover {
+  background-color: #082d8a;
+}
+
+.audio-button:active { transform: translateY(1px); }
+.audio-button:focus-visible { box-shadow: 0 0 0 3px rgba(10, 102, 194, 0.35), 0 0 0 5px rgba(10, 102, 194, 0.18); outline: none; }
+
+.spinner {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 2px solid currentColor;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.play-text, .pause-text {
+  line-height: 1;
+  width: 100%;
+  text-align: center;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+/* Dark mode (user preference) */
+@media (prefers-color-scheme: dark) {
+  .audio-button { background-color: #1e293b; color: #dbe5ff; }
+  .audio-button:hover { background-color: #243043; }
+}
+
+/* Respect theme toggle via Bootstrap data attribute */
+[data-bs-theme="dark"] .audio-button { background-color: #1e293b; color: #dbe5ff; }
+[data-bs-theme="dark"] .audio-button:hover { background-color: #243043; }
+</style>

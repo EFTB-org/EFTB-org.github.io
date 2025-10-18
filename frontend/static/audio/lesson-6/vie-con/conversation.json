@@ -1,0 +1,65 @@
+[
+  {
+    "type": "dialogue",
+    "audio": "Ty - 1.mp3",
+    "speaker": "Tý",
+  "text": "Ê, Trấn Thành có phim mới ra đó!",
+  "en": "Tran Thanh has a new movie out."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na - 1.mp3",
+    "speaker": "Na",
+  "text": "Ảnh là diễn viên nam tui thích nhất luôn. Còn ông, nam diễn viên ông mê nhất là ai?",
+  "en": "He’s my favorite actor. Who’s your favorite actor?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 2.mp3",
+    "speaker": "Tý",
+  "text": "Thiệt ra tui không có thần tượng nam nào hết á, nhưng nữ diễn viên tui thích là Minh Hằng. Còn bà?",
+  "en": "I don’t really have one, but my favorite actress is Minh Hang. Who’s yours?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na - 2.mp3",
+    "speaker": "Na",
+  "text": "Tui mê Khả Ngân nhất luôn!",
+  "en": "My favorite is Kha Ngan."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 3.mp3",
+    "speaker": "Tý",
+  "text": "Thế còn phim mà bà thích nhất là gì?",
+  "en": "What’s your favorite movie?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na - 3.mp3",
+    "speaker": "Na",
+  "text": "Khó ghê á, tui thích nhiều phim lắm",
+  "en": "That’s a hard question. I like a lot of movies."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 4.mp3",
+    "speaker": "Tý",
+  "text": "Tui mê phim Titanic cực luôn!",
+  "en": "I’m crazy about Titanic."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na - 4.mp3",
+    "speaker": "Na",
+  "text": "Thiệt hả? Phim đó cũ xì rồi mà!",
+  "en": "Are you serious? That’s an old movie."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 5.mp3",
+    "speaker": "Tý",
+  "text": "Ừ, nhưng mà hay cực luôn á!",
+  "en": "Yes, but it’s great!"
+  }
+]

@@ -1,0 +1,95 @@
+[
+  {
+    "type": "effect",
+    "audio": "rings_n_pickup.mp3",
+    "name": "(Tiếng điện thoại và nhấc máy)"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Teo - 1.mp3",
+    "speaker": "Teo",
+    "text": "Hello?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 1.mp3",
+    "speaker": "Ty",
+    "text": "Hi, Tẹo! It's me!"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Teo - 2.mp3",
+    "speaker": "Teo",
+    "text": "Huh, who is this?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 2.mp3",
+    "speaker": "Ty",
+    "text": "It's me! Tý here!"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 3.mp3",
+    "speaker": "Ty",
+    "text": "I just got a new phone number."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Teo - 3.mp3",
+    "speaker": "Teo",
+    "text": "Oh, Tý! What's up?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 4.mp3",
+    "speaker": "Ty",
+    "text": "Can you help me with my homework?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Teo - 4.mp3",
+    "speaker": "Teo",
+    "text": "Sure, but I'm a bit busy right now."
+  },
+  {
+    "type": "effect",
+    "audio": "typing.mp3",
+    "name": "(tiếng gõ bàn phím)"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Teo - 5.mp3",
+    "speaker": "Teo",
+    "text": "Can you give me an email?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 5.mp3",
+    "speaker": "Ty",
+    "text": "What's your email address?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Teo - 6.mp3",
+    "speaker": "Teo",
+    "text": "It's teo@gmail.com."
+  },
+  {
+    "type": "effect",
+    "audio": "karaoke.mp3",
+    "name": "(tiếng karoke ở ngoài)"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 6.mp3",
+    "speaker": "Ty",
+    "text": "Huh? Can you repeat that?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Teo - 7.mp3",
+    "speaker": "Teo",
+    "text": "It’s teo@gmail.com!"
+  }
+]

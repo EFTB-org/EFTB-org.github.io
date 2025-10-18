@@ -1,0 +1,19 @@
+[
+  {
+    "type": "effect",
+    "name": "\ud83d\udeb6 Footsteps approaching",
+    "audio": "rushing.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Mr. Parker",
+    "text": "Huh? Look! A stranger is in the park.",
+    "audio": "huh_look_a_stranger_is_in_the_park.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "John",
+    "text": "No, that's our new colleague!",
+    "audio": "no_thats_our_new_colleague.mp3"
+  }
+]

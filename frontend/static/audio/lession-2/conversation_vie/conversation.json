@@ -1,0 +1,95 @@
+[
+  {
+    "type": "effect",
+    "audio": "rings_n_pickup.mp3",
+    "name": "(Tiếng điện thoại và nhấc máy)"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Teo - 1.mp3",
+    "speaker": "Tẹo",
+    "text": "Aloooooooooooooo?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 1.mp3",
+    "speaker": "Tý ",
+    "text": "Chào Tẹo! Là tớ đây!"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Teo - 2.mp3",
+    "speaker": "Tẹo",
+    "text": "Ơ... ai đấy?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 2.mp3",
+    "speaker": "Tý ",
+    "text": "Là tớ mà! Tý đây!"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 3.mp3",
+    "speaker": "Tý ",
+    "text": "Tớ vừa đổi số điện thoại mới nè."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Teo - 3.mp3",
+    "speaker": "Tẹo",
+    "text": "À, Tý hả! Có chuyện gì thế?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 4.mp3",
+    "speaker": "Tý ",
+    "text": "Cậu giúp tớ làm bài tập được không?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Teo - 4.mp3",
+    "speaker": "Tẹo",
+    "text": "Được chứ, nhưng giờ tớ hơi bận một chút."
+  },
+  {
+    "type": "effect",
+    "audio": "typing.mp3",
+    "name": "(tiếng gõ bàn phím)"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Teo - 5.mp3",
+    "speaker": "Tẹo",
+    "text": "Cậu gửi mail cho tớ được không?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 5.mp3",
+    "speaker": "Tý ",
+    "text": "Email của cậu là gì vậy?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Teo - 6.mp3",
+    "speaker": "Tẹo",
+    "text": "Là teo@gmail.com."
+  },
+  {
+    "type": "effect",
+    "audio": "karaoke.mp3",
+    "name": "(tiếng karoke ở ngoài)"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 6.mp3",
+    "speaker": "Tý ",
+    "text": "Hả? Cậu nhắc lại giúp tớ với!"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Teo - 7.mp3",
+    "speaker": "Tẹo",
+    "text": "Là t-e-o-@-gmail.com đó!"
+  }
+]

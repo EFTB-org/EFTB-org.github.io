@@ -1,0 +1,25 @@
+[
+  {
+    "type": "effect",
+    "name": "\ud83c\udf43 Wind blowing sound",
+    "audio": "wind.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "John",
+    "text": "Near the park. I come here every day.",
+    "audio": "near_the_park_i_come_here_every_day.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Mr. Parker",
+    "text": "That's nice! Do you see the boss?",
+    "audio": "thats_nice_do_you_see_the_boss.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "John",
+    "text": "Yes, our boss is at work now.",
+    "audio": "yes_our_boss_is_at_work_now.mp3"
+  }
+]

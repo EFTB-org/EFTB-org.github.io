@@ -1,0 +1,23 @@
+[project]
+name = "python-scripts"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "python-dotenv>=1.0.0",
+    "google-genai>=1.29.0",
+    "groq>=0.31.0",
+    "gTTS>=2.5.3",
+    "markitdown>=0.0.1a3",
+    "mdpd>=0.2.1",
+    "pydub>=0.25.1",
+    "requests>=2.32.3",
+    "soundfile>=0.13.1",
+    "tqdm>=4.67.1",
+    "kittentts",
+    "beautifulsoup4>=4.13.3",
+]
+
+[tool.uv.sources]
+kittentts = { url = "https://github.com/KittenML/KittenTTS/releases/download/0.1/kittentts-0.1.0-py3-none-any.whl" }

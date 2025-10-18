@@ -1,0 +1,13 @@
+[
+  {"type": "dialogue", "audio": "Ty - 1.mp3", "speaker": "Ty", "text": "Hi Na! Have you got gifts for your family yet?"},
+  {"type": "dialogue", "audio": "Na - 1.mp3", "speaker": "Na", "text": "No, I have no idea what to get my sisters"},
+  {"type": "dialogue", "audio": "Ty - 2.mp3", "speaker": "Ty", "text": "How many sisters do you have?"},
+  {"type": "dialogue", "audio": "Na - 2.mp3", "speaker": "Na", "text": "I have two older sisters and one younger sister"},
+  {"type": "dialogue", "audio": "Ty - 3.mp3", "speaker": "Ty", "text": "Why don’t you get them some key chains?"},
+  {"type": "dialogue", "audio": "Na - 3.mp3", "speaker": "Na", "text": "That sounds good. And now something for my younger brother"},
+  {"type": "dialogue", "audio": "Ty - 4.mp3", "speaker": "Ty", "text": "You have a big family! How old is your younger brother?"},
+  {"type": "dialogue", "audio": "Na - 4.mp3", "speaker": "Na", "text": "He’s 12"},
+  {"type": "dialogue", "audio": "Ty - 5.mp3", "speaker": "Ty", "text": "What’s his name?"},
+  {"type": "dialogue", "audio": "Na - 5.mp3", "speaker": "Na", "text": "His name is Teo. He’s very mischievous."},
+  {"type": "dialogue", "audio": "Ty - 6.mp3", "speaker": "Ty", "text": "Yeah, you’re all the same. Haha."}
+]

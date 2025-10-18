@@ -1,0 +1,74 @@
+[
+  {
+    "type": "dialogue",
+    "audio": "Ty - 1.mp3",
+    "speaker": "Ty",
+    "text": "Wow, it's our first day in Vũng Tàu."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 2.mp3",
+    "speaker": "Ty",
+    "text": "What do you think about kayaking? Want to try it?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na - 1.mp3",
+    "speaker": "Na",
+    "text": "It doesn't seem safe to me."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 3.mp3",
+    "speaker": "Ty",
+    "text": "Really? I'm sure it's safe."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 4.mp3",
+    "speaker": "Ty",
+    "text": "How do you feel about rock climbing?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na - 2.mp3",
+    "speaker": "Na",
+    "text": "It looks really hard."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na - 3.mp3",
+    "speaker": "Na",
+    "text": "How about we try another activity?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 5.mp3",
+    "speaker": "Ty",
+    "text": "Do you think bungee jumping looks fun?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na - 4.mp3",
+    "speaker": "Na",
+    "text": "Um, no. That is the scariest thing I have ever seen."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 6.mp3",
+    "speaker": "Ty",
+    "text": "So, what do you want to do?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na - 5.mp3",
+    "speaker": "Na",
+    "text": "I just want to walk around today"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 7.mp3",
+    "speaker": "Ty",
+    "text": "Fine"
+  }
+]
