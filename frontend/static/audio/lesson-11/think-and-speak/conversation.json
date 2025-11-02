@@ -1,0 +1,100 @@
+[
+  {
+    "type": "dialogue",
+    "audio": "Na 1.mp3",
+    "speaker": "Na",
+    "text": "Ê Tý, dạo này ông sao rồi?",
+    "en": "Hey, Ty! How are things?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty 1.mp3",
+    "speaker": "Ty",
+    "text": "Ổn lắm, cảm ơn bà nha. Nay nhìn bà xinh ghê á!",
+    "en": "Great, thanks. You look really nice today!"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na 2.mp3",
+    "speaker": "Na",
+    "text": "Còn phải nói, tui thì lúc nào chả xinh hihi.",
+    "en": "Of course! I'm always pretty, right?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty 2.mp3",
+    "speaker": "Ty",
+    "text": "Umh… Ý mình là cái áo xinh á.",
+    "en": "Uh... I mean, your shirt is nice."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na 3.mp3",
+    "speaker": "Na",
+    "text": "Eehhh…. thì cái áo xinh, tui cũng xinh mà. Đúng hông?",
+    "en": "Hey… The shirt is nice and I'm nice too, right?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty 3.mp3",
+    "speaker": "Ty",
+    "text": "Umh… đúng được chưa?",
+    "en": "Okay okay, you win."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na 4.mp3",
+    "speaker": "Na",
+    "text": "Mà cái áo này chị mình tặng đó.",
+    "en": "You know, it was a gift from my sister."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty 4.mp3",
+    "speaker": "Ty",
+    "text": "Wow, chị bà đỉnh ghê. Màu này hợp với bà lắm luôn!",
+    "en": "Wow, your sister's awesome! That color looks really good on you."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na 5.mp3",
+    "speaker": "Na",
+    "text": "Ừa nè, ông dễ thương ghê! Ông thích thì tui tặng ông 1 cái?",
+    "en": "Aww, you're so nice! Do you want me to give you one?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty 5.mp3",
+    "speaker": "Ty",
+    "text": "Ủa, Alooooooo? Nhưng mà bà có thể tặng tui đồng hồ nè.",
+    "en": "What? But maybe you can give me a watch instead!"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na 6.mp3",
+    "speaker": "Na",
+    "text": "Okieee nè, để tui tặng ông vào dịp sinh nhật nhé.",
+    "en": "Okay, I'll give you one for your birthday."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty 6.mp3",
+    "speaker": "Ty",
+    "text": "Huhu tuyệt cú mèo lun. Nói chứ bà lúc nào cũng mặc đẹp nhất lớp luôn á.",
+    "en": "Haha, that's great! Seriously, you always dress the best in class."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na 7.mp3",
+    "speaker": "Na",
+    "text": "Biết rồi! Khen hoài. Ủa chết, sắp vô học rồi, tui phải đi nè!",
+    "en": "I know, I know! Oh no, I'm late for class!"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty 7.mp3",
+    "speaker": "Ty",
+    "text": "Ờ, tui cũng vậy. Gặp lại bà sau nha!",
+    "en": "Me too. See you later!"
+  }
+]

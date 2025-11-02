@@ -1,0 +1,86 @@
+[
+  {
+    "type": "dialogue",
+    "audio": "Na - 1.mp3",
+    "speaker": "Na",
+    "text": "Hey, Ty! How are things?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 1.mp3",
+    "speaker": "Ty",
+    "text": "Great, thanks. You look really nice today!"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na - 2.mp3",
+    "speaker": "Na",
+    "text": "Of course! I'm always pretty, right?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 2.mp3",
+    "speaker": "Ty",
+    "text": "Uh… I mean your shirt is nice."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na - 3.mp3",
+    "speaker": "Na",
+    "text": "Hey… The shirt is nice and I'm nice too, right?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 3.mp3",
+    "speaker": "Ty",
+    "text": "Okay, okay, you win."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na - 4.mp3",
+    "speaker": "Na",
+    "text": "You know, it was a gift from my sister."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 4.mp3",
+    "speaker": "Ty",
+    "text": "Wow, your sister's awesome! That color looks really good on you."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na - 5.mp3",
+    "speaker": "Na",
+    "text": "Aww, you're so nice! Do you want me to give you one?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 5.mp3",
+    "speaker": "Ty",
+    "text": "What? But maybe you can give me a watch instead!"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na - 6.mp3",
+    "speaker": "Na",
+    "text": "Okay, I'll give you one for your birthday."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 6.mp3",
+    "speaker": "Ty",
+    "text": "Haha, that's great! Seriously, you always dress the best in class."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na - 7.mp3",
+    "speaker": "Na",
+    "text": "I know, I know! Oh no, I'm late for class!"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 7.mp3",
+    "speaker": "Ty",
+    "text": "Me too. See you later!"
+  }
+]
