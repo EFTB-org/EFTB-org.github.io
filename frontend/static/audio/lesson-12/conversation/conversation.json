@@ -1,0 +1,68 @@
+[
+  {
+    "type": "dialogue",
+    "audio": "Ty - 1.mp3",
+    "speaker": "Ty",
+    "text": "Hey Na, what do you think of this shirt?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na - 1.mp3",
+    "speaker": "Na",
+    "text": "Honestly, yellow isn't really a good color for you."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 2.mp3",
+    "speaker": "Ty",
+    "text": "But I like it because it's made of cotton. I'm sure it'll be cool to wear."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na - 2.mp3",
+    "speaker": "Na",
+    "text": "Yeah, or try the blue one. That color looks nice on you."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 3.mp3",
+    "speaker": "Ty",
+    "text": "By the way, you promised to give me a watch, remember?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na - 3.mp3",
+    "speaker": "Na",
+    "text": "Of course! And you buy me a shirt now, okay?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 4.mp3",
+    "speaker": "Ty",
+    "text": "What?? … Okay, what about the purple sweater?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na - 4.mp3",
+    "speaker": "Na",
+    "text": "I really like it! Thank you so much. It's thick and warm."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na - 5.mp3",
+    "speaker": "Na",
+    "text": "By the way, didn't you say that you don't like shopping?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty - 5.mp3",
+    "speaker": "Ty",
+    "text": "I do, but it's fun when you come with me."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na - 6.mp3",
+    "speaker": "Na",
+    "text": "Awwwww…. I feel the same, hihi."
+  }
+]

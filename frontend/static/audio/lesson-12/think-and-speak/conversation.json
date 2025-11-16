@@ -1,0 +1,79 @@
+[
+  {
+    "type": "dialogue",
+    "audio": "Ty 1.mp3",
+    "speaker": "Ty",
+    "text": "Na ơi, cậu thấy cái áo này thế nào?",
+    "en": "Hey Na, what do you think of this shirt?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na 1.mp3",
+    "speaker": "Na",
+    "text": "Thiệt tình mà nói màu vàng nhìn không hợp với cậu lắm",
+    "en": "Honestly, yellow isn't really a good color for you."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty 2.mp3",
+    "speaker": "Ty",
+    "text": "Nhưng mà tớ thích nó vì nó được làm từ vải cotton. Mặc vô chắc mát lắm đây",
+    "en": "But I like it because it's made of cotton. I'm sure it'll be cool to wear."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na 2.mp3",
+    "speaker": "Na",
+    "text": "Đúng vậy, hay cậu thử áo màu xanh đi. Màu đó trông cậu đẹp trai lắm",
+    "en": "Yeah, or try the blue one. That color looks nice on you."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty 3.mp3",
+    "speaker": "Ty",
+    "text": "Mà nhắc mới nhớ, hôm bữa cậu hứa tặng tớ cái đồng hồ đó, nhớ hông nè?",
+    "en": "By the way, you promised to give me a watch, remember?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na 3.mp3",
+    "speaker": "Na",
+    "text": "Nhớ chứ. Hay là bây giờ cậu tặng lại tớ cái áo đi  hihi",
+    "en": "Of course! And you buy me a shirt now, okay?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty 4.mp3",
+    "speaker": "Ty",
+    "text": "Ủa aloo …. Thôi được rồi, thế cái áo len tím kia thì sao?",
+    "en": "What?? … Okay, what about the purple sweater?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na 4.mp3",
+    "speaker": "Na",
+    "text": "Cái này đẹp đấy! Cảm ơn cậu nhé. Áo dày mà ấm nữa.",
+    "en": "I really like it! Thank you so much. It's thick and warm."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na 5.mp3",
+    "speaker": "Na",
+    "text": "Ờ. Mà nhân tiện, không phải cậu bảo ghét đi mua sắm sao?",
+    "en": "By the way, didn't you say that you don't like shopping?"
+  },
+  {
+    "type": "dialogue",
+    "audio": "Ty 5.mp3",
+    "speaker": "Ty",
+    "text": "Có ghét mà... Nhưng mà có cậu đi cùng tớ thấy vui á.",
+    "en": "I do, but it's fun when you come with me."
+  },
+  {
+    "type": "dialogue",
+    "audio": "Na 6.mp3",
+    "speaker": "Na",
+    "text": "Awwwww…Tớ cũng vậy, hihi",
+    "en": "Awwwww…. I feel the same, hihi."
+  }
+]
