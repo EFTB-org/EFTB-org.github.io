@@ -260,9 +260,16 @@ def generate_line_audio_with_retry(prompt, speaker, voice_name, output_file, log
                   # Exponential backoff: 1s, 2s, 4s, 8s, etc.
                   wait_time = 2 ** attempt
 
-               print(
-                  f"Rate limit hit for {speaker} using key ...{api_key[-4:] if api_key else 'None'}. Waiting {wait_time} seconds before retry {attempt + 1}/{max_retries}...")
-               time.sleep(wait_time)
+               print(f"Rate limit hit for {speaker} using key ...{api_key[-4:] if api_key else 'None'}.")
+               
+               # If we have multiple keys, try the next one immediately (with short delay)
+               if len(key_manager.keys) > 1:
+                     print(f"Switching to next API key (attempt {attempt + 1}/{max_retries})...")
+                     time.sleep(1) # Short delay to prevent tight loop
+               else:
+                     print(f"Waiting {wait_time} seconds before retry {attempt + 1}/{max_retries}...")
+                     time.sleep(wait_time)
+               
                continue
             else:
                # Not a rate limit error or max retries exceeded
@@ -303,30 +310,30 @@ def generate_line_audio(prompt, speaker, voice_name, output_file, log_prompts=Tr
         ),
     )
 
-    try:
-        audio_chunks = []
-        for chunk in client.models.generate_content_stream(
-            model=model,
-            contents=prompt,
-            config=generate_content_config,
-        ):
-            if not _has_audio_data(chunk):
-                continue
+    # try:
+    audio_chunks = []
+    for chunk in client.models.generate_content_stream(
+        model=model,
+        contents=prompt,
+        config=generate_content_config,
+    ):
+        if not _has_audio_data(chunk):
+            continue
 
-            inline_data = chunk.candidates[0].content.parts[0].inline_data
-            if inline_data.data and inline_data.mime_type:
-                data_buffer = _process_audio_data(inline_data)
-                audio_chunks.append(data_buffer)
+        inline_data = chunk.candidates[0].content.parts[0].inline_data
+        if inline_data.data and inline_data.mime_type:
+            data_buffer = _process_audio_data(inline_data)
+            audio_chunks.append(data_buffer)
 
-        if audio_chunks:
-            return _save_audio_file(audio_chunks, output_file)
-        else:
-            print(f"Error: No audio data received from API for {speaker}")
-            return None
-
-    except Exception as e:
-        print(f"Error generating TTS for {speaker}: {e}")
+    if audio_chunks:
+        return _save_audio_file(audio_chunks, output_file)
+    else:
+        print(f"Error: No audio data received from API for {speaker}")
         return None
+
+    # except Exception as e:
+    #     print(f"Error generating TTS for {speaker}: {e}")
+    #     return None
 
 
 def _has_audio_data(chunk):

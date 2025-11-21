@@ -1,0 +1,100 @@
+[
+    {
+        "type": "dialogue",
+        "speaker": "Tý",
+        "text": "Na ơi, hôm nay đi shopping, cậu tính mua gì?",
+        "meaning": "Hey Na, what are you going to buy today?",
+        "audio": "ty_1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Tớ tính mua áo thun và quần jeans nè. Còn cậu thì sao?",
+        "meaning": "I’m thinking of buying a T-shirt and jeans. What about you?",
+        "audio": "na_1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Tý",
+        "text": "Tớ vẫn đang suy nghĩ nè. Cậu thấy cái áo sơ mi xanh kia thế nào?",
+        "meaning": "I’m still deciding. What do you think about that blue shirt?",
+        "audio": "ty_2.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Đẹp mà! Màu xanh hợp với cậu lắm đó.",
+        "meaning": "It’s nice! Blue really suits you.",
+        "audio": "na_2.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Tý",
+        "text": "Thật ư? Tớ cũng thích nữa. Mặc vô chắc mát lắm đây.",
+        "meaning": "Really? I like it too. I’m sure it’ll be cool to wear.",
+        "audio": "ty_3.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "À Tý, tớ đang chọn áo tặng em gái. Cậu có anh chị em gì không?",
+        "meaning": "I’m also choosing a shirt for my little sister. Do you have any brothers or sisters?",
+        "audio": "na_3.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Tý",
+        "text": "Tớ là con một đó. Em gái cậu mấy tuổi rồi?",
+        "meaning": "I’m an only child. How old is your sister?",
+        "audio": "ty_4.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Nó 12 tuổi. Nó hơi nhút nhát nhưng rất thân thiện và hài hước đó.",
+        "meaning": "She’s 12. She’s a bit shy but she’s really friendly and funny.",
+        "audio": "na_4.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Tý",
+        "text": "Dễ thương ghê.",
+        "meaning": "Lovely!",
+        "audio": "ty_5.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Còn cậu thấy tớ thế nào?",
+        "meaning": "And what do you think about me?",
+        "audio": "na_5.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Tý",
+        "text": "Cậu thì hài hước nè, thông minh nhưng đôi khi hơi thiếu kiên nhẫn hehe.",
+        "meaning": "You’re funny and smart, but sometimes a little impatient hehe.",
+        "audio": "ty_6.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Ê nha… tớ chỉ thiếu kiên nhẫn với cậu thôi đó. Lúc nào cũng đem tớ ra làm trò cười hết.",
+        "meaning": "Hey… I’m only impatient with you. You always make fun of me!",
+        "audio": "na_6.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Tý",
+        "text": "Tớ đùa thôi. Mà cái áo này làm từ cotton hả? Nhìn mát ghê.",
+        "meaning": "I’m just kidding. By the way, is this shirt made of cotton? It looks really cool.",
+        "audio": "ty_7.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Ừ, đúng rồi. Tớ sẽ mua nó để làm quà sinh nhật cho em gái tớ nhé.",
+        "meaning": "Yeah, it is. I’m going to buy it as a birthday present for my sister.",
+        "audio": "na_7.mp3"
+    }
+]
