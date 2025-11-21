@@ -1,0 +1,50 @@
+[
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Hi. How’s it going?",
+        "audio": "ty_1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "I’m good, thanks. What about you?",
+        "audio": "na_1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "I’m good too. Oh, by the way, I’m Trần Ngọc Tý. What’s your name?",
+        "audio": "ty_2.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "I’m Hà Na, but you can just call me Na.",
+        "audio": "na_2.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "That’s a cute name! Nice to meet you.",
+        "audio": "ty_3.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Thanks, Tý. Nice to meet you, too.",
+        "audio": "na_3.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Well, Na, it’s time for class. See you later!",
+        "audio": "ty_4.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Yeah, see you later, Tý.",
+        "audio": "na_4.mp3"
+    }
+]

@@ -21,6 +21,38 @@ from google.genai import types
 # Load environment variables from .env file
 load_dotenv()
 
+class KeyManager:
+    """Manages multiple API keys for load balancing."""
+    def __init__(self):
+        self.keys = []
+        self._load_keys()
+        self.current_index = 0
+
+    def _load_keys(self):
+        # Try loading from GEMINI_API_KEYS (comma separated)
+        keys_str = os.environ.get("GEMINI_API_KEYS")
+        if keys_str:
+            self.keys = [k.strip() for k in keys_str.split(",") if k.strip()]
+        
+        # Fallback/Add GEMINI_API_KEY
+        single_key = os.environ.get("GEMINI_API_KEY")
+        if single_key and single_key not in self.keys:
+            self.keys.append(single_key)
+        
+        if not self.keys:
+            print("Warning: No Gemini API keys found in environment variables.")
+
+    def get_next_key(self):
+        """Get the next API key in rotation."""
+        if not self.keys:
+            return None
+        
+        key = self.keys[self.current_index]
+        self.current_index = (self.current_index + 1) % len(self.keys)
+        return key
+
+# Initialize global key manager
+key_manager = KeyManager()
 
 def save_binary_file(file_name, data):
     """Save binary data to file."""
@@ -211,8 +243,11 @@ def generate_line_audio_with_retry(prompt, speaker, voice_name, output_file, log
    """Generate TTS audio for a single line with retry logic for rate limiting."""
 
    for attempt in range(max_retries + 1):
+      # Get a key for this attempt (rotates on each call)
+      api_key = key_manager.get_next_key()
+      
       try:
-            return generate_line_audio(prompt, speaker, voice_name, output_file, log_prompts)
+            return generate_line_audio(prompt, speaker, voice_name, output_file, log_prompts, api_key)
 
       except Exception as e:
             if is_rate_limit_error(e) and attempt < max_retries:
@@ -226,7 +261,7 @@ def generate_line_audio_with_retry(prompt, speaker, voice_name, output_file, log
                   wait_time = 2 ** attempt
 
                print(
-                  f"Rate limit hit for {speaker}. Waiting {wait_time} seconds before retry {attempt + 1}/{max_retries}...")
+                  f"Rate limit hit for {speaker} using key ...{api_key[-4:] if api_key else 'None'}. Waiting {wait_time} seconds before retry {attempt + 1}/{max_retries}...")
                time.sleep(wait_time)
                continue
             else:
@@ -237,10 +272,10 @@ def generate_line_audio_with_retry(prompt, speaker, voice_name, output_file, log
    return None
 
 
-def generate_line_audio(prompt, speaker, voice_name, output_file, log_prompts=True):
+def generate_line_audio(prompt, speaker, voice_name, output_file, log_prompts=True, api_key=None):
     """Generate TTS audio for a single line using streaming API."""
     client = genai.Client(
-        api_key=os.environ.get("GEMINI_API_KEY"),
+        api_key=api_key,
     )
 
     # Log the prompt if requested
@@ -248,6 +283,7 @@ def generate_line_audio(prompt, speaker, voice_name, output_file, log_prompts=Tr
         print(f"\n{'='*60}")
         print(f"PROMPT FOR: {speaker} -> {Path(output_file).name}")
         print(f"VOICE: {voice_name}")
+        print(f"KEY: ...{api_key[-4:] if api_key else 'None'}")
         print(f"{'='*60}")
         print(prompt)
         print(f"{'='*60}\n")

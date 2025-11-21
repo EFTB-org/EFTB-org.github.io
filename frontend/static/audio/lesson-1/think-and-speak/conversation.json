@@ -1,0 +1,58 @@
+[
+    {
+        "type": "dialogue",
+        "speaker": "Tý",
+        "text": "Chào cậu. Cậu khỏe chứ?",
+        "meaning": "Hi. How’s it going?",
+        "audio": "ty_1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Mình tốt, cảm ơn. Còn cậu thì sao?",
+        "meaning": "I’m good, thanks. What about you?",
+        "audio": "na_1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Tý",
+        "text": "Mình cũng ổn. À, mình là Trần Ngọc Tý. Cậu tên gì?",
+        "meaning": "I’m good too. Oh, by the way, I’m Trần Ngọc Tý. What’s your name?",
+        "audio": "ty_2.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Mình là Hà Na. Cậu gọi mình là Na được rồi.",
+        "meaning": "I’m Hà Na, but you can just call me Na.",
+        "audio": "na_2.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Tý",
+        "text": "Tên dễ thương ghê! Rất vui được gặp cậu.",
+        "meaning": "That’s a cute name! Nice to meet you.",
+        "audio": "ty_3.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Cảm ơn Tý. Mình cũng vui khi được gặp cậu.",
+        "meaning": "Thanks, Tý. Nice to meet you too.",
+        "audio": "na_3.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Tý",
+        "text": "Thôi Na, tới giờ học rồi. Gặp lại cậu sau nha.",
+        "meaning": "Well Na, it’s time for class. See you later!",
+        "audio": "ty_4.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Ừ, gặp lại Tý sau nhé.",
+        "meaning": "Yeah, see you later, Tý.",
+        "audio": "na_4.mp3"
+    }
+]
