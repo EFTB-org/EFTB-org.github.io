@@ -38,6 +38,12 @@
           aria-label="Toggle sound effects">
         <label for="sfx-toggle-{{ .Ordinal }}" class="sfx-label" title="Sound Effects">SFX</label>
       </div>
+      <div class="bt-control">
+        <input type="checkbox" id="bt-toggle-{{ .Ordinal }}" class="bt-checkbox"
+          aria-label="Toggle Bluetooth Keep-Alive">
+        <label for="bt-toggle-{{ .Ordinal }}" class="bt-label"
+          title="Bluetooth Keep-Alive (prevents audio cutoff)">BT</label>
+      </div>
     </div>
     <div class="right-controls">
       <label class="speed-label" for="speed-control-{{ .Ordinal }}">Speed</label>
@@ -142,6 +148,23 @@
     if (sfxToggle) {
       sfxToggle.addEventListener('change', () => {
         sfxEnabled = sfxToggle.checked;
+      });
+    }
+
+    // Bluetooth Toggle
+    const btToggle = document.getElementById(`bt-toggle-${ordinal}`);
+    if (btToggle && window.AudioUtils) {
+      // Set initial state
+      btToggle.checked = window.AudioUtils.getBluetoothMode();
+
+      // Handle user change
+      btToggle.addEventListener('change', () => {
+        window.AudioUtils.setBluetoothMode(btToggle.checked);
+      });
+
+      // Listen for global changes (sync other players)
+      window.addEventListener('audio-bluetooth-change', (e) => {
+        btToggle.checked = e.detail.enabled;
       });
     }
 
@@ -552,6 +575,8 @@
   })();
 </script>
 
+{{ partial "audio-global-script.html" . }}
+
 <style>
   /* Container */
   .audio-player {
@@ -752,6 +777,39 @@
   }
 
   [data-bs-theme="dark"] .sfx-label {
+    color: #c9d4f0;
+  }
+
+  /* BT Toggle */
+  .bt-control {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-left: 8px;
+  }
+
+  .bt-checkbox {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    accent-color: #0a37a7;
+  }
+
+  .bt-label {
+    font-size: 12px;
+    cursor: pointer;
+    user-select: none;
+    color: #444;
+    font-weight: 600;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .bt-label {
+      color: #c9d4f0;
+    }
+  }
+
+  [data-bs-theme="dark"] .bt-label {
     color: #c9d4f0;
   }
 

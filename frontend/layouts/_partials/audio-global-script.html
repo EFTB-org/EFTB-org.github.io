@@ -1,0 +1,105 @@
+<script>
+    (function () {
+        if (window.AudioUtils) return;
+
+        const AudioUtils = {
+            audioContext: null,
+            keepAliveOscillator: null,
+            gainNode: null,
+            isBluetoothMode: false,
+
+            init: function () {
+                // Load preference
+                const stored = localStorage.getItem('audio_bluetooth_mode');
+                this.isBluetoothMode = stored === 'true';
+
+                // Setup unlock listener
+                const unlock = () => {
+                    this.ensureContext();
+                    if (this.audioContext.state === 'suspended') {
+                        this.audioContext.resume();
+                    }
+                    if (this.isBluetoothMode) {
+                        this.startKeepAlive();
+                    }
+                    document.removeEventListener('click', unlock);
+                    document.removeEventListener('keydown', unlock);
+                    document.removeEventListener('touchstart', unlock);
+                };
+
+                document.addEventListener('click', unlock);
+                document.addEventListener('keydown', unlock);
+                document.addEventListener('touchstart', unlock);
+            },
+
+            ensureContext: function () {
+                if (!this.audioContext) {
+                    const AudioContext = window.AudioContext || window.webkitAudioContext;
+                    this.audioContext = new AudioContext();
+                }
+            },
+
+            setBluetoothMode: function (enabled) {
+                this.isBluetoothMode = enabled;
+                localStorage.setItem('audio_bluetooth_mode', enabled);
+
+                if (enabled) {
+                    this.ensureContext();
+                    if (this.audioContext.state === 'suspended') {
+                        this.audioContext.resume();
+                    }
+                    this.startKeepAlive();
+                } else {
+                    this.stopKeepAlive();
+                }
+
+                // Dispatch event for UI updates across components
+                window.dispatchEvent(new CustomEvent('audio-bluetooth-change', { detail: { enabled } }));
+            },
+
+            startKeepAlive: function () {
+                if (this.keepAliveOscillator) return; // Already running
+                if (!this.audioContext) return;
+
+                try {
+                    // Create a silent oscillator
+                    this.keepAliveOscillator = this.audioContext.createOscillator();
+                    this.gainNode = this.audioContext.createGain();
+
+                    this.keepAliveOscillator.type = 'sine';
+                    this.keepAliveOscillator.frequency.value = 20; // Low frequency
+
+                    // Very low gain - just enough to keep the DAC active
+                    // 0.001 is usually sufficient and inaudible
+                    this.gainNode.gain.value = 0.001;
+
+                    this.keepAliveOscillator.connect(this.gainNode);
+                    this.gainNode.connect(this.audioContext.destination);
+
+                    this.keepAliveOscillator.start();
+                } catch (e) {
+                    console.warn('Failed to start keep-alive oscillator', e);
+                }
+            },
+
+            stopKeepAlive: function () {
+                if (this.keepAliveOscillator) {
+                    try {
+                        this.keepAliveOscillator.stop();
+                        this.keepAliveOscillator.disconnect();
+                        this.gainNode.disconnect();
+                    } catch (e) { /* ignore */ }
+                    this.keepAliveOscillator = null;
+                    this.gainNode = null;
+                }
+            },
+
+            getBluetoothMode: function () {
+                return this.isBluetoothMode;
+            }
+        };
+
+        window.AudioUtils = AudioUtils;
+        AudioUtils.init();
+    })();
+</script>
