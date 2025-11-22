@@ -98,7 +98,7 @@ seo:
 <table>
   <thead>
     <tr>
-      <th colspan="2" style="text-align: center; font-weight: bold;">Greeting people</th>
+      <th colspan="2" style="text-align: center; font-weight: bold;">{{< audio-text text="Greeting people" src="audio/lesson-1/structures/greeting_people.mp3" >}}</th>
     </tr>
   </thead>
   <tbody>
@@ -128,7 +128,7 @@ seo:
 <table>
   <thead>
     <tr>
-      <th colspan="2" style="text-align: center; font-weight: bold;">Responding</th>
+      <th colspan="2" style="text-align: center; font-weight: bold;">{{< audio-text text="Responding" src="audio/lesson-1/structures/responding.mp3" >}}</th>
     </tr>
   </thead>
   <tbody>
@@ -154,7 +154,7 @@ seo:
 <table>
   <thead>
     <tr>
-      <th colspan="2" style="text-align: center; font-weight: bold;">Saying goodbye</th>
+      <th colspan="2" style="text-align: center; font-weight: bold;">{{< audio-text text="Saying goodbye" src="audio/lesson-1/structures/saying_goodbye.mp3" >}}</th>
     </tr>
   </thead>
   <tbody>
@@ -187,14 +187,10 @@ seo:
 <table>
   <thead>
     <tr>
-      <th>Sentences</th>
-      <th>Meaning</th>
+      <th colspan="2" style="text-align: center; font-weight: bold;">{{< audio-text text="Greeting people - Responding" src="audio/lesson-1/structures/greeting_people_responding.mp3" >}}</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td colspan="2" style="text-align: center; font-weight: bold;">Greeting people - Responding</td>
-    </tr>
     <tr>
       <td>{{< audio-text text="Good morning. How are you?" src="audio/lesson-1/practice/good_morning_how_are_you.mp3" >}}<br><i>Another question:</i></td>
       <td>{{< audio-text text="Chào buổi sáng, bạn thế nào rồi?" src="audio/lesson-1/practice/chao_buoi_sang_ban_the_nao_roi.mp3" >}}</td>
