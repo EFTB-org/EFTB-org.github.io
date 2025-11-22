@@ -33,7 +33,6 @@ Usage:
             <span class="ha-header-trigger" id="haHeader{{ $id }}" role="button" tabindex="0"
               aria-label="Play audio: {{ $text | plainify }}" aria-pressed="false" aria-controls="ha-audio-{{ $id }}">
               {{ $text | safeHTML }}
-              <span class="ha-spinner" aria-hidden="true" style="display:none"></span>
             </span>
             <audio id="ha-audio-{{ $id }}" preload="none" class="ha-audio-el" tabindex="-1">
               <source src="{{ $src | relURL }}" type="audio/mpeg" />
@@ -78,19 +77,19 @@ Usage:
         if (!trigger) return;
         const aid = trigger.getAttribute('aria-controls');
         const audio = aid && document.getElementById(aid);
+
         if (!audio) return;
-        const spinner = trigger.querySelector('.ha-spinner');
         if (audio.paused || audio.ended) {
           pauseOthers(trigger);
           if (audio.ended) audio.currentTime = 0;
-          if (spinner) { spinner.style.display = 'inline-block'; trigger.classList.add('loading'); trigger.setAttribute('aria-busy', 'true'); }
+          if (true) { trigger.classList.add('loading'); trigger.setAttribute('aria-busy', 'true'); }
           const p = audio.play();
           if (p && p.then) {
             p.then(() => {
-              if (spinner) { spinner.style.display = 'none'; trigger.classList.remove('loading'); trigger.removeAttribute('aria-busy'); }
+              if (true) { trigger.classList.remove('loading'); trigger.removeAttribute('aria-busy'); }
               setState(trigger, audio);
             }).catch(err => {
-              if (spinner) { spinner.style.display = 'none'; trigger.classList.remove('loading'); trigger.removeAttribute('aria-busy'); }
+              if (true) { trigger.classList.remove('loading'); trigger.removeAttribute('aria-busy'); }
               console.error('Header audio play failed', err);
               setState(trigger, audio);
             });
@@ -140,7 +139,7 @@ Usage:
     .ha-header-trigger {
       display: inline-flex;
       align-items: center;
-      gap: .4em;
+      gap: .35em;
       cursor: pointer;
       color: var(--ha-fg);
       text-decoration: none;
@@ -168,11 +167,14 @@ Usage:
 
     .ha-header-trigger::before {
       content: '\1F50A';
-      font-size: .82em;
-      line-height: 1;
+      font-size: 1em;
+      line-height: 1.2em;
       display: inline-block;
-      transform: translateY(1px);
-      transition: transform .25s ease, opacity .25s ease;
+      width: 1.2em;
+      height: 1.2em;
+      text-align: center;
+      flex-shrink: 0;
+      margin-right: 0.2em;
     }
 
     .ha-header-trigger.playing {
@@ -183,16 +185,22 @@ Usage:
 
     /* .ha-header-trigger.playing::before { content:'\23F8'; } */
     .ha-header-trigger.loading {
-      opacity: .65;
+      opacity: .6;
+      pointer-events: none;
     }
 
-    .ha-header-trigger .ha-spinner {
-      width: .9em;
-      height: .9em;
+    /* Replace icon with spinner in ::before */
+    .ha-header-trigger.loading::before {
+      content: '';
+      width: 1em;
+      height: 1em;
+      margin: 0.1em;
       border: 2px solid currentColor;
       border-top-color: transparent;
       border-radius: 50%;
       animation: ha-spin 1s linear infinite;
+      box-sizing: border-box;
+      transform: none;
     }
 
     @keyframes ha-spin {
@@ -206,7 +214,7 @@ Usage:
         transition: none;
       }
 
-      .ha-header-trigger .ha-spinner {
+      .ha-header-trigger.loading::before {
         animation: none;
       }
     }

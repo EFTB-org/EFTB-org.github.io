@@ -5,7 +5,6 @@
 <span class="audio-text" id="audioText{{ $id }}" role="button" aria-label="Play audio: {{ $text | plainify }}"
   data-plain-text="{{ $text | plainify }}" tabindex="0" aria-controls="audio{{ $id }}">
   {{ $text | safeHTML }}
-  <span class="spinner" style="display:none;" aria-hidden="true"></span>
 </span>
 
 <audio id="audio{{ $id }}" preload="none">
@@ -16,7 +15,6 @@
 <script>
   (function () {
     const audioText = document.getElementById('audioText{{ $id }}');
-    const spinner = audioText.querySelector('.spinner');
     const audio = document.getElementById('audio{{ $id }}');
 
     const baseText = audioText.getAttribute('data-plain-text') || '';
@@ -37,20 +35,17 @@
 
     audioText.addEventListener('click', function () {
       if (audio.paused || audio.ended) {
-        spinner.style.display = 'inline-block';
         audioText.classList.add('loading');
         audioText.setAttribute('aria-busy', 'true');
         if (audio.ended) {
           audio.currentTime = 0;
         }
         audio.play().then(() => {
-          spinner.style.display = 'none';
           audioText.classList.remove('loading');
           audioText.setAttribute('aria-busy', 'false');
           updateAriaLabelAndStyle();
         }).catch((error) => {
           console.error('Playback failed:', error);
-          spinner.style.display = 'none';
           audioText.classList.remove('loading');
           audioText.setAttribute('aria-busy', 'false');
           updateAriaLabelAndStyle();
@@ -137,11 +132,14 @@
 
   .audio-text::before {
     content: '🔊';
-    font-size: 0.9em;
-    line-height: 1;
+    font-size: 1em;
+    line-height: 1.2em;
     display: inline-block;
-    transform: translateY(1px);
-    transition: transform 0.2s ease, opacity 0.2s ease;
+    width: 1.2em;
+    height: 1.2em;
+    text-align: center;
+    flex-shrink: 0;
+    margin-right: 0.1em;
   }
 
   .audio-text.playing {
@@ -152,22 +150,25 @@
     /* Override static bg */
   }
 
-  /* Keep speaker icon when playing, so no content change needed */
-  /* .audio-text.playing::before { content: '⏸'; } */
-
   .audio-text.loading {
-    opacity: 0.7;
+    opacity: 0.6;
+    pointer-events: none;
   }
 
-  .spinner {
-    display: inline-block;
-    width: 0.9em;
-    height: 0.9em;
+  /* Replace icon with spinner in ::before */
+  .audio-text.loading::before {
+    content: '';
+    width: 1em;
+    height: 1em;
+    margin: 0.1em;
+    /* (1.2 - 1.0) / 2 = 0.1 to keep total size 1.2em */
     border: 2px solid currentColor;
     border-top-color: transparent;
     border-radius: 50%;
     animation: spin 1s linear infinite;
-    margin-left: 0.1rem;
+    box-sizing: border-box;
+    vertical-align: middle;
+    transform: none;
   }
 
   @keyframes spin {
