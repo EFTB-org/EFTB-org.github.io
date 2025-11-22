@@ -224,7 +224,7 @@ seo:
 
 <!-- markdownlint-disable MD033 -->
 {{< audio-with-controls src="audio/lesson-1/think-and-speak/context.mp3" >}}
-**Context**: Năm học mới bắt đầu. Bạn nữ Tý đang đi lên lớp thì đụng phải bạn Tèo. Tèo thấy Tý liền đi tới bắt chuyện làm quen.
+**Context**: Năm học mới bắt đầu. Na đang đi lên lớp thì đụng phải Tý. Tý thấy Na liền đi tới bắt chuyện làm quen.
 
 <!-- markdownlint-disable MD033 -->
 {{<audio_script_table json="/audio/lesson-1/think-and-speak/conversation.json" audiopath="/audio/lesson-1/think-and-speak/" headerSpeaker="Character" headerText="Vietnamese" headerMeaning="English" meaningField="en">}}
