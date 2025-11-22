@@ -18,6 +18,7 @@ Usage:
   {{ $id := .Get "id" | default (anchorize $text) }}
   {{ $lvlInt := int $lvl }}
   {{ if or (lt $lvlInt 2) (gt $lvlInt 6) }}{{ $lvlInt = 3 }}{{ end }}
+  {{ $audioExists := fileExists (printf "static/%s" $src) }}
 
   {{/* Output the heading tag dynamically (kept explicit for readability) */}}
   {{ if eq $lvlInt 2 }}<h2 id="{{ $id }}" class="sc-header-audio heading-audio"
@@ -30,14 +31,19 @@ Usage:
           data-plain-text="{{ $text | plainify }}">{{ end }}
           {{ if eq $lvlInt 6 }}<h6 id="{{ $id }}" class="sc-header-audio heading-audio"
             data-plain-text="{{ $text | plainify }}">{{ end }}
-            <span class="ha-header-trigger" id="haHeader{{ $id }}" role="button" tabindex="0"
-              aria-label="Play audio: {{ $text | plainify }}" aria-pressed="false" aria-controls="ha-audio-{{ $id }}">
+            <span class="ha-header-trigger{{ if not $audioExists }} disabled{{ end }}" id="haHeader{{ $id }}"
+              role="button" tabindex="{{ if $audioExists }}0{{ else }}-1{{ end }}"
+              aria-label="{{ if $audioExists }}Play audio: {{ $text | plainify }}{{ else }}Audio not available: {{ $text | plainify }}{{ end }}"
+              aria-pressed="false" aria-controls="ha-audio-{{ $id }}" {{ if not $audioExists }}aria-disabled="true" {{
+              end }}>
               {{ $text | safeHTML }}
             </span>
+            {{ if $audioExists }}
             <audio id="ha-audio-{{ $id }}" preload="none" class="ha-audio-el" tabindex="-1">
               <source src="{{ $src | relURL }}" type="audio/mpeg" />
               Your browser does not support the audio element.
             </audio>
+            {{ end }}
             {{ if eq $lvlInt 2 }}</h2>{{ end }}
   {{ if eq $lvlInt 3 }}</h3>{{ end }}
   {{ if eq $lvlInt 4 }}</h4>{{ end }}
@@ -74,7 +80,7 @@ Usage:
       }
       document.addEventListener('click', function (e) {
         const trigger = e.target.closest('.ha-header-trigger');
-        if (!trigger) return;
+        if (!trigger || trigger.classList.contains('disabled')) return;
         const aid = trigger.getAttribute('aria-controls');
         const audio = aid && document.getElementById(aid);
 
@@ -149,6 +155,13 @@ Usage:
       position: relative;
       outline: none;
       transition: color .2s ease, background-color .2s ease, box-shadow .2s ease, transform .05s ease;
+    }
+
+    .ha-header-trigger.disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      pointer-events: none;
+      filter: grayscale(100%);
     }
 
     .ha-header-trigger:hover {

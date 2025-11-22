@@ -1,16 +1,21 @@
 {{ $text := .Get "text" }}
 {{ $src := .Get "src" }}
 {{ $id := delimit (shuffle (seq 999)) "" }}
+{{ $audioExists := fileExists (printf "static/%s" $src) }}
 
-<span class="audio-text" id="audioText{{ $id }}" role="button" aria-label="Play audio: {{ $text | plainify }}"
-  data-plain-text="{{ $text | plainify }}" tabindex="0" aria-controls="audio{{ $id }}">
+<span class="audio-text{{ if not $audioExists }} disabled{{ end }}" id="audioText{{ $id }}" role="button"
+  aria-label="{{ if $audioExists }}Play audio: {{ $text | plainify }}{{ else }}Audio not available: {{ $text | plainify }}{{ end }}"
+  data-plain-text="{{ $text | plainify }}" tabindex="{{ if $audioExists }}0{{ else }}-1{{ end }}"
+  aria-controls="audio{{ $id }}" {{ if not $audioExists }}aria-disabled="true" {{ end }}>
   {{ $text | safeHTML }}
 </span>
 
+{{ if $audioExists }}
 <audio id="audio{{ $id }}" preload="none">
   <source src="{{ $src | relURL }}" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
+{{ end }}
 
 <script>
   (function () {
@@ -34,6 +39,7 @@
     }
 
     audioText.addEventListener('click', function () {
+      if (audioText.classList.contains('disabled') || !audio) return;
       if (audio.paused || audio.ended) {
         audioText.classList.add('loading');
         audioText.setAttribute('aria-busy', 'true');
@@ -114,6 +120,13 @@
     position: relative;
     outline: none;
     transition: color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease, transform 0.05s ease, font-style 0.2s ease;
+  }
+
+  .audio-text.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+    filter: grayscale(100%);
   }
 
   .audio-text:hover {
