@@ -15,7 +15,6 @@ dependencies = [
     "requests>=2.32.3",
     "soundfile>=0.13.1",
     "tqdm>=4.67.1",
-    "kittentts",
     "beautifulsoup4>=4.13.3",
 ]
 

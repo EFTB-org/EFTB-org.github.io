@@ -1,0 +1,86 @@
+[
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Do you want to meet on Friday?",
+        "audio": "Ty1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "That's a great idea!",
+        "audio": "Na1_1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "What time do you wake up?",
+        "audio": "Ty2.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "I wake up at 7:30 a.m.",
+        "audio": "Na2_1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "So, we can meet at around 8:30?",
+        "audio": "Ty3.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "At 8:30, I go to my karate lesson.",
+        "audio": "Na3_1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "So...9:30? Do you have time then?",
+        "audio": "Ty4.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Well, at 10:00 I start school.",
+        "audio": "Na4_1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Come onnn, I’m not kidding. So what time do you finish?",
+        "audio": "Ty5.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "I’m serious! I finish at 5 p.m.",
+        "audio": "Na5_1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "So let's meet at 5:15—for dinner? It’s my treat hehe.",
+        "audio": "Na6_1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "No, I’m mad now.",
+        "audio": "Ty6.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Ohh, come on…I’m sorry.",
+        "audio": "Na7_1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Alright, alright. Let’s just go.",
+        "audio": "Ty7.mp3"
+    }
+]

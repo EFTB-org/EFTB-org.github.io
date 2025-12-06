@@ -1,0 +1,100 @@
+[
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Na ơi, cậu muốn gặp nhau vào thứ Sáu không?",
+        "en": "Do you want to meet on Friday?",
+        "audio": "Ty1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Ý hay đó!",
+        "en": "That's a great idea!",
+        "audio": "Na1_1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Mấy giờ thì cậu dậy?",
+        "en": "What time do you wake up?",
+        "audio": "Ty2.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Tớ dậy lúc 7 giờ 30 sáng.",
+        "en": "I wake up at 7:30 a.m.",
+        "audio": "Na2_1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Vậy… tụi mình gặp nhau lúc khoảng 8 giờ 30 được không?",
+        "en": "So, we can meet at around 8:30?",
+        "audio": "Ty3.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "8 giờ 30 thì tớ phải đi học võ karate rồi.",
+        "en": "At 8:30, I go to my karate lesson.",
+        "audio": "Na3_1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Vậy… 9 giờ 30? Lúc đó cậu rảnh không nè?",
+        "en": "So...9:30? Do you have time then?",
+        "audio": "Ty4.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Ờm… 10 giờ tớ vô học.",
+        "en": "Well, at 10:00 I start school.",
+        "audio": "Na4_1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Eeh nha, tui hổng có giỡn nha. Thế mấy giờ cậu tan học?",
+        "en": "Come onnn, I’m not kidding. So what time do you finish?",
+        "audio": "Ty5.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Mình bận thật mà. Tớ tan lúc 5 giờ chiều.",
+        "en": "I’m serious! I finish at 5 p.m.",
+        "audio": "Na5_1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Vậy tụi mình gặp nhau lúc 5 giờ 15 nha — đi ăn tối luôn? Tớ bao nè hihi.",
+        "en": "So let's meet at 5:15—for dinner? It’s my treat hehe.",
+        "audio": "Na6_1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Không, tớ giận rồi.",
+        "en": "No, I’m mad now.",
+        "audio": "Ty6.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Thôi thôi,… tớ xin lỗi mà.",
+        "en": "Ohh, come on…I’m sorry.",
+        "audio": "Na7_1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Thôi được rồi. Đi thì đi.",
+        "en": "Alright, alright. Let’s just go.",
+        "audio": "Ty7.mp3"
+    }
+]
