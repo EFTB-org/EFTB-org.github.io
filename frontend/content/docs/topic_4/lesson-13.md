@@ -349,6 +349,7 @@ Listen to the audio and imitate the speaker’s pronunciation, rhythm, and inton
 
 {{< header-audio text="2. Application" src="audio/common/headers/2_application.mp3" level="3" id="application" >}}
 
+{{< audio-with-controls src="audio/lesson-13/application/work_in_pairs.mp3" >}}
 Work in pairs. Take turns asking and answering questions about your daily routine.
 
 {{< audio-text text="Use the structures: \"Do you...?\" / \"What time...?\" / \"When do you...\"" src="audio/lesson-13/application/use_structures.mp3" >}}
