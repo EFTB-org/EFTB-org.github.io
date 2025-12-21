@@ -1,0 +1,44 @@
+[
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Hey Na, Christmas is coming. Are you free? Do you want to go out with me?",
+        "audio": "Ty1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "I will say yes if you can answer some Christmas questions in English.",
+        "audio": "Na1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Okay, let’s play!",
+        "audio": "Ty2.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "First question, at Christmas, what gift do I like?",
+        "audio": "Na2.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Hey, this is not about Christmas!",
+        "audio": "Ty3.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Oh, I’m wrong. Haha.",
+        "audio": "Na3.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Haizzz",
+        "audio": "Ty4.mp3"
+    }
+]

@@ -1,0 +1,51 @@
+[
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Na ơi, sắp tới Giáng Sinh rồi, cậu rảnh không đi chơi với tớ?",
+        "en": "Hey Na, Christmas is coming. Are you free? Do you want to go out with me?",
+        "audio": "Ty1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Tớ sẽ đồng ý nếu cậu trả lời được những câu hỏi về Giáng Sinh bằng tiếng Anh hihi",
+        "en": "I will say yes if you can answer some Christmas questions in English.",
+        "audio": "Na1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Okieee chơi luôn.",
+        "en": "Okay, let’s play!",
+        "audio": "Ty2.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Đố cậu, Giáng sinh tớ thích được tặng quà gì?",
+        "en": "First question, at Christmas, what gift do I like?",
+        "audio": "Na2.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Ủa alo? Này đâu phải về Giáng Sinh.",
+        "en": "Hey, this is not about Christmas!",
+        "audio": "Ty3.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Ừa há, tớ nhầm hihi",
+        "en": "Oh, I’m wrong. Haha.",
+        "audio": "Na3.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Haizz",
+        "en": "Haizzz",
+        "audio": "Ty4.mp3"
+    }
+]

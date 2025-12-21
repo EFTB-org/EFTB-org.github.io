@@ -1,0 +1,32 @@
+[
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Wow, you are very good!",
+        "audio": "Na1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "It’s easy. On that day, we can have dinner and then go for a walk.",
+        "audio": "Ty1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "By the way, it’s my treat",
+        "audio": "Ty2.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Okay!",
+        "audio": "Na2.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Yeah!",
+        "audio": "Ty3.mp3"
+    }
+]

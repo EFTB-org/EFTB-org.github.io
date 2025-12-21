@@ -1,0 +1,37 @@
+[
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Wow, cậu giỏi quá à.",
+        "en": "Wow, you are very good!",
+        "audio": "Na1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Hehe chuyện nhỏ mà nè. Vậy hôm đó chúng mình đi ăn tối, xong đi dạo nhé.",
+        "en": "It’s easy. On that day, we can have dinner and then go for a walk.",
+        "audio": "Ty1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "À, tớ bao nè",
+        "en": "By the way, it’s my treat",
+        "audio": "Ty2.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Okiee luôn.",
+        "en": "Okay!",
+        "audio": "Na2.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Yeahhhhh.",
+        "en": "Yeah!",
+        "audio": "Ty3.mp3"
+    }
+]
