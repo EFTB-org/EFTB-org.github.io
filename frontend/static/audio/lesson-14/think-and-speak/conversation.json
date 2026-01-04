@@ -1,0 +1,114 @@
+[
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Na ơi, dạo này trông cậu tràn đầy năng lượng ghê ha.",
+        "en": "Hey Na, you look full of beans these days.",
+        "audio": "Ty1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Cảm ơn cậu, mình tập thể dục mỗi ngày nè.",
+        "en": "Thanks! I exercise every day.",
+        "audio": "Na1_1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Ừa nè, hay cậu tập chung với tớ đi.",
+        "en": "Yeah, maybe you can exercise with me.",
+        "audio": "Ty2.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Tớ đang cố gắng tập luyện lại nè.",
+        "en": "I’m trying to exercise again.",
+        "audio": "Ty3.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Vậy hả? cậu tập lúc nào.",
+        "en": "Really? When do you work out?",
+        "audio": "Na2_1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Mình thích tập thể dục vào sáng sớm. Lúc đó rất yên tĩnh và dễ chịu.",
+        "en": "I love to work out early. It’s nice and quiet.",
+        "audio": "Ty4.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Vậy cậu thường đến lúc mấy giờ?",
+        "en": "When do you get here?",
+        "audio": "Na3_1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Khoảng 6 giờ 30 sáng.",
+        "en": "Around 6:30 a.m.",
+        "audio": "Ty5.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Wow, vậy cậu có lịch tập cố định không?",
+        "en": "Wow, do you have a routine?",
+        "audio": "Na4_1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Hông, tớ chỉ chạy bộ trên máy chạy thôi.",
+        "en": "No. I just run on the treadmill.",
+        "audio": "Ty6.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Thế cậu chạy trong bao lâu?",
+        "en": "How long do you run for?",
+        "audio": "Na5_1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Khoảng 40 phút. Còn cậu thì sao?",
+        "en": "For around 40 minutes. How about you?",
+        "audio": "Ty7.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Mình tập yoga khoảng một tiếng á.",
+        "en": "I do yoga for an hour.",
+        "audio": "Na6_1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Giờ mình đói quá. Hay đi ăn đi, tớ bao.",
+        "en": "Oh no, I’m starving now. Let’s eat. My treat!",
+        "audio": "Na7_1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Nữa hả? huhu",
+        "en": "Again? Oh no!",
+        "audio": "Ty8.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Đúng rồi, ăn rồi mới có sức tập luyện chứ nè hihi",
+        "en": "Yah, we’ll have more energy to work out hihi.",
+        "audio": "Na8_1.mp3"
+    }
+]

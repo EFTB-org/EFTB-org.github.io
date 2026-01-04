@@ -1,0 +1,98 @@
+[
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Hey Na, you look full of beans these days.",
+        "audio": "Ty1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Thanks! I exercise every day.",
+        "audio": "Na1_1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Yeah, maybe you can exercise with me.",
+        "audio": "Ty2.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "I’m trying to exercise again.",
+        "audio": "Ty3.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Really? When do you work out?",
+        "audio": "Na2_1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "I love to work out early. It’s nice and quiet.",
+        "audio": "Ty4.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "When do you get here?",
+        "audio": "Na3_1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Around 6:30 a.m.",
+        "audio": "Ty5.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Wow do you have a routine?",
+        "audio": "Na4_1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "No. I just run on the treadmill.",
+        "audio": "Ty6.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "How long do you run for?",
+        "audio": "Na5_1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "For around 40 minutes. How about you?",
+        "audio": "Ty7.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "I do yoga for an hour.",
+        "audio": "Na6_1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Oh no, I’m starving now. Let’s eat. My treat!",
+        "audio": "Na7_1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Again? Oh no!",
+        "audio": "Ty8.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Yah, we’ll have more energy to work out hihi.",
+        "audio": "Na8_1.mp3"
+    }
+]

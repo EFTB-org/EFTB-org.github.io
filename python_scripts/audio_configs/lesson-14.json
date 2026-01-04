@@ -1,0 +1,90 @@
+{
+    "lesson": 14,
+    "sections": [
+        {
+            "name": "vocabs",
+            "dir": "frontend/static/audio/lesson-14/vocabs/eng",
+            "items": {
+                "go_shopping": "Go shopping",
+                "go_out_to_eat": "Go out to eat",
+                "work_out": "Work out",
+                "go_to_the_library": "Go to the library",
+                "go_to_the_mall": "Go to the mall",
+                "watch_sports": "Watch sports",
+                "watch_movies": "Watch movies",
+                "take_a_walk": "Take a walk",
+                "run_on_the_treadmill": "Run on the treadmill",
+                "do_yoga": "Do yoga",
+                "workout": "Workout",
+                "exercise": "Exercise",
+                "full_of_beans": "Full of beans",
+                "have_a_routine": "Have a routine",
+                "how_long": "How long",
+                "starving": "Starving"
+            }
+        },
+        {
+            "name": "structures",
+            "dir": "frontend/static/audio/lesson-14/structures/eng",
+            "items": {
+                "comment_header": "Comment",
+                "i_exercise_every_day": "I exercise every day.",
+                "asking_questions_header": "Asking follow-up questions",
+                "what_kind_of_exercise_do_you_do": "What kind of exercise do you do?",
+                "who_do_you_exercise_with": "Who do you exercise with?",
+                "where_do_you_exercise": "Where do you exercise?",
+                "when_do_you_get_there": "When do you get there?",
+                "why_do_you_exercise_in_the_morning": "Why do you exercise in the morning?",
+                "how_do_you_get_to_the_gym": "How do you get to the gym?"
+            }
+        },
+        {
+            "name": "practice",
+            "dir": "frontend/static/audio/lesson-14/practice/eng",
+            "items": {
+                "practice_title": "3. Let's practice",
+                "practice_instruction": "Look at the examples. Ask a follow-up question using what, when, who, where or how?",
+                "header_sentences": "Sentences",
+                "header_meaning": "Meaning",
+                "i_go_shopping_every_day": "I go shopping every day.",
+                "i_watch_sports_in_the_evening": "I watch sports in the evening.",
+                "i_watch_movies_every_day": "I watch movies every day."
+            }
+        },
+        {
+            "name": "comprehension",
+            "dir": "frontend/static/audio/lesson-14/comprehension/eng",
+            "items": {
+                "header_question": "Question",
+                "header_answer": "Answer",
+                "does_na_exercise_every_day": "Does Na exercise every day?",
+                "yes_she_does": "Yes, she does.",
+                "when_does_ty_like_to_work_out": "When does Tee like to work out?",
+                "early_in_the_morning": "Early in the morning.",
+                "what_time_does_ty_get_to_the_gym": "What time does Tee get to the gym?",
+                "around_630_am": "Around 6, 30 a.m.",
+                "what_does_ty_do_at_the_gym": "What does Tee do at the gym?",
+                "he_runs_on_the_treadmill": "He runs on the treadmill.",
+                "how_long_does_na_do_yoga": "How long does Na do yoga?",
+                "for_an_hour": "For an hour."
+            }
+        },
+        {
+            "name": "application",
+            "dir": "frontend/static/audio/lesson-14/application/eng",
+            "items": {
+                "listening_speaking_instruction": "Listen to the audio and imitate the speaker\u2019s pronunciation, rhythm, and intonation.",
+                "instruction_a": "A: Complete the information. Include one example for each.",
+                "header_todo": "Something to do",
+                "header_meaning": "Meaning",
+                "something_to_do_alone": "Something you like to do alone",
+                "something_in_the_evening": "Something you do in the evening",
+                "something_you_want_to_buy": "Something you want to buy",
+                "someone_to_spend_time_with": "Someone you like to spend time with",
+                "fun_place_to_hang_out": "A fun place to hang out",
+                "where_you_go_after_class": "Where you go after class",
+                "instruction_b": "B: group work: Take turns asking and answering questions. Use the information above."
+            }
+        }
+    ]
+}
