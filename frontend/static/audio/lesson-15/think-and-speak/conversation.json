@@ -1,0 +1,128 @@
+[
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Tý ơi, mình thật sự rất mong chờ cuối tuần luôn.",
+        "en": "Hey Ty, I’m really looking forward to the weekend.",
+        "audio": "Na1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Um, tớ cũng vậy đó. Đặc biệt là Chủ nhật nè.",
+        "en": "Me too. Especially Sunday.",
+        "audio": "Ty1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Vậy cậu hay làm gì vào Chủ nhật?",
+        "en": "What do you usually do on Sundays?",
+        "audio": "Na2.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Đâu tiên là tớ rủ bạn đi ăn sáng nè",
+        "en": "Well, first I meet some friends for breakfast.",
+        "audio": "Ty2.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Chúng mình ghé quán Cơm Tấm Ta Ny gần nhà tớ",
+        "en": "We go to Com Tam Ta Ny restaurant near my house.",
+        "audio": "Ty3.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Rồi sao nữa?",
+        "en": "Then what do you do?",
+        "audio": "Na3.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Sau đó chúng mình đi công viên.",
+        "en": "Then we go to the park.",
+        "audio": "Ty4.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Ở đó có một khu chợ ngoài trời vào Chủ nhật.",
+        "en": "There’s an outdoor market there on Sundays.",
+        "audio": "Ty5.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "À, tớ thích chỗ này lắm",
+        "en": "Yeah, I like this place.",
+        "audio": "Na4.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "ừa, sau đó tụi mình đi xe đạp nè",
+        "en": "Next, we ride our bikes.",
+        "audio": "Ty6.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Và sau đó nữa, chúng mình cùng xem một bộ phim hehe.",
+        "en": "Later, we watch a movie.",
+        "audio": "Ty7.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Wow nghe tuyệt vời quá ta.",
+        "en": "It sounds like a great way to spend Sundays.",
+        "audio": "Na5.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Cơ mà tớ buồn quá à?",
+        "en": "But… I feel a little sad.",
+        "audio": "Na6.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Ủa mắc gì buồn vậy cô nương?",
+        "en": "Why?",
+        "audio": "Ty8.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Do cậu không rủ tớ đó huhu",
+        "en": "Because you don’t invite me.",
+        "audio": "Na7.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Thì do cậu hay ngủ nướng tới trưa luôn mà",
+        "en": "Oh, because you always sleep in late.",
+        "audio": "Ty9.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Hmm, có đâu. Vậy Chủ nhật này cậu đi chơi với tớ đó nha",
+        "en": "Hey! This Sunday, let me go with you.",
+        "audio": "Na8.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Haizz thôi được rồi.",
+        "en": "Haizz okay. Deal!",
+        "audio": "Ty10.mp3"
+    }
+]

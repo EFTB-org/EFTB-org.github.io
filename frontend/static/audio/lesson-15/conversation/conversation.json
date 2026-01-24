@@ -1,0 +1,110 @@
+[
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Hey Tý, I’m really looking forward to the weekend.",
+        "audio": "Na1_1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Me too. Especially Sunday.",
+        "audio": "Ty1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "What do you usually do on Sundays?",
+        "audio": "Na2_1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Well, first I meet some friends for breakfast.",
+        "audio": "Ty2.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "We go to Cơm Tấm Na Tý restaurant near my house.",
+        "audio": "Ty3.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Then what do you do?",
+        "audio": "Na3_1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Then we go to the park.",
+        "audio": "Ty4.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "There’s an outdoor market there on Sundays.",
+        "audio": "Ty5.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Yeah, I like this place.",
+        "audio": "Na4_1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Next, we ride our bikes.",
+        "audio": "Ty6.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Later, we watch a movie.",
+        "audio": "Ty7.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "It sounds like a great way to spend Sundays.",
+        "audio": "Na5_1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "But… I feel a little sad.",
+        "audio": "Na6_1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Why?",
+        "audio": "Ty8.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Because you don’t invite me.",
+        "audio": "Na7_1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Oh, because you always sleep in late.",
+        "audio": "Ty9.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Hey! Okay then. This Sunday, let me go with you.",
+        "audio": "Na8_1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Haizz okay. Deal!",
+        "audio": "Ty10.mp3"
+    }
+]
