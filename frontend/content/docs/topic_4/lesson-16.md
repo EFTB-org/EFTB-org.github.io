@@ -9,7 +9,10 @@ seo:
   description: "Learn to ask about and describe ongoing activities in English."
   canonical: ""
   robots: ""
+hide_title: true
 ---
+
+{{< header-audio text="Lesson 16: What Are You Doing?" src="audio/lesson-16/title.mp3" level="1" >}}
 
 {{< audio-with-controls src="audio/lesson-16/focus/eng/audio.mp3" >}}
 

@@ -17,10 +17,12 @@ Usage:
   {{ $lvl := .Get "level" | default "3" }}
   {{ $id := .Get "id" | default (anchorize $text) }}
   {{ $lvlInt := int $lvl }}
-  {{ if or (lt $lvlInt 2) (gt $lvlInt 6) }}{{ $lvlInt = 3 }}{{ end }}
+  {{ if or (lt $lvlInt 1) (gt $lvlInt 6) }}{{ $lvlInt = 3 }}{{ end }}
   {{ $audioExists := fileExists (printf "static/%s" $src) }}
 
   {{/* Output the heading tag dynamically (kept explicit for readability) */}}
+  {{ if eq $lvlInt 1 }}<h1 id="{{ $id }}" class="sc-header-audio heading-audio"
+    data-plain-text="{{ $text | plainify }}">{{ end }}
   {{ if eq $lvlInt 2 }}<h2 id="{{ $id }}" class="sc-header-audio heading-audio"
     data-plain-text="{{ $text | plainify }}">{{ end }}
     {{ if eq $lvlInt 3 }}<h3 id="{{ $id }}" class="sc-header-audio heading-audio"
@@ -44,7 +46,8 @@ Usage:
               Your browser does not support the audio element.
             </audio>
             {{ end }}
-            {{ if eq $lvlInt 2 }}</h2>{{ end }}
+  {{ if eq $lvlInt 1 }}</h1>{{ end }}
+  {{ if eq $lvlInt 2 }}</h2>{{ end }}
   {{ if eq $lvlInt 3 }}</h3>{{ end }}
   {{ if eq $lvlInt 4 }}</h4>{{ end }}
   {{ if eq $lvlInt 5 }}</h5>{{ end }}
