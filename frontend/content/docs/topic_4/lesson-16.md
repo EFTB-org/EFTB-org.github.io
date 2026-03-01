@@ -309,11 +309,11 @@ seo:
   </thead>
   <tbody>
     <tr>
-      <td>{{< audio-text text="What does Tee invite Na to do tonight?" src="audio/lesson-16/comprehension/eng/q1.mp3" >}}</td>
-      <td>{{< audio-text text="Tee invites Na to see a movie tonight." src="audio/lesson-16/comprehension/eng/a1.mp3" >}}</td>
+      <td>{{< audio-text text="What does Ty invite Na to do tonight?" src="audio/lesson-16/comprehension/eng/q1.mp3" >}}</td>
+      <td>{{< audio-text text="Ty invites Na to see a movie tonight." src="audio/lesson-16/comprehension/eng/a1.mp3" >}}</td>
     </tr>
     <tr>
-      <td>{{< audio-text text="Why can’t Na go with Tee?" src="audio/lesson-16/comprehension/eng/q2.mp3" >}}</td>
+      <td>{{< audio-text text="Why can’t Na go with Ty?" src="audio/lesson-16/comprehension/eng/q2.mp3" >}}</td>
       <td>{{< audio-text text="Because she has a meditation lesson at 7:00 p.m." src="audio/lesson-16/comprehension/eng/a2.mp3" >}}</td>
     </tr>
     <tr>
@@ -325,8 +325,8 @@ seo:
       <td>{{< audio-text text="She is in the dance club." src="audio/lesson-16/comprehension/eng/a4.mp3" >}}</td>
     </tr>
     <tr>
-      <td>{{< audio-text text="What will Tee buy for Na?" src="audio/lesson-16/comprehension/eng/q5.mp3" >}}</td>
-      <td>{{< audio-text text="Tee will buy Na milk tea with full toppings." src="audio/lesson-16/comprehension/eng/a5.mp3" >}}</td>
+      <td>{{< audio-text text="What will Ty buy for Na?" src="audio/lesson-16/comprehension/eng/q5.mp3" >}}</td>
+      <td>{{< audio-text text="Ty will buy Na milk tea with full toppings." src="audio/lesson-16/comprehension/eng/a5.mp3" >}}</td>
     </tr>
   </tbody>
 </table>
