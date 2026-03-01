@@ -1,0 +1,86 @@
+[
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Na ơi, tối nay cậu rảnh hông?",
+        "en": "Hey Na, are you free tonight?",
+        "audio": "Ty1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Đi xem phim với tớ đi?",
+        "en": "Do you wanna see a movie with me?",
+        "audio": "Ty2.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Huhu Xin lỗi Tý nha. Tối nay, tớ có lớp thiền lúc 7 giờ tối rồi.",
+        "en": "Sorry Ty. I have a meditation lesson at 7:00 p.m.",
+        "audio": "Na1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Thật à? Cậu đang học loại thiền nào vậy?",
+        "en": "Really? What kind of meditation are you learning?",
+        "audio": "Ty3.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Tớ đang học thiền hiện đại nè.",
+        "en": "I’m learning modern meditation.",
+        "audio": "Na2.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Tớ cũng ở trong câu lạc bộ khiêu vũ nữa đó hihi.",
+        "en": "I’m also in the dance club.",
+        "audio": "Na3.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Ồ hay quá! Cho tớ xem thử đi.",
+        "en": "Oh, cool! Show me what you can do.",
+        "audio": "Ty4.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Không đời nào hứ.",
+        "en": "No way.",
+        "audio": "Na4.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Đi mà! Tớ sẽ mời cậu trà sữa full topping nè.",
+        "en": "Come on! I’ll buy you milk tea with full toppings.",
+        "audio": "Ty5.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Yeahh. Vậy cậu xem này.",
+        "en": "Ok, watch this!",
+        "audio": "Na5.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Wow! Cậu nhảy giỏi thật đấy!",
+        "en": "Wow! You dance really well!",
+        "audio": "Ty6.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Hihi, chuyện nhỏ mà nè!",
+        "en": "Easy peasy, lemon squeezy hihi!",
+        "audio": "Na6.mp3"
+    }
+]

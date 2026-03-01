@@ -1,0 +1,74 @@
+[
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Hey Na, are you free tonight?",
+        "audio": "Ty1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Do you wanna see a movie with me?",
+        "audio": "Ty2.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Sorry Tee. I have a meditation lesson at 7:00 p.m.",
+        "audio": "Na1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Really? What kind of meditation are you learning?",
+        "audio": "Ty3.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "I’m learning modern meditation.",
+        "audio": "Na2.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "I’m also in the dance club.",
+        "audio": "Na3.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Oh, cool! Show me what you can do.",
+        "audio": "Ty4.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "No way.",
+        "audio": "Na4.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Come on! I’ll buy you milk tea with full toppings.",
+        "audio": "Ty5.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "OK, watch this!",
+        "audio": "Na5.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Ty",
+        "text": "Wow! You dance really well!",
+        "audio": "Ty6.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Easy peasy, lemon squeezy hihi!",
+        "audio": "Na6.mp3"
+    }
+]
