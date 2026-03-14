@@ -1,0 +1,156 @@
+[
+    {
+        "type": "dialogue",
+        "speaker": "Tý",
+        "text": "Na ơi, cậu thường dậy lúc mấy giờ đó?",
+        "meaning": "Na, what time do you usually get up?",
+        "audio": "Ty 1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Tớ thường dậy sớm, khoảng 7 giờ sáng á. Còn cậu thì sao?",
+        "meaning": "I usually get up early, at around 7 a.m. What about you?",
+        "audio": "Na1.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Tý",
+        "text": "Tớ dậy lúc 6 giờ 30. Đầu tiên tớ kiểm tra email.",
+        "meaning": "I get up at 6:30. First, I check my email.",
+        "audio": "Ty 2.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Tý",
+        "text": "Sau đó tớ tắm.",
+        "meaning": "Then I take a shower.",
+        "audio": "Ty3.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Sau khi dậy cậu có tập thể dục không?",
+        "meaning": "Do you exercise after you wake up?",
+        "audio": "Na2.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Tý",
+        "text": "Có chứ. Tớ tập thể dục mỗi ngày.",
+        "meaning": "Yes, I exercise every day.",
+        "audio": "Ty4.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Cậu tập loại bài tập nào vậy?",
+        "meaning": "What kind of exercise do you do?",
+        "audio": "Na3.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Tý",
+        "text": "Tớ thường chạy trên máy chạy bộ ở phòng gym.",
+        "meaning": "I usually run on the treadmill at the gym.",
+        "audio": "Ty5.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Wow, tuyệt quá hen. Vậy sau giờ học cậu thường làm gì?",
+        "meaning": "Wow, that’s great! What do you usually do after class?",
+        "audio": "Na4.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Tý",
+        "text": "Tớ thường đến thư viện và học bài nè.",
+        "meaning": "I usually go to the library and study.",
+        "audio": "Ty6.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Tý",
+        "text": "Mà Na ơi, cậu thường làm gì vào Chủ nhật?",
+        "meaning": "By the way, what do you usually do on Sundays, Na?",
+        "audio": "Ty7.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Đầu tiên thì tớ gặp bạn để ăn sáng.",
+        "meaning": "First, I meet my friends for breakfast.",
+        "audio": "Na5.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Sau đó tụi tớ đi công viên.",
+        "meaning": "Then we go to the park.",
+        "audio": "Na6.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Tiếp theo tụi tớ đạp xe nè.",
+        "meaning": "Next, we ride our bikes.",
+        "audio": "Na7.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Tý",
+        "text": "Nghe vui quá!",
+        "meaning": "That sounds fun!",
+        "audio": "Ty8.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Tý",
+        "text": "À mà dạo này cậu đang làm gì?",
+        "meaning": "By the way, what are you doing these days?",
+        "audio": "Ty9.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Học kỳ này tớ đang học tiếng Anh và tâm lý học.",
+        "meaning": "This semester, I’m studying English and psychology.",
+        "audio": "Na8.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Nhưng mà tiếng Anh tớ yếu quá à. Cậu giúp tớ với.",
+        "meaning": "But my English is not very good. Can you help me?",
+        "audio": "Na9.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Tý",
+        "text": "Okiee chuyện nhỏ nè. Bây giờ học luôn nhen.",
+        "meaning": "Sure! No problem. Let’s study now.",
+        "audio": "Ty10.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Hoyy, có “thực” mới vực được đạo chứ nè hihi",
+        "meaning": "Oh no! A hungry man has no ears, remember?",
+        "audio": "Na10.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Tý",
+        "text": "Haizz, lại nữa. Cậu đúng là tâm hồn ăn uống mà.",
+        "meaning": "Oh no, not again! You’re always thinking about food.",
+        "audio": "Ty11.mp3"
+    },
+    {
+        "type": "dialogue",
+        "speaker": "Na",
+        "text": "Ăn đi, tớ bao mà nè hihi",
+        "meaning": "Come on, let’s eat first. My treat!",
+        "audio": "Na11.mp3"
+    }
+]
