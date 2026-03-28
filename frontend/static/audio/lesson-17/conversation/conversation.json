@@ -1,0 +1,92 @@
+[
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "Tý, what's your new apartment like?",
+    "audio": "Na1.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Ty",
+    "text": "It's pretty nice. It's small, but it's very convenient.",
+    "audio": "Ty1.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "That's good. Where is it?",
+    "audio": "Na2.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Ty",
+    "text": "It's downtown, on Điện Biên Phủ Street.",
+    "audio": "Ty2.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Ty",
+    "text": "The location is good. It's near your house.",
+    "audio": "Ty3.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "So I can come and study English with you.",
+    "audio": "Na3.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Ty",
+    "text": "Yeah, you can come over if you like.",
+    "audio": "Ty4.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "How many rooms are there?",
+    "audio": "Na4.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Ty",
+    "text": "It has one bedroom, a living room, a kitchen, and a small bathroom.",
+    "audio": "Ty5.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "Wow, that's great!",
+    "audio": "Na5.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Ty",
+    "text": "What about your house?",
+    "audio": "Ty6.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "My house is quite big. It has a small garden too.",
+    "audio": "Na6.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "How about coming to my house tomorrow? We'll throw a small party.",
+    "audio": "Na7.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Ty",
+    "text": "Okay, it sounds good. I'll invite some friends too.",
+    "audio": "Ty7.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "Yeah, the more, the merrier!",
+    "audio": "Na8.mp3"
+  }
+]

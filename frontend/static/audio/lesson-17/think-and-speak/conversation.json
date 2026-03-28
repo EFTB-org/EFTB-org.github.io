@@ -1,0 +1,107 @@
+[
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "Tý ơi, căn hộ mới của cậu thế nào rồi?",
+    "en": "Ty, what's your new apartment like?",
+    "audio": "Na1.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Ty",
+    "text": "Cũng khá ổn á. Nhỏ thôi nhưng rất tiện nè.",
+    "en": "It's pretty nice. It's small, but it's very convenient.",
+    "audio": "Ty1.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "Vậy thì tốt rồi. Nó ở đâu vậy?",
+    "en": "That's good. Where is it?",
+    "audio": "Na2.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Ty",
+    "text": "Ở trung tâm, trên đường Điện Biên Phủ.",
+    "en": "It's downtown, on Dien Bien Phu Street.",
+    "audio": "Ty2.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Ty",
+    "text": "Vị trí rất ổn luôn. Gần nhà cậu đó hehe",
+    "en": "The location is good. It's near your house.",
+    "audio": "Ty3.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "Yeah, vậy tớ sẽ có thể học tiếng Anh với cậu rồi",
+    "en": "So I can come and study English with you.",
+    "audio": "Na3.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Ty",
+    "text": "Ừa nè, cậu có thể ghé qua chơi nếu thích.",
+    "en": "Yeah, you can come over if you like.",
+    "audio": "Ty4.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "Thế nhà cậu có bao nhiêu phòng vậy?",
+    "en": "How many rooms are there?",
+    "audio": "Na4.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Ty",
+    "text": "Có một phòng ngủ, một phòng khách, một nhà bếp và một phòng tắm nhỏ.",
+    "en": "It has one bedroom, a living room, a kitchen, and a small bathroom.",
+    "audio": "Ty5.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "Wow, tuyệt quá ta.",
+    "en": "Wow, that's great!",
+    "audio": "Na5.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Ty",
+    "text": "Còn nhà cậu như thế nào?",
+    "en": "What about your house?",
+    "audio": "Ty6.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "Nhà tớ cũng khá rộng. Có một khu vườn nhỏ nữa.",
+    "en": "My house is quite big. It has a small garden too.",
+    "audio": "Na6.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "Hay mai cậu qua nhà tớ nhé? Tụi mình tổ chức một bữa tiệc nho nhỏ.",
+    "en": "How about coming to my house tomorrow? We'll throw a small party.",
+    "audio": "Na7.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Ty",
+    "text": "Okiee, được đó. Tớ rủ thêm vài bạn nữa nha.",
+    "en": "Okay, it sounds good. I'll invite some friends too.",
+    "audio": "Ty7.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "Ừa nè, càng đông càng vui.",
+    "en": "Yeah, the more, the merrier!",
+    "audio": "Na8.mp3"
+  }
+]
