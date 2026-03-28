@@ -220,14 +220,9 @@ hide_title: true
 
 <!-- markdownlint-disable MD033 -->
 <table>
-  <thead>
-    <tr>
-      <th colspan="2" style="text-align: center; font-weight: bold;">{{< audio-text text="Language boosters" src="audio/lesson-17/structures/eng/header.mp3" >}}</th>
-    </tr>
-  </thead>
   <tbody>
     <tr>
-      <td colspan="2" style="font-weight: bold;">{{< audio-text text="Asking about a place" src="audio/lesson-17/structures/eng/asking_header.mp3" >}} - {{< audio-text text="Hỏi về nơi ở" src="audio/lesson-17/structures/vie/asking_header.mp3" >}}</td>
+      <td colspan="2" style="text-align: center; font-weight: bold;">{{< audio-text text="Asking about a place" src="audio/lesson-17/structures/eng/asking_header.mp3" >}} - {{< audio-text text="Hỏi về nơi ở" src="audio/lesson-17/structures/vie/asking_header.mp3" >}}</td>
     </tr>
     <tr>
       <td>{{< audio-text text="What's your place like?" src="audio/lesson-17/structures/eng/whats_your_place_like.mp3" >}}</td>
@@ -242,7 +237,7 @@ hide_title: true
       <td>{{< audio-text text="Có sân không?" src="audio/lesson-17/structures/vie/is_there_a_yard.mp3" >}}</td>
     </tr>
     <tr>
-      <td colspan="2" style="font-weight: bold;">{{< audio-text text="Describing a place" src="audio/lesson-17/structures/eng/describing_header.mp3" >}} - {{< audio-text text="Mô tả về nơi ở" src="audio/lesson-17/structures/vie/describing_header.mp3" >}}</td>
+      <td colspan="2" style="text-align: center; font-weight: bold;">{{< audio-text text="Describing a place" src="audio/lesson-17/structures/eng/describing_header.mp3" >}} - {{< audio-text text="Mô tả về nơi ở" src="audio/lesson-17/structures/vie/describing_header.mp3" >}}</td>
     </tr>
     <tr>
       <td>{{< audio-text text="It's small, but convenient." src="audio/lesson-17/structures/eng/its_small_but_convenient.mp3" >}}</td>
