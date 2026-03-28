@@ -1,7 +1,7 @@
 ---
-title: "TOPIC 5: PLACES"
+title: "TOPIC 5: MY HOMETOWN"
 description: ""
-lead: "English for The Blind - TOPIC 5: PLACES"
+lead: "English for The Blind - TOPIC 5: MY HOMETOWN"
 draft: false
 weight: 110
 seo:
