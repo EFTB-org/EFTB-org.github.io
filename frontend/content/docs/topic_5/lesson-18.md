@@ -198,18 +198,28 @@ hide_title: true
   </tbody>
 </table>
 
-### 3. Think and Speak {#think-and-speak .toc-only}
+### 3. Let's Practice {#lets-practice .toc-only}
 
-{{< header-audio text="3. Think and Speak" src="audio/common/headers/3_think_and_speak.mp3" level="3" id="think-and-speak" >}}
+{{< header-audio text="3. Let's Practice" src="audio/common/headers/3_lets_practice.mp3" level="3" id="lets-practice" >}}
+
+{{< audio-text text="<strong>Take turns asking for a suggestion and giving suggestions.</strong>" src="audio/lesson-18/lets_practice/instructions.mp3" >}}
+
+<br/>
+
+{{< audio-text text="<strong>Example:</strong>" src="audio/lesson-18/application/example.mp3" >}}
+
+- <strong>Teacher:</strong> {{< audio-text text="Where can I buy a TV?" src="audio/lesson-18/lets_practice/teacher.mp3" >}}
+- <strong>Student:</strong> {{< audio-text text="You can go to Điện Máy Xanh." src="audio/lesson-18/lets_practice/student.mp3" >}}
+
+### 4. Think and Speak {#think-and-speak .toc-only}
+
+{{< header-audio text="4. Think and Speak" src="audio/common/headers/4_think_and_speak.mp3" level="3" id="think-and-speak" >}}
 
 **Ngữ cảnh:**
 
 {{< audio-with-controls src="audio/lesson-18/context/vie/context.mp3" >}}
 
 Tý mới chuyển nhà nên cần mua một số đồ như sofa và TV. Tý hỏi Bo nên mua ở đâu. Bo đưa ra gợi ý và giúp Tý tìm chỗ phù hợp.
-
-{{< audio-with-controls src="audio/lesson-18/context/eng/context.mp3" >}}
-Tý recently moved to a new apartment and needs to buy some items like a sofa and TV. Tý asks Bo where to buy them. Bo gives suggestions and helps Tý find suitable places.
 
 {{<audio_script_table json="/audio/lesson-18/think-and-speak/conversation.json" audiopath="/audio/lesson-18/think-and-speak/" headerSpeaker="Character" headerText="Vietnamese" headerMeaning="English" meaningField="en">}}
 
