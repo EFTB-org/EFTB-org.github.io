@@ -1,0 +1,79 @@
+[
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "Ty, căn hộ mới của cậu còn thiếu gì nữa không?",
+    "en": "What else do you need for your new apartment, Ty?",
+    "audio": "bo1.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Ty",
+    "text": "Ừm… tớ đang không biết mua sofa cũ ở đâu nữa.",
+    "en": "Well, where can I buy a used sofa?",
+    "audio": "ty1.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "Sao cậu không thử xem trên báo đi?",
+    "en": "Why don't you look in the newspaper?",
+    "audio": "bo2.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Ty",
+    "text": "Ờ ha, cũng hay đó. Mà mua kệ thì mua ở đâu ta?",
+    "en": "Good idea. And where can I get shelves?",
+    "audio": "ty2.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "Tớ nghĩ cậu nên ghé Điện Máy Xanh thử. Ở đó có cả đồ nhà bếp nữa, mà giá cũng ổn.",
+    "en": "I think you can go to Dien May Xanh. They have kitchen things. The prices are good.",
+    "audio": "bo3.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Ty",
+    "text": "Ok luôn. Thế còn mua TV thì chỗ nào ổn nhỉ?",
+    "en": "OK. And where's a good place to get a TV?",
+    "audio": "ty3.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Ty",
+    "text": "Hay mua ở Điện Máy Xanh luôn ta.",
+    "en": "Maybe I can buy it at Dien May Xanh?",
+    "audio": "ty4.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "Đúng rồi, đúng rồi",
+    "en": "Yes, that's right!",
+    "audio": "bo4.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "Mua TV thì Điện Máy Xanh là ổn đó.",
+    "en": "A good place to buy a TV is Dien May Xanh.",
+    "audio": "bo5.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "À mà thôi, để tớ tặng cậu 1 cái ti vi nha, nhà tớ dư 1 cái nè.",
+    "en": "Oh, I can give you a TV. I have an extra one at home.",
+    "audio": "bo6.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Ty",
+    "text": "Yeah, cảm ơn Bo nhiều nha!",
+    "en": "Yeah, thank you, Bo!",
+    "audio": "ty5.mp3"
+  }
+]

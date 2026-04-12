@@ -1,0 +1,68 @@
+[
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "What else do you need for your new apartment, Tý?",
+    "audio": "bo1.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Ty",
+    "text": "Well, where can I buy a used sofa?",
+    "audio": "ty1.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "Why don't you look in the newspaper?",
+    "audio": "bo2.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Ty",
+    "text": "Good idea. And where can I get shelves?",
+    "audio": "ty2.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "I think you can go to Điện Máy Xanh. They have kitchen things. The prices are good.",
+    "audio": "bo3.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Ty",
+    "text": "OK. And where's a good place to get a TV?",
+    "audio": "ty3.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Ty",
+    "text": "Maybe I can buy it at Điện Máy Xanh?",
+    "audio": "ty4.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "Yes, that's right!",
+    "audio": "bo4.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "A good place to buy a TV is Điện Máy Xanh.",
+    "audio": "bo5.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "Oh, I can give you a TV. I have an extra one at home.",
+    "audio": "bo6.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Ty",
+    "text": "Yeah, thank you, Bo!",
+    "audio": "ty5.mp3"
+  }
+]
