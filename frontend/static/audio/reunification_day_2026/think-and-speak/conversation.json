@@ -1,0 +1,93 @@
+[
+  {
+    "type": "dialogue",
+    "speaker": "Tý",
+    "text": "Mọi người ơi, 30/04 là Ngày Thống nhất đất nước đó. Tụi mình đi chơi đi!",
+    "en": "Guys, April 30th is Reunification Day. Let’s hang out!",
+    "audio": "Ty1.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "Đúng rồi đó. Cậu có đề xuất gì không, Bo?",
+    "en": "Yeah, that’s right. Do you have any suggestions, Bo?",
+    "audio": "Na1.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "Tụi mình có thể đến Dinh Độc Lập nè.",
+    "en": "We can go to the Independence Palace.",
+    "audio": "Bo1.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Tý",
+    "text": "Nghe hay đó! Ở đó tụi mình làm gì?",
+    "en": "Sounds great! What can we do there?",
+    "audio": "Ty2.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "Ở đó có lễ chào cờ với diễu binh đó.",
+    "en": "There’s a flag-raising ceremony and a military parade.",
+    "audio": "Na2.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "Ừ, đúng rồi. Đầu tiên, tụi mình xem lễ chào cờ.",
+    "en": "Yes. First, we watch the flag-raising ceremony.",
+    "audio": "Bo2.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "Sau đó, tụi mình xem diễu binh.",
+    "en": "Then, we watch the military parade.",
+    "audio": "Na3.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "Tiếp theo, tụi mình đi chợ Bến Thành ăn trưa nhé. Tớ mời!",
+    "en": "Next, we go to Ben Thanh Market for lunch. It’s my treat!",
+    "audio": "Bo3.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "Nghe thích đó, đồ ăn ở đó ngon lắm luôn!",
+    "en": "That sounds great! The food there is really good!",
+    "audio": "Na4.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Tý",
+    "text": "Cậu lúc nào cũng thích ăn ha! Còn buổi tối thì sao, cả nhà?",
+    "en": "You always think about food! What about the evening?",
+    "audio": "Ty3.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "Tối thì tụi mình ghé Nhà thờ Đức Bà rồi đi xem pháo hoa nhé!",
+    "en": "In the evening, we can visit Notre-Dame Cathedral and then watch fireworks.",
+    "audio": "Bo4.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "Ok luôn, kế hoạch hợp lý đó!",
+    "en": "Sounds good! That’s a great plan!",
+    "audio": "Na5.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Tý",
+    "text": "Vậy chốt nha, hẹn nhau hôm đó!",
+    "en": "Deal! See you that day!",
+    "audio": "Ty4.mp3"
+  }
+]
