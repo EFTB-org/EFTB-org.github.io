@@ -1,0 +1,50 @@
+[
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "Na, I want to send these postcards. Where’s the nearest post office? Do you know?",
+    "audio": "bo1.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "Let me think… Oh, there’s one on Điện Biên Phủ Street. It’s across from the park.",
+    "audio": "na1.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "I also need some cash. Is there an ATM around here?",
+    "audio": "bo2.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "Sure. There’s one next to the post office.",
+    "audio": "na2.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "OK, thanks, Na. I also need a haircut. My hair is too long.",
+    "audio": "bo3.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "You can go to the EFTB salon on Trường Sa Street. My uncle cuts hair really well.",
+    "audio": "na3.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "Sounds great! Can you go with me?",
+    "audio": "bo4.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "Sure! Let’s go, Bo!",
+    "audio": "na4.mp3"
+  }
+]

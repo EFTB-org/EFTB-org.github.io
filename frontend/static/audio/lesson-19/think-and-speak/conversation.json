@@ -1,0 +1,58 @@
+[
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "Na ơi, mình muốn gửi mấy tấm bưu thiếp này. Bưu điện gần nhất ở đâu vậy? Cậu có biết không?",
+    "en": "Na, I want to send these postcards. Where’s the nearest post office? Do you know?",
+    "audio": "Bo1.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "Để tớ nghĩ xem… À, có một cái trên đường Điện Biên Phủ. Nó ở đối diện công viên.",
+    "en": "Let me think… Oh, there’s one on Dien Bien Phu Street. It’s across from the park.",
+    "audio": "Na1.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "Mình cũng cần một ít tiền mặt nữa. Ở gần đây có cây ATM không?",
+    "en": "I also need some cash. Is there an ATM around here?",
+    "audio": "Bo2.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "Có chứ. Có một cái ngay cạnh bưu điện.",
+    "en": "Sure. There’s one next to the post office.",
+    "audio": "Na2.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "Ok, cảm ơn Na nhé. À, mình cũng cần đi cắt tóc nữa. Tóc dài quá rồi.",
+    "en": "OK, thanks, Na. I also need a haircut. My hair is too long.",
+    "audio": "Bo3.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "Hay cậu đến tiệm EFTB trên đường Trường Sa đi. Cậu tớ cắt tóc đẹp lắm đó.",
+    "en": "You can go to the EFTB salon on Truong Sa Street. My uncle cuts hair really well.",
+    "audio": "Na3.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "Tuyệt vời! Vậy cậu đi với tớ cho vui nha?",
+    "en": "Sounds great! Can you go with me?",
+    "audio": "Bo4.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "Okiee, đi luôn nè Bo!",
+    "en": "Sure! Let’s go, Bo!",
+    "audio": "Na4.mp3"
+  }
+]
