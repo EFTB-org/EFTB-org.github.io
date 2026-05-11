@@ -273,14 +273,6 @@ Sau giờ học, Bo đang rất vội vì cần gửi một thứ quan trọng n
 
 {{< header-audio text="1. Conversation" src="audio/common/headers/1_conversation.mp3" level="3" id="conversation" >}}
 
-#### Listening and Speaking {#listening-and-speaking .toc-only}
-
-{{< header-audio text="Listening and Speaking" src="audio/common/headers/listening_and_speaking.mp3" level="4" >}}
-
-{{< audio-with-controls src="audio/lesson-17/application/eng/listening_speaking_instruction.mp3" >}}
-
-Listen to the audio and imitate the speaker's pronunciation, rhythm, and intonation.
-
 {{<audio_script_table json="/audio/lesson-19/conversation/conversation.json" audiopath="/audio/lesson-19/conversation/" headerSpeaker="Character" headerText="English" meaningField="">}}
 
 #### Listening Comprehension  {#listening-comprehension .toc-only}
@@ -288,6 +280,7 @@ Listen to the audio and imitate the speaker's pronunciation, rhythm, and intonat
 {{< header-audio text="Listening Comprehension" src="audio/common/headers/listening_comprehension.mp3" level="4" >}}
 
 {{< header-audio text="Listen carefully and answer the questions:" src="audio/common/headers/listen_carefully_and_answer_the_questions.mp3" level="5" >}}
+
 
 <!-- markdownlint-disable MD033 -->
 <table>
@@ -320,6 +313,13 @@ Listen to the audio and imitate the speaker's pronunciation, rhythm, and intonat
     </tr>
   </tbody>
 </table>
+
+#### Listening and Speaking {#listening-and-speaking .toc-only}
+{{< header-audio text="Listening and Speaking" src="audio/common/headers/listening_and_speaking.mp3" level="4" >}}
+
+{{< audio-with-controls src="audio/lesson-17/application/eng/listening_speaking_instruction.mp3" >}}
+
+Listen to the audio and imitate the speaker's pronunciation, rhythm, and intonation.
 
 ### 2. Application {#application .toc-only}
 
