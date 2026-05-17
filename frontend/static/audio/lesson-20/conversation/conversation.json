@@ -1,0 +1,80 @@
+[
+  {
+    "type": "dialogue",
+    "speaker": "Ty",
+    "text": "Hello.",
+    "audio": "ty1.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "Hi, Ty. It’s Bo.",
+    "audio": "bo1.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Ty",
+    "text": "Hey, Bo. What’s up?",
+    "audio": "ty2.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "Well, it’s my birthday on Sunday, and I’m having a party. Can you come?",
+    "audio": "bo2.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Ty",
+    "text": "Sure! I’d love to.",
+    "audio": "ty3.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "Great! I live in the English For The Blind Apartments on Truong Sa Street.",
+    "audio": "bo3.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Ty",
+    "text": "Is that near the park?",
+    "audio": "ty4.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "Yeah. It’s not far.",
+    "audio": "bo4.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Ty",
+    "text": "Can you give me directions?",
+    "audio": "ty5.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "From the park, go up Hoang Sa Street and take a left on Truong Sa Street. It’s really easy.",
+    "audio": "bo5.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Ty",
+    "text": "What’s your apartment number?",
+    "audio": "ty6.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "I’m in 14C. Come around 6:00 p.m.",
+    "audio": "bo6.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Ty",
+    "text": "Ok Bo. See you and Na later",
+    "audio": "ty7.mp3"
+  }
+]

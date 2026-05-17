@@ -1,0 +1,93 @@
+[
+  {
+    "type": "dialogue",
+    "speaker": "Ty",
+    "text": "Alo.",
+    "en": "Hello.",
+    "audio": "Ty1.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "Ê Tý, Bo nè.",
+    "en": "Hi, Tý. It’s Bo.",
+    "audio": "Bo1.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Ty",
+    "text": "Ủa Bo hả, có chuyện gì vậy?",
+    "en": "Hey, Bo. What’s up?",
+    "audio": "Ty2.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "Chủ nhật này là sinh nhật tớ, tớ định tổ chức tiệc. Cậu tới không?",
+    "en": "Well, it’s my birthday on Sunday, and I’m having a party. Can you come?",
+    "audio": "Bo2.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Ty",
+    "text": "Được chứ, tớ thích lắm!",
+    "en": "Sure! I’d love to.",
+    "audio": "Ty3.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "Tớ ở chung cư EFTB, trên đường Trường Sa á.",
+    "en": "Great! I live in the EFTB Apartments on Truong Sa Street.",
+    "audio": "Bo3.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Ty",
+    "text": "Có gần công viên không?",
+    "en": "Is that near the park?",
+    "audio": "Ty4.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "Ừ, cũng không quá xa đâu.",
+    "en": "Yeah. It’s not far.",
+    "audio": "Bo4.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Ty",
+    "text": "Vậy cậu chỉ tớ đường đi với.",
+    "en": "Can you give me directions?",
+    "audio": "Ty5.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "Từ công viên đi thẳng lên đường Hoàng Sa, rồi quẹo trái vào đường Trường Sa là tới. Dễ lắm.",
+    "en": "From the park, go up Hoang Sa Street and take a left on Truong Sa Street. It’s really easy.",
+    "audio": "Bo5.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Ty",
+    "text": "À mà số phòng cậu là gì?",
+    "en": "What’s your apartment number?",
+    "audio": "Ty6.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "Tớ ở phòng 14C á. Khoảng 6 giờ tối cậu tới nha.",
+    "en": "I’m in 14C. Come around 6:00 p.m.",
+    "audio": "Bo6.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Ty",
+    "text": "Ừa nè Bo, hẹn gặp cậu và Na nhé.",
+    "en": "Okay, Bo. See you and Na later",
+    "audio": "Ty7.mp3"
+  }
+]
