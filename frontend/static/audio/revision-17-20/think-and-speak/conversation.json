@@ -1,0 +1,93 @@
+[
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "Na ơi, tớ có thể mua đồ dùng học tập ở đâu nhỉ?",
+    "en": "Na, where can I find school supplies?",
+    "audio": "Bo1.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "Tớ biết một chỗ khá ổn. Chỗ đó nhỏ nhưng tiện lắm.",
+    "en": "I know a good place. It’s small, but convenient.",
+    "audio": "Na1.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "Ở đó có bán nhiều đồ không?",
+    "en": "Are there many things there?",
+    "audio": "Bo2.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "Có bút, vở với nhiều đồ dùng học tập khác nữa.",
+    "en": "There are pens, notebooks, and other school supplies.",
+    "audio": "Na2.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "Wow, tuyệt cú mèo!",
+    "en": "Wow, that’s great!",
+    "audio": "Bo3.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "Cậu thử đến cửa hàng gần công viên xem.",
+    "en": "You can go to the store near the park.",
+    "audio": "Na3.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "À mà, cửa hàng ở đâu vậy Na?",
+    "en": "Where’s the store?",
+    "audio": "Bo4.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "Có một cửa hàng trên đường Trường Sa, đối diện công viên.",
+    "en": "There’s one on Truong Sa Street, across from the park.",
+    "audio": "Na4.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "Từ đây đi tới đó thế nào nhỉ?",
+    "en": "How do I get there from here?",
+    "audio": "Bo5.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "Cậu đi thẳng, rồi quẹo trái vào đường Trường Sa.",
+    "en": "Go straight, then take a left onto Truong Sa Street.",
+    "audio": "Na5.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "Cậu nói quẹo trái đúng không?",
+    "en": "Did you say take a left?",
+    "audio": "Bo6.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "Ừ, đúng rồi. Cửa hàng ở bên phải của cậu.",
+    "en": "Yes, that’s right. The store is on your right.",
+    "audio": "Na6.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "Tuyệt vời, cảm ơn Na nhé.",
+    "en": "Great. Thanks, Na.",
+    "audio": "Bo7.mp3"
+  }
+]
