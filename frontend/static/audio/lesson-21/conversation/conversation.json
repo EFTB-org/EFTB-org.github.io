@@ -1,0 +1,74 @@
+[
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "Na, how much does a cup of coffee cost here?",
+    "audio": "Bo1.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "It costs thirty thousand dong.",
+    "audio": "Na1.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "That’s not bad! How much is a bottle of water?",
+    "audio": "Bo2.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "It’s only ten thousand dong a bottle.",
+    "audio": "Na2.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "What about milk tea?",
+    "audio": "Bo3.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "It’s fifty thousand dong.",
+    "audio": "Na3.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "What? Fifty thousand dong? That’s expensive!",
+    "audio": "Bo4.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "Yeah, milk tea is usually more expensive than bottled water.",
+    "audio": "Na4.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "Oh, man! Now I want milk tea so bad!",
+    "audio": "Bo5.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "Oh, come on! If you want some, I’ll buy it for you. I’m rich, you know!",
+    "audio": "Na5.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "Yay! Then, can you get me a cup of milk tea and a bánh mì, please?",
+    "audio": "Bo6.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "Okay, Bo! As long as you’re happy!",
+    "audio": "Na6.mp3"
+  }
+]

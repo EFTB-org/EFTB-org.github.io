@@ -1,0 +1,86 @@
+[
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "Na ơi, một ly cà phê ở đây bao nhiêu tiền vậy?",
+    "en": "Na, how much does a cup of coffee cost here?",
+    "audio": "Bo1.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "30.000 đồng một ly á.",
+    "en": "It costs thirty thousand dong.",
+    "audio": "Na1.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "Cũng được đó! Thế một chai nước suối bao nhiêu?",
+    "en": "That’s not bad! How much is a bottle of water?",
+    "audio": "Bo2.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "10.000 đồng một chai thôi.",
+    "en": "It’s only ten thousand dong a bottle.",
+    "audio": "Na2.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "Còn trà sữa thì sao?",
+    "en": "What about milk tea?",
+    "audio": "Bo3.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "Một ly 50.000 đồng đó.",
+    "en": "It’s fifty thousand dong.",
+    "audio": "Na3.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "Hả? Năm mươi nghìn á? Đắt quá!",
+    "en": "What? Fifty thousand dong? That’s expensive!",
+    "audio": "Bo4.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "Ừ, trà sữa thường đắt hơn nước suối mà.",
+    "en": "Yeah, milk tea is usually more expensive than bottled water.",
+    "audio": "Na4.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "Chán ghê, tự nhiên tớ thèm trà sữa quá à.",
+    "en": "Oh, man! Now I want milk tea so bad!",
+    "audio": "Bo5.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "Xời, thèm thì để tớ mua cho. Tớ giàu mà!",
+    "en": "Oh, come on! If you want some, I’ll buy it for you. I’m rich, you know!",
+    "audio": "Na5.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "Yeah, vậy cậu mua cho tớ một ly trà sữa và một ổ bánh mì nha!",
+    "en": "Yay! Then, can you get me a cup of milk tea and a bánh mì, please?",
+    "audio": "Bo6.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "Okiee nè Bo, cậu thích là được nè.",
+    "en": "Okay, Bo! As long as you’re happy!",
+    "audio": "Na6.mp3"
+  }
+]
