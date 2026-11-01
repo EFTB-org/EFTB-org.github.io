@@ -89,17 +89,17 @@ hide_title: true
 
 <tr><td></td><td>{{< audio-text text="Would you accept $20?" src="audio/lesson-22/sentences/en_1_1_2.mp3" >}}</td><td>{{< audio-text text="Bạn có chấp nhận mức giá 20 đô la không?" src="audio/lesson-22/sentences/vi_1_1_2.mp3" >}}</td></tr>
 
-<tr><td>{{< audio-text text="Will you give it or them to me for + price?" src="audio/lesson-22/sentences/pattern_1_2.mp3" >}}</td><td>{{< audio-text text="Will you give it to me for $20?" src="audio/lesson-22/sentences/en_1_2_1.mp3" >}}</td><td>{{< audio-text text="Bạn để lại món đồ này cho tôi với giá 20 đô la nhé?" src="audio/lesson-22/sentences/vi_1_2_1.mp3" >}}</td></tr>
+<tr><td>{{< audio-text text="Will you give it/them to me for + price?" src="audio/lesson-22/sentences/pattern_1_2.mp3" >}}</td><td>{{< audio-text text="Will you give it to me for $20?" src="audio/lesson-22/sentences/en_1_2_1.mp3" >}}</td><td>{{< audio-text text="Bạn để lại món đồ này cho tôi với giá 20 đô la nhé?" src="audio/lesson-22/sentences/vi_1_2_1.mp3" >}}</td></tr>
 
 <tr><td></td><td>{{< audio-text text="Will you give them to me for $20?" src="audio/lesson-22/sentences/en_1_2_2.mp3" >}}</td><td>{{< audio-text text="Bạn để lại những món đồ này cho tôi với giá 20 đô la nhé?" src="audio/lesson-22/sentences/vi_1_2_2.mp3" >}}</td></tr>
 
 <tr><th colspan="3">{{< audio-text text="Suggesting a different price" src="audio/lesson-22/sentences/group_2.mp3" >}}</th></tr>
 
-<tr><td>{{< audio-text text="I’ll give it or them to you for + price." src="audio/lesson-22/sentences/pattern_2_1.mp3" >}}</td><td>{{< audio-text text="I’ll give it to you for $30." src="audio/lesson-22/sentences/en_2_1_1.mp3" >}}</td><td>{{< audio-text text="Tôi sẽ để lại món đồ này cho bạn với giá 30 đô la." src="audio/lesson-22/sentences/vi_2_1_1.mp3" >}}</td></tr>
+<tr><td>{{< audio-text text="I’ll give it/them to you for + price." src="audio/lesson-22/sentences/pattern_2_1.mp3" >}}</td><td>{{< audio-text text="I’ll give it to you for $30." src="audio/lesson-22/sentences/en_2_1_1.mp3" >}}</td><td>{{< audio-text text="Tôi sẽ để lại món đồ này cho bạn với giá 30 đô la." src="audio/lesson-22/sentences/vi_2_1_1.mp3" >}}</td></tr>
 
 <tr><td></td><td>{{< audio-text text="I’ll give them to you for $30." src="audio/lesson-22/sentences/en_2_1_2.mp3" >}}</td><td>{{< audio-text text="Tôi sẽ để lại những món đồ này cho bạn với giá 30 đô la." src="audio/lesson-22/sentences/vi_2_1_2.mp3" >}}</td></tr>
 
-<tr><td>{{< audio-text text="You can have it or them for + price." src="audio/lesson-22/sentences/pattern_2_2.mp3" >}}</td><td>{{< audio-text text="You can have it for $30." src="audio/lesson-22/sentences/en_2_2_1.mp3" >}}</td><td>{{< audio-text text="Bạn có thể mua món đồ này với giá 30 đô la." src="audio/lesson-22/sentences/vi_2_2_1.mp3" >}}</td></tr>
+<tr><td>{{< audio-text text="You can have it/them for + price." src="audio/lesson-22/sentences/pattern_2_2.mp3" >}}</td><td>{{< audio-text text="You can have it for $30." src="audio/lesson-22/sentences/en_2_2_1.mp3" >}}</td><td>{{< audio-text text="Bạn có thể mua món đồ này với giá 30 đô la." src="audio/lesson-22/sentences/vi_2_2_1.mp3" >}}</td></tr>
 
 <tr><td></td><td>{{< audio-text text="You can have them for $30." src="audio/lesson-22/sentences/en_2_2_2.mp3" >}}</td><td>{{< audio-text text="Bạn có thể mua những món đồ này với giá 30 đô la." src="audio/lesson-22/sentences/vi_2_2_2.mp3" >}}</td></tr>
 
