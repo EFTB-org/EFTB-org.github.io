@@ -1,0 +1,68 @@
+[
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "Na, I'm so upset! My desk lamp just stopped working!",
+    "audio": "Bo1.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "Oh no! How are you going to study now?",
+    "audio": "Na1.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "I have an old desk lamp. Do you want to buy it? I'll give you a good price!",
+    "audio": "Na2.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "That sounds good! How much is it?",
+    "audio": "Bo2.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "I'm selling it for 100,000 dong.",
+    "audio": "Na3.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "What? 100,000? Will you take 60,000 dong?",
+    "audio": "Bo3.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "That's a little too low. I can give it to you for 80,000 dong.",
+    "audio": "Na4.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "Hmm... How about 70,000 dong? Please, Na!",
+    "audio": "Bo4.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "Let me think... Hmm, all right!",
+    "audio": "Na5.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "Great! Thanks, Na!",
+    "audio": "Bo5.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "You're welcome! I hope you like it.",
+    "audio": "Na6.mp3"
+  }
+]

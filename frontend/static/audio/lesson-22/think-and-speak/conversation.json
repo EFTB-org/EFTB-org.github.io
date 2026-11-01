@@ -1,0 +1,79 @@
+[
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "Na ơi, tớ buồn quá à! Cái đèn bàn nhà tớ hư mất rồi, huhu!",
+    "en": "Na, I'm so upset! My desk lamp just stopped working!",
+    "audio": "Bo1.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "Trời ơi! Vậy giờ cậu học bài bằng gì?",
+    "en": "Oh no! How are you going to study now?",
+    "audio": "Na1.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "Nhà tớ có một cái đèn bàn cũ, cậu mua lại không? Tớ để giá mềm cho!",
+    "en": "I have an old desk lamp. Do you want to buy it? I'll give you a good price!",
+    "audio": "Na2.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "Nghe được đó! Bao nhiêu tiền vậy?",
+    "en": "That sounds good! How much is it?",
+    "audio": "Bo2.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "100.000 đồng nhé.",
+    "en": "I'm selling it for 100,000 dong.",
+    "audio": "Na3.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "Hả? 100.000 á? Cậu bán cho tớ 60.000 đồng được không, đi mà?",
+    "en": "What? 100,000? Will you take 60,000 dong?",
+    "audio": "Bo3.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "60.000 thì hơi thấp đó. Tớ để lại cho cậu 80.000 đồng nhé?",
+    "en": "That's a little too low. I can give it to you for 80,000 dong.",
+    "audio": "Na4.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "Hmm... 70.000 đồng được không, Na? Năn nỉ cậu đó!",
+    "en": "Hmm... How about 70,000 dong? Please, Na!",
+    "audio": "Bo4.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "Để tớ nghĩ xem... Hừm, được rồi!",
+    "en": "Let me think... Hmm, all right!",
+    "audio": "Na5.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Bo",
+    "text": "Tuyệt! Cảm ơn Na nha!",
+    "en": "Great! Thanks, Na!",
+    "audio": "Bo5.mp3"
+  },
+  {
+    "type": "dialogue",
+    "speaker": "Na",
+    "text": "Không có gì nè! Mong là cậu sẽ thích nó.",
+    "en": "You're welcome! I hope you like it.",
+    "audio": "Na6.mp3"
+  }
+]

@@ -1,0 +1,447 @@
+{
+  "english": [
+    [
+      "Lesson twenty two. Will you take twenty dollars?",
+      "title.mp3"
+    ],
+    [
+      "Lesson focus. Bargaining for a lower price. Suggesting a different price.",
+      "focus/eng/audio.mp3"
+    ],
+    [
+      "yard sale",
+      "vocabs/eng/yard_sale.mp3"
+    ],
+    [
+      "clothes",
+      "vocabs/eng/clothes.mp3"
+    ],
+    [
+      "makeup",
+      "vocabs/eng/makeup.mp3"
+    ],
+    [
+      "furniture",
+      "vocabs/eng/furniture.mp3"
+    ],
+    [
+      "electronics",
+      "vocabs/eng/electronics.mp3"
+    ],
+    [
+      "video games",
+      "vocabs/eng/video_games.mp3"
+    ],
+    [
+      "toys",
+      "vocabs/eng/toys.mp3"
+    ],
+    [
+      "sports equipment",
+      "vocabs/eng/sports_equipment.mp3"
+    ],
+    [
+      "a famous painting",
+      "vocabs/eng/a_famous_painting.mp3"
+    ],
+    [
+      "a gold watch",
+      "vocabs/eng/a_gold_watch.mp3"
+    ],
+    [
+      "a flat-screen TV",
+      "vocabs/eng/a_flat_screen_tv.mp3"
+    ],
+    [
+      "a comic book",
+      "vocabs/eng/a_comic_book.mp3"
+    ],
+    [
+      "a computer bag",
+      "vocabs/eng/a_computer_bag.mp3"
+    ],
+    [
+      "a bowl",
+      "vocabs/eng/a_bowl.mp3"
+    ],
+    [
+      "sunglasses",
+      "vocabs/eng/sunglasses.mp3"
+    ],
+    [
+      "lamp",
+      "vocabs/eng/lamp.mp3"
+    ],
+    [
+      "a good price",
+      "vocabs/eng/a_good_price.mp3"
+    ],
+    [
+      "bargain",
+      "vocabs/eng/bargain.mp3"
+    ],
+    [
+      "accept",
+      "vocabs/eng/accept.mp3"
+    ],
+    [
+      "It's a deal!",
+      "vocabs/eng/it_s_a_deal.mp3"
+    ],
+    [
+      "just a second",
+      "vocabs/eng/just_a_second.mp3"
+    ],
+    [
+      "thanks anyway",
+      "vocabs/eng/thanks_anyway.mp3"
+    ],
+    [
+      "Bargaining for a lower price",
+      "sentences/group_1.mp3"
+    ],
+    [
+      "Would you  plus  take/accept  plus  price?",
+      "sentences/pattern_1_1.mp3"
+    ],
+    [
+      "Would you take $20?",
+      "sentences/en_1_1_1.mp3"
+    ],
+    [
+      "Would you accept $20?",
+      "sentences/en_1_1_2.mp3"
+    ],
+    [
+      "Will you give it/them to me for  plus  price?",
+      "sentences/pattern_1_2.mp3"
+    ],
+    [
+      "Will you give it to me for $20?",
+      "sentences/en_1_2_1.mp3"
+    ],
+    [
+      "Will you give them to me for $20?",
+      "sentences/en_1_2_2.mp3"
+    ],
+    [
+      "Suggesting a different price",
+      "sentences/group_2.mp3"
+    ],
+    [
+      "I’ll give it/them to you for  plus  price.",
+      "sentences/pattern_2_1.mp3"
+    ],
+    [
+      "I’ll give it to you for $30.",
+      "sentences/en_2_1_1.mp3"
+    ],
+    [
+      "I’ll give them to you for $30.",
+      "sentences/en_2_1_2.mp3"
+    ],
+    [
+      "You can have it or them for plus price.",
+      "sentences/pattern_2_2.mp3"
+    ],
+    [
+      "You can have it for $30.",
+      "sentences/en_2_2_1.mp3"
+    ],
+    [
+      "You can have them for $30.",
+      "sentences/en_2_2_2.mp3"
+    ],
+    [
+      "Take turns bargaining for a lower price for the items below.",
+      "lets_practice/instructions.mp3"
+    ],
+    [
+      "a famous painting",
+      "lets_practice/item_1.mp3"
+    ],
+    [
+      "a gold watch",
+      "lets_practice/item_2.mp3"
+    ],
+    [
+      "a flat-screen TV",
+      "lets_practice/item_3.mp3"
+    ],
+    [
+      "a comic book",
+      "lets_practice/item_4.mp3"
+    ],
+    [
+      "1. Why is Bo upset?",
+      "comprehension/q1.mp3"
+    ],
+    [
+      "Because his desk lamp stopped working.",
+      "comprehension/a1.mp3"
+    ],
+    [
+      "2. What does Na offer to sell Bo?",
+      "comprehension/q2.mp3"
+    ],
+    [
+      "An old desk lamp.",
+      "comprehension/a2.mp3"
+    ],
+    [
+      "3. How much does Na ask for the lamp at first?",
+      "comprehension/q3.mp3"
+    ],
+    [
+      "100,000 dong.",
+      "comprehension/a3.mp3"
+    ],
+    [
+      "4. How much does Bo offer to pay at first?",
+      "comprehension/q4.mp3"
+    ],
+    [
+      "60,000 dong.",
+      "comprehension/a4.mp3"
+    ],
+    [
+      "5. What price do Bo and Na finally agree on?",
+      "comprehension/q5.mp3"
+    ],
+    [
+      "70,000 dong.",
+      "comprehension/a5.mp3"
+    ],
+    [
+      "Listen to the audio and imitate the speaker's pronunciation, rhythm, and intonation.",
+      "pronunciation/instructions.mp3"
+    ],
+    [
+      "Two. Application",
+      "application/title.mp3"
+    ],
+    [
+      "Pair work. Work in pairs and create your own conversation. Take turns speaking and try to use the structures you have learned.",
+      "application/instructions.mp3"
+    ],
+    [
+      "Topic: Let's Have a Yard Sale!",
+      "application/topic.mp3"
+    ],
+    [
+      "Imagine you are having a yard sale with a friend. One of you is the seller, and the other is the buyer. Take turns choosing items, asking about prices, and bargaining for a better deal. Try to agree on a price for each item.",
+      "application/description.mp3"
+    ],
+    [
+      "Your conversation should include:",
+      "application/includes.mp3"
+    ],
+    [
+      "Asking about prices and offering items for sale.",
+      "application/include_1.mp3"
+    ],
+    [
+      "Bargaining for a lower price.",
+      "application/include_2.mp3"
+    ],
+    [
+      "Suggesting a different price and agreeing on a final price.",
+      "application/include_3.mp3"
+    ],
+    [
+      "Example prompts:",
+      "application/prompts.mp3"
+    ],
+    [
+      "How much is this desk lamp?",
+      "application/example_1.mp3"
+    ],
+    [
+      "I'm selling it for 100,000 dong.",
+      "application/example_2.mp3"
+    ],
+    [
+      "Will you take 60,000 dong?",
+      "application/example_3.mp3"
+    ],
+    [
+      "I can give it to you for 80,000 dong.",
+      "application/example_4.mp3"
+    ],
+    [
+      "How about 70,000 dong?",
+      "application/example_5.mp3"
+    ],
+    [
+      "All right! It's a deal!",
+      "application/example_6.mp3"
+    ],
+    [
+      "Na, I'm so upset! My desk lamp just stopped working!",
+      "conversation/Bo1.mp3"
+    ],
+    [
+      "Oh no! How are you going to study now?",
+      "conversation/Na1.mp3"
+    ],
+    [
+      "I have an old desk lamp. Do you want to buy it? I'll give you a good price!",
+      "conversation/Na2.mp3"
+    ],
+    [
+      "That sounds good! How much is it?",
+      "conversation/Bo2.mp3"
+    ],
+    [
+      "I'm selling it for 100,000 dong.",
+      "conversation/Na3.mp3"
+    ],
+    [
+      "What? 100,000? Will you take 60,000 dong?",
+      "conversation/Bo3.mp3"
+    ],
+    [
+      "That's a little too low. I can give it to you for 80,000 dong.",
+      "conversation/Na4.mp3"
+    ],
+    [
+      "Hmm... How about 70,000 dong? Please, Na!",
+      "conversation/Bo4.mp3"
+    ],
+    [
+      "Let me think... Hmm, all right!",
+      "conversation/Na5.mp3"
+    ],
+    [
+      "Great! Thanks, Na!",
+      "conversation/Bo5.mp3"
+    ],
+    [
+      "You're welcome! I hope you like it.",
+      "conversation/Na6.mp3"
+    ]
+  ],
+  "vietnamese": [
+    [
+      "Buổi bán đồ cũ tại sân nhà",
+      "vocabs/vie/yard_sale.mp3"
+    ],
+    [
+      "Quần áo",
+      "vocabs/vie/clothes.mp3"
+    ],
+    [
+      "Đồ trang điểm, mỹ phẩm",
+      "vocabs/vie/makeup.mp3"
+    ],
+    [
+      "Đồ nội thất",
+      "vocabs/vie/furniture.mp3"
+    ],
+    [
+      "Đồ điện tử",
+      "vocabs/vie/electronics.mp3"
+    ],
+    [
+      "Trò chơi điện tử",
+      "vocabs/vie/video_games.mp3"
+    ],
+    [
+      "Đồ chơi",
+      "vocabs/vie/toys.mp3"
+    ],
+    [
+      "Dụng cụ thể thao",
+      "vocabs/vie/sports_equipment.mp3"
+    ],
+    [
+      "Một bức tranh nổi tiếng",
+      "vocabs/vie/a_famous_painting.mp3"
+    ],
+    [
+      "Một chiếc đồng hồ vàng",
+      "vocabs/vie/a_gold_watch.mp3"
+    ],
+    [
+      "Một chiếc TV màn hình phẳng",
+      "vocabs/vie/a_flat_screen_tv.mp3"
+    ],
+    [
+      "Một cuốn truyện tranh",
+      "vocabs/vie/a_comic_book.mp3"
+    ],
+    [
+      "Một chiếc túi đựng máy tính",
+      "vocabs/vie/a_computer_bag.mp3"
+    ],
+    [
+      "Một cái bát",
+      "vocabs/vie/a_bowl.mp3"
+    ],
+    [
+      "Kính râm",
+      "vocabs/vie/sunglasses.mp3"
+    ],
+    [
+      "Đèn, đèn bàn",
+      "vocabs/vie/lamp.mp3"
+    ],
+    [
+      "Một mức giá tốt, giá hợp lý",
+      "vocabs/vie/a_good_price.mp3"
+    ],
+    [
+      "Mặc cả, trả giá",
+      "vocabs/vie/bargain.mp3"
+    ],
+    [
+      "Chấp nhận, đồng ý",
+      "vocabs/vie/accept.mp3"
+    ],
+    [
+      "Chốt nhé! / Thỏa thuận nhé!",
+      "vocabs/vie/it_s_a_deal.mp3"
+    ],
+    [
+      "Đợi một chút, chờ một lát",
+      "vocabs/vie/just_a_second.mp3"
+    ],
+    [
+      "Dù sao cũng cảm ơn",
+      "vocabs/vie/thanks_anyway.mp3"
+    ],
+    [
+      "Bạn có đồng ý bán với giá 20 đô la không?",
+      "sentences/vi_1_1_1.mp3"
+    ],
+    [
+      "Bạn có chấp nhận mức giá 20 đô la không?",
+      "sentences/vi_1_1_2.mp3"
+    ],
+    [
+      "Bạn để lại món đồ này cho tôi với giá 20 đô la nhé?",
+      "sentences/vi_1_2_1.mp3"
+    ],
+    [
+      "Bạn để lại những món đồ này cho tôi với giá 20 đô la nhé?",
+      "sentences/vi_1_2_2.mp3"
+    ],
+    [
+      "Tôi sẽ để lại món đồ này cho bạn với giá 30 đô la.",
+      "sentences/vi_2_1_1.mp3"
+    ],
+    [
+      "Tôi sẽ để lại những món đồ này cho bạn với giá 30 đô la.",
+      "sentences/vi_2_1_2.mp3"
+    ],
+    [
+      "Bạn có thể mua món đồ này với giá 30 đô la.",
+      "sentences/vi_2_2_1.mp3"
+    ],
+    [
+      "Bạn có thể mua những món đồ này với giá 30 đô la.",
+      "sentences/vi_2_2_2.mp3"
+    ]
+  ],
+  "context": "Bo đang buồn vì chiếc đèn bàn ở nhà bị hỏng, khiến cậu không có đèn để học bài. Biết chuyện, Na liền đề nghị bán lại chiếc đèn bàn cũ của mình với giá ưu đãi. Tuy nhiên, Bo thấy giá hơi cao nên thử mặc cả để có được mức giá tốt hơn. Liệu hai bạn có thống nhất được mức giá phù hợp không?"
+}
