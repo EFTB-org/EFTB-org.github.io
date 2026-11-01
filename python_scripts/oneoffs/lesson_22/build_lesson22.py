@@ -107,14 +107,14 @@ for group_no,(label,group) in enumerate((("Bargaining for a lower price",boost1)
         if not english or english in (":----","-----"):continue
         if structure and structure not in ("Bargaining for a lower price","Suggesting a different price"):
             pattern=structure;pat_n+=1
-            spoken_pattern = pattern.replace("+", " plus ")
+            spoken_pattern = pattern.replace("it/them", "it or them").replace("+", " plus ")
             if pattern == "You can have it/them for + price.":
                 spoken_pattern = "You can have it or them for plus price."
             jobs_en.append((spoken_pattern,f"sentences/pattern_{group_no}_{pat_n}.mp3"))
         if not pattern:continue
         n=sum(1 for p in parts if f"sentences/en_{group_no}_{pat_n}_" in p)+1
         pa=f"sentences/en_{group_no}_{pat_n}_{n}.mp3";pb=f"sentences/vi_{group_no}_{pat_n}_{n}.mp3"
-        parts.append("<tr><td>"+(audio(f"sentences/pattern_{group_no}_{pat_n}.mp3", "You can have it or them for + price." if pattern == "You can have it/them for + price." else pattern) if structure else "")+"</td><td>"+audio(pa,english)+"</td><td>"+audio(pb,vietnamese)+"</td></tr>")
+        parts.append("<tr><td>"+(audio(f"sentences/pattern_{group_no}_{pat_n}.mp3", pattern.replace("it/them", "it or them")) if structure else "")+"</td><td>"+audio(pa,english)+"</td><td>"+audio(pb,vietnamese)+"</td></tr>")
         jobs_en.append((english,pa));jobs_vi.append((vietnamese,pb))
 parts+=['</tbody></table>',"### 3. Let's Practice {#lets-practice .toc-only}",head("3. Let's Practice","audio/common/headers/3_lets_practice.mp3",3,"lets-practice")]
 practice_text="Take turns bargaining for a lower price for the items below."
